@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+resumo_pr.md
+posts/exemplo/

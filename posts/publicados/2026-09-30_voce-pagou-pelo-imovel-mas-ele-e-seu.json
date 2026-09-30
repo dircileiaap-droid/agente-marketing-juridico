@@ -1,0 +1,76 @@
+{
+  "id": "2026-09-30_voce-pagou-pelo-imovel-mas-ele-e-seu",
+  "data_publicacao": "2026-09-30",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Você pagou pelo imóvel. Mas ele é *seu*?",
+  "subtitulo": "Entenda a diferença entre contrato, escritura e registro.",
+  "foto": "assets/fotos/escolhidas/pexels-7578992.jpg",
+  "foto_credito": "Foto: Pexels (licença gratuita), imagem 7578992",
+  "slides": [
+    {
+      "titulo": "O contrato não basta",
+      "texto": "Contrato particular e recibo comprovam o negócio, mas não transferem a propriedade do imóvel."
+    },
+    {
+      "titulo": "A escritura formaliza",
+      "texto": "A escritura pública, lavrada em tabelionato de notas, dá forma oficial à compra e venda. Ainda assim, sozinha, ela não transfere a propriedade."
+    },
+    {
+      "titulo": "O registro transfere",
+      "texto": "A propriedade só passa para o seu nome com o registro do título na matrícula, no Cartório de Registro de Imóveis (Código Civil, art. 1.245)."
+    },
+    {
+      "titulo": "Por que isso importa",
+      "texto": "Sem registro, o imóvel continua no nome do vendedor e pode ser atingido por dívidas dele, além de dificultar venda, herança e financiamento."
+    }
+  ],
+  "chamada_final": "O seu imóvel já está registrado no seu nome?",
+  "legenda": "Muita gente acredita que, ao pagar pelo imóvel e assinar o contrato, já se tornou proprietária. Mas não é bem assim.\n\nO contrato particular e o recibo comprovam o negócio entre as partes. A escritura pública, lavrada no tabelionato de notas, formaliza a compra e venda. Mesmo assim, a propriedade só é transferida com o registro do título na matrícula do imóvel, no Cartório de Registro de Imóveis, como determina o artigo 1.245 do Código Civil.\n\nEnquanto o registro não é feito, a lei continua considerando o vendedor como dono do imóvel. Isso pode trazer riscos, como a penhora por dívidas dele, e dificultar a venda, o financiamento e até a partilha em uma herança.\n\nPor isso, conferir a matrícula atualizada do imóvel é um passo simples e muito importante.\n\nSalve este post para consultar depois e envie para quem está comprando ou já comprou um imóvel.",
+  "hashtags": [
+    "#direitoimobiliario",
+    "#regularizacaodeimoveis",
+    "#registrodeimoveis",
+    "#escritura",
+    "#matricula",
+    "#compraevenda",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código Civil (Lei 10.406/2002), art. 1.245, caput e § 1º, conferido em planalto.gov.br em 30/09/2026",
+    "Código Civil, art. 108 (escritura pública), conferido em planalto.gov.br em 30/09/2026"
+  ],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "rodadas": 1,
+    "revisado_por": "Claude (skill marketing-juridico), revisão manual em 10 etapas",
+    "etapas": [
+      {"etapa": "Ética OAB: vedações", "ok": true, "obs": "Sem promessa, preço, captação, comparação ou caso concreto."},
+      {"etapa": "Ética OAB: tom", "ok": true, "obs": "Informativo e sóbrio; chamada final permitida (salvar e compartilhar)."},
+      {"etapa": "Exatidão jurídica", "ok": true, "obs": "Distinção contrato, escritura e registro correta e vigente."},
+      {"etapa": "Fontes", "ok": true, "obs": "Arts. 1.245 e 108 do CC conferidos no Planalto."},
+      {"etapa": "Prazos, valores e requisitos", "ok": true, "obs": "Nenhum prazo ou valor citado."},
+      {"etapa": "Ortografia", "ok": true, "obs": "Acentuação e nomes próprios conferidos."},
+      {"etapa": "Gramática e norma culta", "ok": true, "obs": "Concordância e regência conferidas; sem travessões."},
+      {"etapa": "Clareza", "ok": true, "obs": "Termos técnicos explicados; uma ideia por lâmina."},
+      {"etapa": "Coerência entre peças", "ok": true, "obs": "Capa, lâminas, legenda e hashtags alinhadas; numeração 01 a 06."},
+      {"etapa": "Acabamento visual", "ok": true, "obs": "Textos cabem; contraste legível; nome e OAB corretos."}
+    ],
+    "alertas_oab": []
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação integral (lâminas e legenda) em 30/09/2026",
+  "imagens": [
+    "posts/imagens/2026-09-30_voce-pagou-pelo-imovel-mas-ele-e-seu_01.jpg",
+    "posts/imagens/2026-09-30_voce-pagou-pelo-imovel-mas-ele-e-seu_02.jpg",
+    "posts/imagens/2026-09-30_voce-pagou-pelo-imovel-mas-ele-e-seu_03.jpg",
+    "posts/imagens/2026-09-30_voce-pagou-pelo-imovel-mas-ele-e-seu_04.jpg",
+    "posts/imagens/2026-09-30_voce-pagou-pelo-imovel-mas-ele-e-seu_05.jpg",
+    "posts/imagens/2026-09-30_voce-pagou-pelo-imovel-mas-ele-e-seu_06.jpg"
+  ],
+  "publicado_em": "2026-09-30",
+  "publicado_via": "Instagram web (Chrome), manualmente pelo Claude após aprovação",
+  "permalink": "https://www.instagram.com/p/Dd65cz4loo9/",
+  "shortcode": "Dd65cz4loo9"
+}

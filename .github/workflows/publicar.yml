@@ -1,0 +1,45 @@
+name: Publicar no Instagram
+
+on:
+  schedule:
+    - cron: "0 15 * * *"   # todo dia, 12h (Brasília)
+  workflow_dispatch:
+    inputs:
+      simular:
+        description: "Só simular (não publica)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repositorio
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Publicar posts do dia
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_URL: ${{ vars.IG_GRAPH_URL }}
+        run: python main.py publicar ${{ inputs.simular && '--simular' || '' }}
+
+      - name: Registrar publicação no repositório
+        run: |
+          git config user.name "agente-marketing"
+          git config user.email "agente-marketing@users.noreply.github.com"
+          git add posts/
+          git diff --cached --quiet || (git commit -m "Post publicado no Instagram" && git pull --rebase && git push)

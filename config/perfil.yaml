@@ -1,0 +1,70 @@
+# ============================================================
+# PERFIL: Dra. Dirciléia Aparecida Pacheco
+# Detalhes de conteúdo, ética e design: skills/marketing-juridico/
+# ============================================================
+
+advogado:
+  nome: "Dirciléia Pacheco"
+  assinatura: "DIRCILÉIA PACHECO"
+  oab: "OAB/SP 281.255"
+  instagram: "@dircileiaaparecida_adv"
+  cidade: "São Bernardo do Campo/SP"
+
+tom_de_voz: >
+  Elegante, sóbrio, acolhedor e didático. Linguagem simples, sem juridiquês,
+  frases curtas, norma culta. Informa e provoca reflexão sem sensacionalismo.
+
+publico: >
+  Proprietários, compradores e herdeiros de imóveis, segurados do INSS e pequenos
+  empresários de São Bernardo do Campo e do ABC Paulista. Pessoas leigas.
+
+# Áreas de conteúdo. "peso" = proporção no calendário.
+areas:
+  - nome: "Direito Imobiliário"
+    peso: 10
+    temas_exemplo: ["usucapião (todas as modalidades)", "Habite-se e averbação de construção",
+                    "contrato de gaveta", "escritura x registro x matrícula",
+                    "adjudicação compulsória", "REURB", "imóvel de herança", "ITBI"]
+  - nome: "Direito Previdenciário"
+    peso: 4
+    temas_exemplo: ["aposentadorias e regras de transição", "BPC/LOAS", "pensão por morte",
+                    "auxílio-acidente", "qualidade de segurado", "revisão e decadência"]
+  - nome: "Direito Tributário"
+    peso: 3
+    temas_exemplo: ["isenção de IR por doença grave", "ganho de capital na venda de imóvel",
+                    "prescrição e decadência tributária", "execução fiscal"]
+  - nome: "Direito Empresarial"
+    peso: 3
+    temas_exemplo: ["contrato social e acordo de sócios", "holding familiar",
+                    "responsabilidade dos sócios", "sociedade limitada unipessoal"]
+
+formatos:
+  carrossel: 3
+  card: 1
+
+calendario:
+  dias_semana: [0, 2, 4]   # segunda, quarta e sexta, às 12h
+  posts_por_lote: 3
+  # Programação mensal: gerada todo dia 1º com todos os posts do mês,
+  # enviada para aprovação (Pull Request). Nada é publicado sem aprovação.
+
+# Metas iniciais de KPI (revisar após o primeiro mês de dados)
+# Linha de base em 30/09/2026: 515 seguidores, 2 a 5 curtidas e 0 comentários por post.
+kpis:
+  engajamento_minimo: 0.05     # 5% do alcance
+  alcance_por_post: 300
+  comentarios_por_post: 1
+  salvamentos_por_post: 3
+  novos_seguidores_mes: 30
+
+visual:
+  cor_escura: "#3E231D"        # vinho profundo
+  cor_destaque: "#A8553F"      # terracota
+  cor_destaque_clara: "#C8765A"
+  cor_clara: "#F3EADB"         # creme
+  cor_areia: "#E4D5BF"
+  cor_texto_escuro: "#2E1B16"
+
+hashtags_fixas:
+  - "#advocacia"
+  - "#saobernardodocampo"
