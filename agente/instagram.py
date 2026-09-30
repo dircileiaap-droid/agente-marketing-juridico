@@ -30,7 +30,8 @@ class Instagram:
     def __init__(self):
         self.user_id = os.environ.get("IG_USER_ID")
         self.token = os.environ.get("IG_ACCESS_TOKEN")
-        self.base = os.environ.get("IG_GRAPH_URL", URL_PADRAO).rstrip("/")
+        # "or": no GitHub a variável pode existir mas vir vazia
+        self.base = (os.environ.get("IG_GRAPH_URL") or URL_PADRAO).rstrip("/")
         if not (self.user_id and self.token):
             raise ErroInstagram("Defina IG_USER_ID e IG_ACCESS_TOKEN.")
 

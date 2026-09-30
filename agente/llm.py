@@ -24,7 +24,7 @@ def gerar_json(prompt_sistema: str, prompt_usuario: str, tentativas: int = 3) ->
     chave = os.environ.get("GEMINI_API_KEY")
     if not chave:
         raise ErroLLM("Defina a variável de ambiente GEMINI_API_KEY.")
-    modelo = os.environ.get("GEMINI_MODEL", MODELO_PADRAO)
+    modelo = os.environ.get("GEMINI_MODEL") or MODELO_PADRAO
 
     corpo = {
         "systemInstruction": {"parts": [{"text": prompt_sistema}]},
