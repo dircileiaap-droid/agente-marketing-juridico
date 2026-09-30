@@ -1,8 +1,17 @@
 """Carrega o perfil (config/perfil.yaml), a skill e os caminhos do projeto."""
 import re
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import yaml
+
+# Horário de Brasília (UTC-3; sem horário de verão desde 2019)
+FUSO = timezone(timedelta(hours=-3))
+
+
+def hoje() -> date:
+    """Data de hoje no horário de Brasília (o GitHub roda no horário UTC)."""
+    return datetime.now(FUSO).date()
 
 RAIZ = Path(__file__).resolve().parent.parent
 PASTA_CONFIG = RAIZ / "config"

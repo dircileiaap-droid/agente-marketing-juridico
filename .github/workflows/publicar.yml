@@ -2,7 +2,9 @@ name: Publicar no Instagram
 
 on:
   schedule:
-    - cron: "0 15 * * *"   # todo dia, 12h (Brasília)
+    # Segunda, quarta e sexta às 21h (Brasília) = terça, quinta e sábado 00h (UTC).
+    # O GitHub pode atrasar alguns minutos em horários de pico.
+    - cron: "0 0 * * 2,4,6"
   workflow_dispatch:
     inputs:
       simular:

@@ -49,6 +49,6 @@ seguidores **qualificados**, isto é, pessoas com o problema que a Dra. Dircilé
 
 ## Calendário padrão
 
-- 3 posts por semana (segunda, quarta e sexta), às 12h.
+- 3 posts por semana (segunda, quarta e sexta), às 21h.
 - Proporção: 3 carrosséis para 1 card.
 - Semana típica: 2 posts de Imobiliário + 1 das demais áreas, em rodízio.

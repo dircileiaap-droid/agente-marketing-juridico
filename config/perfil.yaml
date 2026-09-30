@@ -43,7 +43,7 @@ formatos:
   card: 1
 
 calendario:
-  dias_semana: [0, 2, 4]   # segunda, quarta e sexta, às 12h
+  dias_semana: [0, 2, 4]   # segunda, quarta e sexta, às 21h (horário de Brasília)
   posts_por_lote: 3
   # Programação mensal: gerada todo dia 1º com todos os posts do mês,
   # enviada para aprovação (Pull Request). Nada é publicado sem aprovação.

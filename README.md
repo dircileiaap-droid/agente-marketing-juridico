@@ -6,7 +6,7 @@ respeitando o **Provimento 205/2021 da OAB**.
 ## Como funciona
 
 ```
-Todo domingo                              Você revisa                Todo dia às 12h
+Todo domingo                              Você revisa                Seg/qua/sex às 21h
 ┌───────────────────────────┐   PR   ┌────────────────────┐ merge ┌──────────────────────┐
 │ 1. Gemini escreve         │ ─────▶ │ Pull Request com   │ ────▶ │ Publica no Instagram │
 │ 2. Revisor: 10 etapas     │        │ imagens, legendas, │       │ o post do dia        │
@@ -97,7 +97,7 @@ Edite `config/perfil.yaml` com seu nome, OAB, @, cores e dias de publicação.
 | Quando | O que acontece | Você faz |
 |---|---|---|
 | Dia 1º de cada mês, 8h | O agente gera **a programação do mês inteiro** (seg, qua e sex) e abre um Pull Request com o calendário, as imagens, as legendas, as fontes e a revisão de cada post | Revisa e faz o merge (= aprova) |
-| Segunda, quarta e sexta, 12h | Publica o post do dia, **somente se aprovado** | Nada |
+| Segunda, quarta e sexta, 21h | Publica o post do dia, **somente se aprovado** | Nada |
 | Todo dia, 19h | Coleta seguidores, alcance, curtidas, comentários, salvamentos e compartilhamentos | Nada |
 | Domingo à noite | **Relatório semanal de KPIs** (abre uma Issue no GitHub, que chega por e-mail) | Lê e decide |
 | Último dia do mês | **Relatório mensal de KPIs** com recomendações | Lê e decide |
@@ -124,7 +124,7 @@ Para a coleta funcionar, o token do Instagram precisa também da permissão
   (pode informar um tema específico).
 - **Aprovar:** abra o Pull Request, revise imagens e legendas, edite o que quiser
   e clique em **Merge**.
-- **Publicação:** automática, todo dia às 12h, só nas datas agendadas.
+- **Publicação:** automática, segunda, quarta e sexta às 21h, só nas datas aprovadas.
 - **Testar sem publicar:** *Actions* > *Publicar no Instagram* > marque *simular*.
 
 ### Renovar o token (a cada ~50 dias)

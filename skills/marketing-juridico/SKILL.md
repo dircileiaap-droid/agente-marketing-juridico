@@ -70,7 +70,7 @@ o imóvel e o patrimônio (ex.: ITBI, INSS de obra, imóvel na partilha, imóvel
   no Windows para análise e, somente após o "aprovado", envia ao GitHub, que
   publica nas datas.
 
-- **3 posts por semana: segunda, quarta e sexta, às 12h.**
+- **3 posts por semana: segunda, quarta e sexta, às 21h.**
 - **Todo início de mês**, entregue a **programação completa do mês** (todos os posts
   prontos e acabados, com calendário em tabela) para a Dra. Dirciléia analisar e
   aprovar de uma vez. Ela pode aprovar, pedir ajustes ou recusar posts individuais.
