@@ -74,6 +74,16 @@ class Instagram:
         self._aguardar(container)
         return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
 
+    def publicar_reel(self, url_video: str, legenda: str, url_capa: str | None = None) -> str:
+        """Publica um Reels (MP4 H.264 em URL pública). Retorna o ID do post."""
+        params = {"media_type": "REELS", "video_url": url_video, "caption": legenda,
+                  "share_to_feed": "true"}
+        if url_capa:
+            params["cover_url"] = url_capa
+        container = self._req("POST", f"{self.user_id}/media", **params)["id"]
+        self._aguardar(container, limite_s=900)  # vídeo leva mais tempo para processar
+        return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
+
     def perfil(self) -> dict:
         return self._req("GET", "me", fields="user_id,username,followers_count,media_count")
 

@@ -1,13 +1,13 @@
 """Monitoramento de engajamento e KPIs do perfil.
 
-- coletar():   fotografia diÃ¡ria (seguidores + mÃ©tricas de cada post) pela API
-               oficial do Instagram. Precisa da permissÃ£o
+- coletar():   fotografia diária (seguidores + métricas de cada post) pela API
+               oficial do Instagram. Precisa da permissão
                instagram_business_manage_insights no token.
-- relatorio(): relatÃ³rio em Markdown (semanal ou mensal) com KPIs, metas,
-               ranking de posts, desempenho por Ã¡rea e formato, e recomendaÃ§Ãµes.
+- relatorio(): relatório em Markdown (semanal ou mensal) com KPIs, metas,
+               ranking de posts, desempenho por área e formato, e recomendações.
 - aprendizados_para_prompt(): resumo do que funcionou, enviado ao gerador de posts.
 
-As fotografias ficam em dados/metricas/AAAA-MM-DD.json (histÃ³rico no repositÃ³rio).
+As fotografias ficam em dados/metricas/AAAA-MM-DD.json (histórico no repositório).
 """
 import json
 from datetime import date, datetime, timedelta
@@ -23,7 +23,7 @@ METRICAS_POST = ["reach", "saved", "shares", "total_interactions", "views"]
 # ---------------------------------------------------------------- coleta
 
 def _insights_post(ig, media_id: str) -> dict:
-    """Busca as mÃ©tricas do post; se o lote falhar, tenta uma a uma."""
+    """Busca as métricas do post; se o lote falhar, tenta uma a uma."""
     from .instagram import ErroInstagram
     try:
         dados = ig._req("GET", f"{media_id}/insights", metric=",".join(METRICAS_POST))
@@ -79,7 +79,7 @@ def coletar(dias: int = 90) -> dict:
     return foto
 
 
-# ---------------------------------------------------------------- anÃ¡lise
+# ---------------------------------------------------------------- análise
 
 def _fotos() -> list[dict]:
     if not PASTA_METRICAS.exists():
@@ -89,13 +89,13 @@ def _fotos() -> list[dict]:
 
 
 def _foto_em(fotos: list, dia: date):
-    """Fotografia mais prÃ³xima (anterior ou igual) de uma data."""
+    """Fotografia mais próxima (anterior ou igual) de uma data."""
     candidatas = [f for f in fotos if f["data"] <= dia.isoformat()]
     return candidatas[-1] if candidatas else (fotos[0] if fotos else None)
 
 
 def _nossos_posts() -> dict:
-    """Mapa permalink/shortcode -> post do agente (Ã¡rea, formato, tÃ­tulo)."""
+    """Mapa permalink/shortcode -> post do agente (área, formato, título)."""
     mapa = {}
     for p in fila.publicados():
         for chave in (p.get("instagram_id"), p.get("shortcode"), p.get("permalink")):
@@ -180,26 +180,26 @@ def _recomendacoes(a: dict, metas: dict) -> list[str]:
     rec = []
     esperados = round(a["dias"] / 7 * 3)
     if a["qtd_posts"] < esperados:
-        rec.append(f"FrequÃªncia abaixo do plano ({a['qtd_posts']} de {esperados} posts). "
-                   "ConstÃ¢ncia Ã© o fator que mais pesa no alcance: aprovar a programaÃ§Ã£o no inÃ­cio do mÃªs.")
+        rec.append(f"Frequência abaixo do plano ({a['qtd_posts']} de {esperados} posts). "
+                   "Constância é o fator que mais pesa no alcance: aprovar a programação no início do mês.")
     areas = [x for x in a["por_area"] if x["engajamento"] is not None and x["nome"] != "Anterior ao agente"]
     if len(areas) >= 2:
-        rec.append(f"Ãrea com melhor engajamento: **{areas[0]['nome']}** "
-                   f"({_fmt(areas[0]['engajamento'], True)}). Considerar aumentar sua participaÃ§Ã£o.")
-        rec.append(f"Ãrea com menor engajamento: **{areas[-1]['nome']}** "
+        rec.append(f"Área com melhor engajamento: **{areas[0]['nome']}** "
+                   f"({_fmt(areas[0]['engajamento'], True)}). Considerar aumentar sua participação.")
+        rec.append(f"Área com menor engajamento: **{areas[-1]['nome']}** "
                    f"({_fmt(areas[-1]['engajamento'], True)}). Testar ganchos e formatos diferentes.")
     formatos = [x for x in a["por_formato"] if x["engajamento"] is not None]
     if len(formatos) >= 2:
         rec.append(f"Formato com melhor resultado: **{formatos[0]['nome']}**.")
     if (a["comentarios_medios"] or 0) < metas.get("comentarios_por_post", 1):
-        rec.append("Poucos comentÃ¡rios: encerrar posts com perguntas abertas e responder a todos "
-                   "os comentÃ¡rios nas primeiras horas (sem dar consultoria individual).")
+        rec.append("Poucos comentários: encerrar posts com perguntas abertas e responder a todos "
+                   "os comentários nas primeiras horas (sem dar consultoria individual).")
     if (a["salvamentos_medios"] or 0) < metas.get("salvamentos_por_post", 3):
         rec.append("Poucos salvamentos: produzir mais checklists, passo a passo e comparativos.")
     if a["novos_seguidores"] is not None and a["novos_seguidores"] < metas.get("novos_seguidores_mes", 20) * a["dias"] / 30:
-        rec.append("Crescimento de seguidores abaixo da meta: reforÃ§ar o toque local (SÃ£o Bernardo "
-                   "do Campo e ABC), colaboraÃ§Ãµes com perfis parceiros e compartilhar os posts nos stories.")
-    return rec or ["Indicadores dentro das metas. Manter a estratÃ©gia atual."]
+        rec.append("Crescimento de seguidores abaixo da meta: reforçar o toque local (São Bernardo "
+                   "do Campo e ABC), colaborações com perfis parceiros e compartilhar os posts nos stories.")
+    return rec or ["Indicadores dentro das metas. Manter a estratégia atual."]
 
 
 def relatorio(dias: int = 7) -> str:
@@ -207,39 +207,39 @@ def relatorio(dias: int = 7) -> str:
     metas = perfil.get("kpis", {})
     a = analisar(dias)
     if not a:
-        return "Ainda nÃ£o hÃ¡ mÃ©tricas coletadas. Rode `python main.py kpi-coletar`."
+        return "Ainda não há métricas coletadas. Rode `python main.py kpi-coletar`."
 
     def meta(valor, alvo, pct=False):
         if valor is None or alvo is None:
             return "sem dado"
-        return ("âœ…" if valor >= alvo else "âš ï¸") + f" meta {_fmt(alvo, pct)}"
+        return ("✅" if valor >= alvo else "⚠️") + f" meta {_fmt(alvo, pct)}"
 
     tipo = "semanal" if dias <= 7 else "mensal"
-    L = [f"# RelatÃ³rio {tipo} de KPIs: @{perfil['advogado']['instagram'].lstrip('@')}",
-         f"PerÃ­odo: {a['periodo']}", "",
+    L = [f"# Relatório {tipo} de KPIs: @{perfil['advogado']['instagram'].lstrip('@')}",
+         f"Período: {a['periodo']}", "",
          "## Indicadores principais", "",
          "| KPI | Resultado | Meta |", "|---|---|---|",
          f"| Seguidores | {_fmt(a['seguidores'])} | |",
          f"| Novos seguidores | {_fmt(a['novos_seguidores'])} | "
          f"{meta(a['novos_seguidores'], round(metas.get('novos_seguidores_mes', 20) * dias / 30))} |",
          f"| Posts publicados | {a['qtd_posts']} | {meta(a['qtd_posts'], round(dias / 7 * 3))} |",
-         f"| Alcance mÃ©dio por post | {_fmt(a['alcance_medio'])} | {meta(a['alcance_medio'], metas.get('alcance_por_post'))} |",
-         f"| Taxa de engajamento mÃ©dia | {_fmt(a['engajamento_medio'], True)} | "
+         f"| Alcance médio por post | {_fmt(a['alcance_medio'])} | {meta(a['alcance_medio'], metas.get('alcance_por_post'))} |",
+         f"| Taxa de engajamento média | {_fmt(a['engajamento_medio'], True)} | "
          f"{meta(a['engajamento_medio'], metas.get('engajamento_minimo'), True)} |",
          f"| Curtidas por post | {_fmt(a['curtidas_medias'])} | |",
-         f"| ComentÃ¡rios por post | {_fmt(a['comentarios_medios'])} | {meta(a['comentarios_medios'], metas.get('comentarios_por_post'))} |",
+         f"| Comentários por post | {_fmt(a['comentarios_medios'])} | {meta(a['comentarios_medios'], metas.get('comentarios_por_post'))} |",
          f"| Salvamentos por post | {_fmt(a['salvamentos_medios'])} | {meta(a['salvamentos_medios'], metas.get('salvamentos_por_post'))} |",
          f"| Compartilhamentos por post | {_fmt(a['compartilhamentos_medios'])} | |",
-         "", "Taxa de engajamento = (curtidas + comentÃ¡rios + salvamentos + compartilhamentos) Ã· alcance.",
-         "", "## Posts do perÃ­odo", "",
-         "| Data | TÃ­tulo | Ãrea | Alcance | Curt. | Com. | Salv. | Comp. | Engaj. |",
+         "", "Taxa de engajamento = (curtidas + comentários + salvamentos + compartilhamentos) ÷ alcance.",
+         "", "## Posts do período", "",
+         "| Data | Título | Área | Alcance | Curt. | Com. | Salv. | Comp. | Engaj. |",
          "|---|---|---|---|---|---|---|---|---|"]
     for p in a["posts"]:
         L.append(f"| {p['data'][8:10]}/{p['data'][5:7]} | [{p['titulo'][:45]}]({p['permalink']}) | {p['area']} | "
                  f"{_fmt(p.get('alcance'))} | {_fmt(p.get('curtidas'))} | {_fmt(p.get('comentarios'))} | "
                  f"{_fmt(p.get('salvamentos'))} | {_fmt(p.get('compartilhamentos'))} | {_fmt(p.get('engajamento'), True)} |")
-    for titulo, grupo in (("Desempenho por Ã¡rea", a["por_area"]), ("Desempenho por formato", a["por_formato"])):
-        L += ["", f"## {titulo}", "", "| | Posts | Alcance mÃ©dio | Engajamento | Salvamentos | ComentÃ¡rios |",
+    for titulo, grupo in (("Desempenho por área", a["por_area"]), ("Desempenho por formato", a["por_formato"])):
+        L += ["", f"## {titulo}", "", "| | Posts | Alcance médio | Engajamento | Salvamentos | Comentários |",
               "|---|---|---|---|---|---|"]
         for g in grupo:
             L.append(f"| {g['nome']} | {g['posts']} | {_fmt(g['alcance'])} | {_fmt(g['engajamento'], True)} | "
@@ -249,7 +249,7 @@ def relatorio(dias: int = 7) -> str:
     if ranking:
         L += ["", "## Destaques", "", "**Melhores posts:**"]
         L += [f"{i}. {p['titulo']} ({_fmt(p['engajamento'], True)})" for i, p in enumerate(ranking[:3], 1)]
-    L += ["", "## RecomendaÃ§Ãµes para decisÃ£o", ""]
+    L += ["", "## Recomendações para decisão", ""]
     L += [f"- {r}" for r in _recomendacoes(a, metas)]
 
     ARQ_APRENDIZADOS.parent.mkdir(parents=True, exist_ok=True)

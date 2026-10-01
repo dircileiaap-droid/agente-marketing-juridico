@@ -1,4 +1,4 @@
-"""Fila de posts: cada post Ã© um arquivo JSON em posts/fila/ ou posts/publicados/."""
+"""Fila de posts: cada post é um arquivo JSON em posts/fila/ ou posts/publicados/."""
 import json
 from datetime import date, timedelta
 from pathlib import Path
@@ -46,7 +46,7 @@ def titulos_recentes(limite: int = 40) -> list[str]:
 
 
 def proximas_datas(qtd: int, dias_semana: list[int]) -> list[date]:
-    """PrÃ³ximas datas livres nos dias da semana configurados."""
+    """Próximas datas livres nos dias da semana configurados."""
     ocupadas = {p["data_publicacao"] for p in na_fila()}
     dia = hoje() + timedelta(days=1)
     if ocupadas:
@@ -60,7 +60,7 @@ def proximas_datas(qtd: int, dias_semana: list[int]) -> list[date]:
 
 
 def datas_do_mes(ano: int, mes: int, dias_semana: list[int], a_partir_de: date) -> list[date]:
-    """Todas as datas de publicaÃ§Ã£o do mÃªs (ex.: seg/qua/sex), a partir de uma data."""
+    """Todas as datas de publicação do mês (ex.: seg/qua/sex), a partir de uma data."""
     dia = max(date(ano, mes, 1), a_partir_de)
     ocupadas = {p["data_publicacao"] for p in na_fila()}
     datas = []
@@ -75,13 +75,13 @@ TOLERANCIA_ATRASO_DIAS = 2
 
 
 def vencidos() -> list[dict]:
-    """Posts do dia (ou com atÃ© 2 dias de atraso, ex.: aprovaÃ§Ã£o tardia)."""
+    """Posts do dia (ou com até 2 dias de atraso, ex.: aprovação tardia)."""
     dia_hoje = hoje()
     limite = (dia_hoje - timedelta(days=TOLERANCIA_ATRASO_DIAS)).isoformat()
     return [p for p in na_fila() if limite <= p["data_publicacao"] <= dia_hoje.isoformat()]
 
 
 def atrasados() -> list[dict]:
-    """Posts que perderam a data (nÃ£o sÃ£o publicados sozinhos: precisam de nova data)."""
+    """Posts que perderam a data (não são publicados sozinhos: precisam de nova data)."""
     limite = (hoje() - timedelta(days=TOLERANCIA_ATRASO_DIAS)).isoformat()
     return [p for p in na_fila() if p["data_publicacao"] < limite]

@@ -1,4 +1,4 @@
-"""Cria novos posts: pauta, redaÃ§Ã£o (Gemini), revisÃ£o em 10 etapas e imagens."""
+"""Cria novos posts: pauta, redação (Gemini), revisão em 10 etapas e imagens."""
 import json
 import re
 import unicodedata
@@ -12,23 +12,23 @@ ESQUEMA = """Responda SOMENTE com JSON neste formato:
   "posts": [
     {
       "formato": "carrossel" ou "card",
-      "area": "exatamente o nome da Ã¡rea pedida",
-      "titulo": "gancho da capa, atÃ© 8 palavras; destaque UMA palavra com *asteriscos*",
-      "subtitulo": "frase curta de apoio na capa, atÃ© 12 palavras",
-      "foto_busca": "2 a 4 palavras em inglÃªs para buscar foto (ex.: house keys document)",
-      "slides": [ {"titulo": "atÃ© 6 palavras", "texto": "atÃ© 45 palavras"} ],
-      "chamada_final": "pergunta que convide a comentar, atÃ© 10 palavras",
-      "legenda": "80 a 180 palavras, parÃ¡grafos curtos, termina com chamada permitida",
+      "area": "exatamente o nome da área pedida",
+      "titulo": "gancho da capa, até 8 palavras; destaque UMA palavra com *asteriscos*",
+      "subtitulo": "frase curta de apoio na capa, até 12 palavras",
+      "foto_busca": "2 a 4 palavras em inglês para buscar foto (ex.: house keys document)",
+      "slides": [ {"titulo": "até 6 palavras", "texto": "até 45 palavras"} ],
+      "chamada_final": "pergunta que convide a comentar, até 10 palavras",
+      "legenda": "80 a 180 palavras, parágrafos curtos, termina com chamada permitida",
       "hashtags": ["#exemplo"],
-      "fontes": ["cada fundamento citado, ex.: CÃ³digo Civil, art. 1.245"]
+      "fontes": ["cada fundamento citado, ex.: Código Civil, art. 1.245"]
     }
   ]
 }
 Regras do formato:
-- "carrossel": de 4 a 6 slides de conteÃºdo (capa e encerramento sÃ£o automÃ¡ticos).
-- "card": "slides" deve ser lista vazia; tÃ­tulo e subtÃ­tulo carregam a mensagem.
-- De 6 a 10 hashtags especÃ­ficas, sem repetir as fixas.
-- "fontes": sÃ³ o que consta nas tabelas da skill. Sem fundamento citado, lista vazia."""
+- "carrossel": de 4 a 6 slides de conteúdo (capa e encerramento são automáticos).
+- "card": "slides" deve ser lista vazia; título e subtítulo carregam a mensagem.
+- De 6 a 10 hashtags específicas, sem repetir as fixas.
+- "fontes": só o que consta nas tabelas da skill. Sem fundamento citado, lista vazia."""
 
 
 def _ciclo(pesos: dict, inicio: int, qtd: int) -> list:
@@ -54,22 +54,22 @@ def _prompt_usuario(perfil: dict, pedidos: list, tema: str | None) -> str:
     linhas = []
     for i, (formato, area) in enumerate(pedidos, start=1):
         exemplos = ", ".join(areas[area].get("temas_exemplo", []))
-        linhas.append(f"Post {i}: formato {formato}; Ã¡rea {area} (ideias: {exemplos})")
+        linhas.append(f"Post {i}: formato {formato}; área {area} (ideias: {exemplos})")
     recentes = "\n".join(f"- {t}" for t in fila.titulos_recentes()) or "(nenhum ainda)"
     pauta = (f"Todos os posts devem tratar deste tema: {tema}" if tema else
-             "Escolha temas com dÃºvidas reais e frequentes do pÃºblico, variando formatos "
-             "de conteÃºdo (mito x verdade, checklist, passo a passo, erro comum, comparativo).")
+             "Escolha temas com dúvidas reais e frequentes do público, variando formatos "
+             "de conteúdo (mito x verdade, checklist, passo a passo, erro comum, comparativo).")
     return f"""Crie {len(pedidos)} post(s) para o Instagram {perfil['advogado']['instagram']}
 ({perfil['advogado']['nome']}, {perfil['advogado']['cidade']}).
 
 {chr(10).join(linhas)}
 
 Tom de voz: {perfil['tom_de_voz']}
-PÃºblico: {perfil['publico']}
+Público: {perfil['publico']}
 
 {pauta}
 
-NÃƒO repita estes tÃ­tulos jÃ¡ usados:
+NÃO repita estes títulos já usados:
 {recentes}
 
 {ESQUEMA}"""
@@ -77,7 +77,7 @@ NÃƒO repita estes tÃ­tulos jÃ¡ usados:
 
 def gerar_lote(qtd: int | None = None, tema: str | None = None, area: str | None = None,
                datas: list | None = None) -> list:
-    """Gera posts para as datas informadas (ou para as prÃ³ximas datas livres)."""
+    """Gera posts para as datas informadas (ou para as próximas datas livres)."""
     perfil = carregar_perfil()
     if datas is None:
         qtd = qtd or perfil["calendario"]["posts_por_lote"]
@@ -122,14 +122,14 @@ def gerar_lote(qtd: int | None = None, tema: str | None = None, area: str | None
 
 
 def _aprendizados() -> str:
-    """Resumo do Ãºltimo relatÃ³rio de KPIs, para o agente repetir o que funciona."""
+    """Resumo do último relatório de KPIs, para o agente repetir o que funciona."""
     from .kpi import aprendizados_para_prompt
     texto = aprendizados_para_prompt()
-    return f"\n\nAPRENDIZADOS DOS KPIs (use como orientaÃ§Ã£o):\n{texto}" if texto else ""
+    return f"\n\nAPRENDIZADOS DOS KPIs (use como orientação):\n{texto}" if texto else ""
 
 
 def gerar_mes(ano: int, mes: int, lote: int = 3, pausa_s: int = 10) -> list:
-    """ProgramaÃ§Ã£o do mÃªs inteiro (seg/qua/sex), gerada em lotes pequenos para
+    """Programação do mês inteiro (seg/qua/sex), gerada em lotes pequenos para
     respeitar o limite gratuito do Gemini."""
     import time
     from datetime import timedelta
@@ -147,34 +147,34 @@ def gerar_mes(ano: int, mes: int, lote: int = 3, pausa_s: int = 10) -> list:
 
 
 def calendario_markdown(posts: list) -> str:
-    dias = ["segunda", "terÃ§a", "quarta", "quinta", "sexta", "sÃ¡bado", "domingo"]
+    dias = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]
     from datetime import date
-    linhas = ["| Data | Dia | Ãrea | Formato | TÃ­tulo | RevisÃ£o |", "|---|---|---|---|---|---|"]
+    linhas = ["| Data | Dia | Área | Formato | Título | Revisão |", "|---|---|---|---|---|---|"]
     for p in sorted(posts, key=lambda x: x["data_publicacao"]):
         d = date.fromisoformat(p["data_publicacao"])
-        ok = "âœ…" if p.get("revisao", {}).get("aprovado_pelo_revisor") else "âš ï¸"
+        ok = "✅" if p.get("revisao", {}).get("aprovado_pelo_revisor") else "⚠️"
         linhas.append(f"| {d.strftime('%d/%m')} | {dias[d.weekday()]} | {p['area']} | "
                       f"{p['formato']} | {p['titulo'].replace('*', '')} | {ok} |")
     return "\n".join(linhas)
 
 
 def resumo_markdown(posts: list, url_base: str = "") -> str:
-    """Corpo do Pull Request de aprovaÃ§Ã£o."""
-    linhas = ["## ProgramaÃ§Ã£o para aprovaÃ§Ã£o da Dra. DircilÃ©ia Pacheco", "",
+    """Corpo do Pull Request de aprovação."""
+    linhas = ["## Programação para aprovação da Dra. Dirciléia Pacheco", "",
               calendario_markdown(posts), "",
               "Revise cada post. Para ajustar, edite o arquivo JSON em `posts/fila/`.",
-              "**Fazer o merge deste Pull Request = aprovar a publicaÃ§Ã£o.** "
+              "**Fazer o merge deste Pull Request = aprovar a publicação.** "
               "Para recusar um post, apague o JSON dele antes do merge.", ""]
     for p in posts:
-        linhas += [f"### {p['data_publicacao']} Â· {p['area']} Â· {p['formato']}",
+        linhas += [f"### {p['data_publicacao']} · {p['area']} · {p['formato']}",
                    f"**{p['titulo'].replace('*', '')}**", "",
                    revisor.resumo(p), ""]
         r = p.get("revisao", {})
         if r.get("alertas_oab"):
-            linhas += ["> âš ï¸ **Termos sensÃ­veis (OAB):** " + "; ".join(r["alertas_oab"]), ""]
+            linhas += ["> ⚠️ **Termos sensíveis (OAB):** " + "; ".join(r["alertas_oab"]), ""]
         for e in r.get("etapas", []):
             if not e["ok"]:
-                linhas.append(f"> âŒ {e['etapa']}: {e['obs']}")
+                linhas.append(f"> ❌ {e['etapa']}: {e['obs']}")
         for img in p["imagens"]:
             linhas.append(f'<img src="{url_base}{img}" width="200">')
         linhas += ["", "<details><summary>Legenda e fontes</summary>", "",
