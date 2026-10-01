@@ -1,0 +1,106 @@
+{
+  "id": "2026-10-26_holding-familiar",
+  "data_publicacao": "2026-10-26",
+  "formato": "carrossel",
+  "area": "Direito Empresarial",
+  "titulo": "Holding familiar: o que *realmente* é",
+  "subtitulo": "Planejamento patrimonial com segurança jurídica.",
+  "foto": "assets/fotos/escolhidas/pexels-8729964.jpg",
+  "slides": [
+    {
+      "titulo": "O que é",
+      "texto": "É uma empresa criada para reunir e administrar bens de uma família, como imóveis e participações em outras empresas."
+    },
+    {
+      "titulo": "Para que serve",
+      "texto": "Pode facilitar a administração do patrimônio e o planejamento da sucessão, com regras definidas no contrato social e em acordos entre os sócios."
+    },
+    {
+      "titulo": "Não é blindagem absoluta",
+      "texto": "Em caso de abuso, como confusão patrimonial ou desvio de finalidade, o juiz pode desconsiderar a empresa e alcançar os bens dos sócios (Código Civil, art. 50)."
+    },
+    {
+      "titulo": "Não serve para todos",
+      "texto": "Custos de abertura e manutenção, tributos e a realidade de cada família precisam ser analisados antes da decisão."
+    },
+    {
+      "titulo": "Planejamento é individual",
+      "texto": "Cada patrimônio tem particularidades. Uma holding bem estruturada depende de análise jurídica, contábil e tributária."
+    }
+  ],
+  "chamada_final": "Você já tinha ouvido falar em holding familiar?",
+  "legenda": "A holding familiar virou assunto frequente, mas nem sempre é bem explicada.\n\nEla é uma empresa criada para reunir e administrar bens de uma família, como imóveis e participações societárias. Bem estruturada, pode facilitar a administração do patrimônio e o planejamento da sucessão.\n\nPor outro lado, a holding não é uma blindagem absoluta. Pelo artigo 50 do Código Civil, em caso de abuso, como confusão patrimonial ou desvio de finalidade, o juiz pode desconsiderar a empresa e alcançar os bens dos sócios. Ela também não é indicada para todos: custos, tributos e a realidade de cada família precisam ser avaliados.\n\nPor isso, a decisão depende de análise jurídica, contábil e tributária individualizada.\n\nSalve este post para consultar depois.",
+  "hashtags": [
+    "#holdingfamiliar",
+    "#holding",
+    "#planejamentopatrimonial",
+    "#planejamentosucessorio",
+    "#direitoempresarial",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código Civil, arts. 50, 981 e 1.052 (conferido em 30/09/2026)"
+  ],
+  "imagens": [
+    "posts/imagens/2026-10-26_holding-familiar_01.jpg",
+    "posts/imagens/2026-10-26_holding-familiar_02.jpg",
+    "posts/imagens/2026-10-26_holding-familiar_03.jpg",
+    "posts/imagens/2026-10-26_holding-familiar_04.jpg",
+    "posts/imagens/2026-10-26_holding-familiar_05.jpg",
+    "posts/imagens/2026-10-26_holding-familiar_06.jpg",
+    "posts/imagens/2026-10-26_holding-familiar_07.jpg"
+  ],
+  "alertas_oab": [],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

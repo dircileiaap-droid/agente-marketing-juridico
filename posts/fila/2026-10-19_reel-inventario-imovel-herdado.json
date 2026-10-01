@@ -1,0 +1,170 @@
+{
+  "id": "2026-10-19_reel-inventario-imovel-herdado",
+  "data_publicacao": "2026-10-19",
+  "formato": "reel",
+  "area": "Direito Imobiliário",
+  "titulo": "Herdou um imóvel? Faça o *inventário* a tempo",
+  "subtitulo": "Prazo, cartório e multa",
+  "video_capa": "assets/videos/pexels-7546136.mp4",
+  "video_final": "assets/videos/pexels-7492157.mp4",
+  "trilha": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+  "slides": [
+    {
+      "titulo": "Existe prazo",
+      "texto": "O inventário deve ser aberto em até 2 meses do falecimento (Código de Processo Civil, art. 611).",
+      "video": "assets/videos/pexels-13511897.mp4"
+    },
+    {
+      "titulo": "Pode ser em cartório",
+      "texto": "Se todos os herdeiros forem maiores, capazes e estiverem de acordo, o inventário pode ser feito por escritura pública, com advogado (CPC, art. 610).",
+      "video": "assets/videos/pexels-8731252.mp4"
+    },
+    {
+      "titulo": "O atraso pode gerar multa",
+      "texto": "Em São Paulo, se o inventário não for aberto em 60 dias, o ITCMD tem multa de 10%. Acima de 180 dias, a multa sobe para 20%.",
+      "video": "assets/videos/pexels-6964001.mp4"
+    }
+  ],
+  "chamada_final": "Regularizar a herança protege toda a família.",
+  "legenda": "Herdar um imóvel e deixar tudo como está parece simples, mas costuma gerar problemas para a família no futuro.\n\nO Código de Processo Civil determina que o inventário seja aberto em até 2 meses do falecimento. Quando todos os herdeiros são maiores, capazes e estão de acordo, ele pode ser feito em cartório, por escritura pública, com a assistência de advogado.\n\nEm São Paulo, o atraso tem custo: se o inventário não for aberto em 60 dias, o ITCMD é calculado com multa de 10%. Acima de 180 dias, a multa passa a 20% (Lei estadual 10.705/2000, art. 21).\n\nAlém disso, sem inventário e partilha registrada, o imóvel não pode ser vendido ou financiado de forma regular.\n\nSalve este vídeo e compartilhe com a sua família.",
+  "hashtags": [
+    "#inventario",
+    "#heranca",
+    "#itcmd",
+    "#partilha",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código de Processo Civil, arts. 610 e 611 (conferido em 30/09/2026)",
+    "Lei estadual SP 10.705/2000, art. 21, I (conferido em 30/09/2026 em al.sp.gov.br)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+    "inicio": 66.003,
+    "bpm": 70.79,
+    "salto": 4.4
+  },
+  "video": "posts/videos/2026-10-19_reel-inventario-imovel-herdado.mp4",
+  "imagens": [
+    "posts/videos/2026-10-19_reel-inventario-imovel-herdado_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "50.00 s (roteiro 50.01 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -19.9 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.1 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

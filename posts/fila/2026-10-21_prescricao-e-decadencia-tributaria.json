@@ -1,0 +1,106 @@
+{
+  "id": "2026-10-21_prescricao-e-decadencia-tributaria",
+  "data_publicacao": "2026-10-21",
+  "formato": "carrossel",
+  "area": "Direito Tributário",
+  "titulo": "Dívida de imposto antiga ainda pode ser *cobrada*?",
+  "subtitulo": "Entenda decadência e prescrição tributária.",
+  "foto": "assets/fotos/escolhidas/pexels-6927345.jpg",
+  "slides": [
+    {
+      "titulo": "Dois prazos diferentes",
+      "texto": "Decadência é o prazo para o Fisco constituir o crédito, isto é, lançar o tributo. Prescrição é o prazo para cobrá-lo depois de constituído."
+    },
+    {
+      "titulo": "Decadência: 5 anos",
+      "texto": "Em regra, o Fisco tem 5 anos para lançar, contados do primeiro dia do ano seguinte ao que poderia ter lançado (CTN, art. 173, I). Há regra própria para tributos pagos antecipadamente."
+    },
+    {
+      "titulo": "Prescrição: 5 anos",
+      "texto": "Depois de constituído o crédito, o Fisco tem 5 anos para cobrá-lo (CTN, art. 174)."
+    },
+    {
+      "titulo": "O prazo pode recomeçar",
+      "texto": "O despacho que ordena a citação na execução fiscal e o reconhecimento da dívida pelo devedor, entre outros atos, interrompem a prescrição, que volta a correr do início."
+    },
+    {
+      "titulo": "Novidade de 2026",
+      "texto": "A Lei Complementar 236/2026 incluiu o protesto extrajudicial da certidão de dívida ativa entre os atos que interrompem a prescrição (CTN, art. 174, § 1º, II)."
+    }
+  ],
+  "chamada_final": "Ficou alguma dúvida sobre esses prazos? Comente.",
+  "legenda": "Será que aquela dívida de imposto antiga ainda pode ser cobrada? A resposta depende de dois prazos do Código Tributário Nacional.\n\nA decadência é o prazo para o Fisco lançar o tributo. Em regra, são 5 anos contados do primeiro dia do ano seguinte àquele em que o lançamento poderia ter sido feito. Já a prescrição é o prazo para cobrar o crédito depois de constituído: também 5 anos.\n\nAtenção: alguns atos interrompem a prescrição, que então recomeça do zero. A Lei Complementar 236/2026 ampliou essa lista e incluiu, por exemplo, o protesto extrajudicial da certidão de dívida ativa.\n\nComo cada tributo e cada cobrança têm datas próprias, a análise precisa ser feita caso a caso.\n\nSalve este post para consultar depois.",
+  "hashtags": [
+    "#direitotributario",
+    "#prescricao",
+    "#decadencia",
+    "#execucaofiscal",
+    "#contribuinte",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "CTN, arts. 150, § 4º, 173 e 174, com a redação da LC 236/2026 (conferido em 30/09/2026)"
+  ],
+  "imagens": [
+    "posts/imagens/2026-10-21_prescricao-e-decadencia-tributaria_01.jpg",
+    "posts/imagens/2026-10-21_prescricao-e-decadencia-tributaria_02.jpg",
+    "posts/imagens/2026-10-21_prescricao-e-decadencia-tributaria_03.jpg",
+    "posts/imagens/2026-10-21_prescricao-e-decadencia-tributaria_04.jpg",
+    "posts/imagens/2026-10-21_prescricao-e-decadencia-tributaria_05.jpg",
+    "posts/imagens/2026-10-21_prescricao-e-decadencia-tributaria_06.jpg",
+    "posts/imagens/2026-10-21_prescricao-e-decadencia-tributaria_07.jpg"
+  ],
+  "alertas_oab": [],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

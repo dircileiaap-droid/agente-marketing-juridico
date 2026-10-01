@@ -1,0 +1,168 @@
+{
+  "id": "2026-10-09_reel-isencao-ir-doenca-grave",
+  "data_publicacao": "2026-10-09",
+  "formato": "reel",
+  "area": "Direito Tributário",
+  "titulo": "Aposentado com doença grave: *isenção* de IR",
+  "subtitulo": "Entenda quem tem direito",
+  "video_capa": "assets/videos/pexels-7516760.mp4",
+  "video_final": "assets/videos/pexels-5798910.mp4",
+  "trilha": "assets/audio/pixabay-409347-inspiring-cinematic.mp3",
+  "slides": [
+    {
+      "titulo": "Para quem vale",
+      "texto": "Para aposentadoria, reforma e pensão de quem tem uma das doenças graves listadas na lei. Não vale para o salário de quem ainda está trabalhando.",
+      "video": "assets/videos/pexels-5798598.mp4"
+    },
+    {
+      "titulo": "Quais doenças",
+      "texto": "Entre outras: neoplasia maligna, cardiopatia grave, doença de Parkinson, esclerose múltipla, nefropatia grave e cegueira (Lei 7.713/1988, art. 6º, XIV).",
+      "video": "assets/videos/pexels-4352133.mp4"
+    },
+    {
+      "titulo": "Como comprovar",
+      "texto": "Com base em conclusão da medicina especializada, ou seja, laudo médico. Vale mesmo que a doença tenha surgido depois da aposentadoria.",
+      "video": "assets/videos/pexels-7247861.mp4"
+    }
+  ],
+  "chamada_final": "Conhece alguém nessa situação? Compartilhe.",
+  "legenda": "Muitos aposentados e pensionistas com doenças graves continuam pagando Imposto de Renda sem saber que a lei prevê isenção.\n\nA Lei 7.713/1988 isenta os proventos de aposentadoria, reforma e pensão de quem tem uma das doenças da lista legal, como neoplasia maligna, cardiopatia grave, doença de Parkinson, esclerose múltipla, nefropatia grave e cegueira, entre outras.\n\nA doença deve ser comprovada com base em conclusão da medicina especializada, e a isenção vale mesmo que ela tenha surgido depois da aposentadoria.\n\nAtenção: a regra alcança os proventos de aposentadoria, reforma e pensão. O salário de quem ainda está trabalhando não entra.\n\nSalve este vídeo e compartilhe com quem pode ter direito.",
+  "hashtags": [
+    "#impostoderenda",
+    "#isencaodeir",
+    "#aposentados",
+    "#direitotributario",
+    "#doencagrave",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 7.713/1988, art. 6º, XIV e XXI (conferido em 30/09/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-409347-inspiring-cinematic.mp3",
+    "inicio": 38.208,
+    "bpm": 89.1,
+    "salto": 8.2
+  },
+  "video": "posts/videos/2026-10-09_reel-isencao-ir-doenca-grave.mp4",
+  "imagens": [
+    "posts/videos/2026-10-09_reel-isencao-ir-doenca-grave_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "45.79 s (roteiro 45.79 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -16.4 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -0.9 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

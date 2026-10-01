@@ -48,7 +48,9 @@ class Elemento:
     def __init__(self, img, inicio, efeito="subir", duracao=0.5, cor_texto=None, nome="", texto=""):
         caixa = img.getbbox() or (0, 0, 1, 1)
         self.img = img.crop(caixa)
-        self.caixa = caixa
+        # itálico e sombra podem "vazar" para a esquerda: mantém tudo na área segura
+        dx = max(0, 64 - caixa[0])
+        self.caixa = (caixa[0] + dx, caixa[1], caixa[2] + dx, caixa[3])
         self.inicio, self.efeito, self.duracao = inicio, efeito, duracao
         self.cor_texto, self.nome, self.texto = cor_texto, nome, texto
 
@@ -234,7 +236,8 @@ class Roteirista:
             y += int(tam * 1.06)
         if post.get("subtitulo"):
             img, d = _camada()
-            f, ls = paragrafo_ajustado(post["subtitulo"].upper(), "negrito", UTIL, 140, 36, 28, 1.45)
+            # o espaçamento entre letras (8%) alarga a linha: quebra numa largura menor
+            f, ls = paragrafo_ajustado(post["subtitulo"].upper(), "negrito", int(UTIL / 1.12), 140, 36, 28, 1.45)
             y += 50
             for linha in ls:
                 texto_espacado(d, (M, y), linha, f, self.clara, 0.08)

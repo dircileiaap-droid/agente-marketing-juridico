@@ -1,0 +1,84 @@
+{
+  "id": "2026-10-17_stories-pensao-sem-carencia",
+  "data_publicacao": "2026-10-17",
+  "tipo": "voce_sabia",
+  "area": "Direito Previdenciário",
+  "quadros": [
+    {
+      "etiqueta": "VOCÊ SABIA?",
+      "titulo": "A pensão por morte não exige um número *mínimo* de contribuições.",
+      "rodape": "toque para entender"
+    },
+    {
+      "etiqueta": "EXPLICANDO",
+      "titulo": "Em regra, basta que o falecido fosse *segurado* do INSS.",
+      "texto": "A pensão independe de carência (Lei 8.213/1991, art. 26, I)."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "Pedida em até *90 dias*, é paga desde o óbito.",
+      "texto": "Para filhos menores de 16 anos, o prazo é de 180 dias.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "Lei 8.213/1991, arts. 26, I, e 74, I (conferido em 30/09/2026)"
+  ],
+  "formato": "stories",
+  "imagens": [
+    "posts/imagens/2026-10-17_stories-pensao-sem-carencia_01.jpg",
+    "posts/imagens/2026-10-17_stories-pensao-sem-carencia_02.jpg",
+    "posts/imagens/2026-10-17_stories-pensao-sem-carencia_03.jpg"
+  ],
+  "alertas_oab": [],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

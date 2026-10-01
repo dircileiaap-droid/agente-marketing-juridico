@@ -1,0 +1,108 @@
+{
+  "id": "2026-10-12_contrato-de-gaveta",
+  "data_publicacao": "2026-10-12",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Contrato de gaveta: *riscos* e caminhos",
+  "subtitulo": "O que fazer quando a compra nunca foi registrada.",
+  "foto": "assets/fotos/escolhidas/pexels-7875831.jpg",
+  "slides": [
+    {
+      "titulo": "O que é",
+      "texto": "É a compra feita apenas por contrato particular, sem escritura registrada no Cartório de Registro de Imóveis."
+    },
+    {
+      "titulo": "O principal risco",
+      "texto": "Enquanto o título não é registrado, a lei continua considerando o vendedor como dono do imóvel (Código Civil, art. 1.245, § 1º)."
+    },
+    {
+      "titulo": "Outros problemas",
+      "texto": "Dívidas do vendedor podem levar à penhora do imóvel, e o falecimento dele pode exigir inventário antes da regularização. Vender ou financiar também fica mais difícil."
+    },
+    {
+      "titulo": "Caminho 1: adjudicação",
+      "texto": "Quem quitou a compra e não recebeu a escritura pode pedir a adjudicação compulsória, inclusive diretamente no Registro de Imóveis (Lei 6.015/1973, art. 216-B)."
+    },
+    {
+      "titulo": "Caminho 2: usucapião",
+      "texto": "Em alguns casos, a posse prolongada permite a usucapião, que também pode ser feita em cartório. Cada situação exige análise dos documentos."
+    }
+  ],
+  "chamada_final": "Você conhece alguém com contrato de gaveta?",
+  "legenda": "O chamado contrato de gaveta ainda é muito comum: a pessoa paga pelo imóvel, assina um contrato particular e nunca registra a compra.\n\nO risco é grande. Pelo Código Civil, enquanto o título não é registrado, o vendedor continua sendo considerado o dono. Dívidas dele podem levar à penhora do imóvel, e o falecimento do vendedor pode exigir inventário antes de qualquer regularização.\n\nA boa notícia é que existem caminhos. Quem quitou a compra e não recebeu a escritura pode pedir a adjudicação compulsória, inclusive em cartório. Em algumas situações, a posse prolongada permite a usucapião.\n\nA escolha do caminho depende dos documentos e da história de cada imóvel.\n\nSalve este post e compartilhe com quem comprou um imóvel assim.",
+  "hashtags": [
+    "#contratodegaveta",
+    "#adjudicacaocompulsoria",
+    "#usucapiao",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#registrodeimoveis",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código Civil, art. 1.245, § 1º (conferido em 30/09/2026)",
+    "Lei 6.015/1973, arts. 216-A e 216-B (conferido em 30/09/2026)"
+  ],
+  "imagens": [
+    "posts/imagens/2026-10-12_contrato-de-gaveta_01.jpg",
+    "posts/imagens/2026-10-12_contrato-de-gaveta_02.jpg",
+    "posts/imagens/2026-10-12_contrato-de-gaveta_03.jpg",
+    "posts/imagens/2026-10-12_contrato-de-gaveta_04.jpg",
+    "posts/imagens/2026-10-12_contrato-de-gaveta_05.jpg",
+    "posts/imagens/2026-10-12_contrato-de-gaveta_06.jpg",
+    "posts/imagens/2026-10-12_contrato-de-gaveta_07.jpg"
+  ],
+  "alertas_oab": [],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

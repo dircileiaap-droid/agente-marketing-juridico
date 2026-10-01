@@ -1,0 +1,169 @@
+{
+  "id": "2026-10-23_reel-adjudicacao-compulsoria",
+  "data_publicacao": "2026-10-23",
+  "formato": "reel",
+  "area": "Direito Imobiliário",
+  "titulo": "Pagou tudo e não recebeu a *escritura*?",
+  "subtitulo": "Conheça a adjudicação compulsória em cartório",
+  "video_capa": "assets/videos/pexels-7817162.mp4",
+  "video_final": "assets/videos/pexels-7817246.mp4",
+  "trilha": "assets/audio/pixabay-576594-upbeat-corporate.mp3",
+  "slides": [
+    {
+      "titulo": "O problema",
+      "texto": "Você quitou o imóvel prometido à venda, mas o vendedor não assina a escritura definitiva. A lei tem uma solução para isso.",
+      "video": "assets/videos/pexels-7646289.mp4"
+    },
+    {
+      "titulo": "Agora também em cartório",
+      "texto": "A adjudicação compulsória pode ser feita diretamente no Registro de Imóveis, com advogado, sem processo judicial (Lei 6.015/1973, art. 216-B).",
+      "video": "assets/videos/pexels-8061108.mp4"
+    },
+    {
+      "titulo": "O que é preciso",
+      "texto": "Contrato de promessa, prova do pagamento, ata notarial, certidões, comprovante do ITBI e notificação do vendedor, que tem 15 dias para cumprir a obrigação.",
+      "video": "assets/videos/pexels-8814706.mp4"
+    }
+  ],
+  "chamada_final": "Compartilhe com quem está nessa situação.",
+  "legenda": "Você pagou todas as parcelas do imóvel, mas o vendedor nunca assinou a escritura definitiva? Essa situação é mais comum do que parece.\n\nA solução se chama adjudicação compulsória. Desde a Lei 14.382/2022, ela também pode ser feita diretamente no Cartório de Registro de Imóveis, com advogado e sem processo judicial.\n\nO pedido reúne o contrato de promessa de compra e venda, a prova do pagamento, ata notarial, certidões, o comprovante do ITBI e a notificação do vendedor, que tem 15 dias para cumprir a obrigação. Não é necessário que a promessa tenha sido registrada antes.\n\nCada caso exige análise da documentação.\n\nSalve este vídeo e compartilhe com quem está nessa situação.",
+  "hashtags": [
+    "#adjudicacaocompulsoria",
+    "#escritura",
+    "#compraevenda",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#registrodeimoveis",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 6.015/1973, art. 216-B, §§ 1º a 3º, incluído pela Lei 14.382/2022 (conferido em 30/09/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-576594-upbeat-corporate.mp3",
+    "inicio": 17.775,
+    "bpm": 120.19,
+    "salto": 1.4
+  },
+  "video": "posts/videos/2026-10-23_reel-adjudicacao-compulsoria.mp4",
+  "imagens": [
+    "posts/videos/2026-10-23_reel-adjudicacao-compulsoria_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "45.43 s (roteiro 45.43 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -17.0 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -0.9 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

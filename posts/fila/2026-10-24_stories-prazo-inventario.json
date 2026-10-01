@@ -1,0 +1,84 @@
+{
+  "id": "2026-10-24_stories-prazo-inventario",
+  "data_publicacao": "2026-10-24",
+  "tipo": "complete",
+  "area": "Direito Imobiliário",
+  "quadros": [
+    {
+      "etiqueta": "COMPLETE A FRASE",
+      "titulo": "O inventário deve ser aberto em até…",
+      "rodape": "toque para ver a resposta"
+    },
+    {
+      "etiqueta": "RESPOSTA",
+      "destaque": "2 meses!",
+      "titulo": "Contados do *falecimento*.",
+      "texto": "É o prazo do Código de Processo Civil (art. 611). Em São Paulo, o atraso pode gerar multa no ITCMD."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "Herança em dia protege a *família*.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "CPC, art. 611; Lei estadual SP 10.705/2000, art. 21, I (conferido em 30/09/2026)"
+  ],
+  "formato": "stories",
+  "imagens": [
+    "posts/imagens/2026-10-24_stories-prazo-inventario_01.jpg",
+    "posts/imagens/2026-10-24_stories-prazo-inventario_02.jpg",
+    "posts/imagens/2026-10-24_stories-prazo-inventario_03.jpg"
+  ],
+  "alertas_oab": [],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

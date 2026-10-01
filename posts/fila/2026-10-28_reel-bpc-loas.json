@@ -1,0 +1,168 @@
+{
+  "id": "2026-10-28_reel-bpc-loas",
+  "data_publicacao": "2026-10-28",
+  "formato": "reel",
+  "area": "Direito Previdenciário",
+  "titulo": "BPC/LOAS: quem tem *direito*?",
+  "subtitulo": "Um salário mínimo por mês",
+  "video_capa": "assets/videos/pexels-5271503.mp4",
+  "video_final": "assets/videos/pexels-7516761.mp4",
+  "trilha": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+  "slides": [
+    {
+      "titulo": "Para quem é",
+      "texto": "Pessoas idosas a partir de 65 anos e pessoas com deficiência que não tenham meios de se manter nem de ser mantidas pela família (Lei 8.742/1993, art. 20).",
+      "video": "assets/videos/pexels-7496263.mp4"
+    },
+    {
+      "titulo": "O critério de renda",
+      "texto": "Em regra, renda familiar por pessoa de até 1/4 do salário mínimo. O regulamento pode ampliar esse limite para até 1/2 salário mínimo.",
+      "video": "assets/videos/pexels-7981920.mp4"
+    },
+    {
+      "titulo": "Cadastro Único obrigatório",
+      "texto": "A inscrição no CPF e no Cadastro Único é requisito para conceder, manter e revisar o benefício (art. 20, § 12).",
+      "video": "assets/videos/pexels-7821798.mp4"
+    }
+  ],
+  "chamada_final": "Compartilhe com quem pode ter direito.",
+  "legenda": "O Benefício de Prestação Continuada, conhecido como BPC/LOAS, garante um salário mínimo por mês a quem mais precisa. E não exige contribuições ao INSS.\n\nPodem ter direito pessoas idosas a partir de 65 anos e pessoas com deficiência que não tenham meios de se manter nem de ser mantidas pela família.\n\nEm regra, a renda familiar por pessoa deve ser de até 1/4 do salário mínimo, e o regulamento pode ampliar esse limite para até 1/2 salário mínimo. A inscrição no CPF e no Cadastro Único é obrigatória para pedir, manter e revisar o benefício.\n\nCada família tem uma realidade, e outros elementos também podem ser considerados na análise.\n\nSalve este vídeo e compartilhe com quem pode ter direito.",
+  "hashtags": [
+    "#bpc",
+    "#loas",
+    "#inss",
+    "#direitoprevidenciario",
+    "#assistenciasocial",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 8.742/1993, art. 20, caput, §§ 3º, 11, 11-A e 12 (conferido em 30/09/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+    "inicio": 66.003,
+    "bpm": 70.79,
+    "salto": 4.4
+  },
+  "video": "posts/videos/2026-10-28_reel-bpc-loas.mp4",
+  "imagens": [
+    "posts/videos/2026-10-28_reel-bpc-loas_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "50.85 s (roteiro 50.85 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -21.2 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.1 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

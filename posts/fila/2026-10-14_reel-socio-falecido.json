@@ -1,0 +1,168 @@
+{
+  "id": "2026-10-14_reel-socio-falecido",
+  "data_publicacao": "2026-10-14",
+  "formato": "reel",
+  "area": "Direito Empresarial",
+  "titulo": "Sócio faleceu: o que acontece com a *empresa*?",
+  "subtitulo": "O contrato social faz toda a diferença",
+  "video_capa": "assets/videos/pexels-8348913.mp4",
+  "video_final": "assets/videos/pexels-7981954.mp4",
+  "trilha": "assets/audio/pixabay-595943-upbeat-corporate.mp3",
+  "slides": [
+    {
+      "titulo": "A regra do Código Civil",
+      "texto": "Se o contrato nada disser, a quota do sócio falecido é, em regra, liquidada: o valor é apurado e pago aos herdeiros (Código Civil, art. 1.028).",
+      "video": "assets/videos/pexels-8731516.mp4"
+    },
+    {
+      "titulo": "As exceções",
+      "texto": "A regra muda se o contrato social dispuser de outra forma, se os sócios optarem pela dissolução ou se houver acordo com os herdeiros.",
+      "video": "assets/videos/pexels-8814513.mp4"
+    },
+    {
+      "titulo": "Planejar evita conflitos",
+      "texto": "Prever no contrato social o que acontece em caso de falecimento traz segurança para a empresa, para os sócios e para a família.",
+      "video": "assets/videos/pexels-7735908.mp4"
+    }
+  ],
+  "chamada_final": "O contrato social da sua empresa prevê essa situação?",
+  "legenda": "Poucos sócios pensam nisso ao abrir uma empresa: o que acontece se um deles falecer?\n\nPelo Código Civil, se o contrato social nada disser, a quota do sócio falecido é, em regra, liquidada. Ou seja, o valor correspondente é apurado e pago aos herdeiros, o que pode afetar o caixa e a continuidade do negócio.\n\nA lei prevê exceções: o contrato pode dispor de outra forma, os sócios podem optar pela dissolução ou pode haver acordo com os herdeiros para substituir o sócio falecido.\n\nPor isso, um contrato social bem planejado traz segurança para a empresa, para os sócios e para as famílias.\n\nSalve este vídeo e compartilhe com seu sócio.",
+  "hashtags": [
+    "#direitoempresarial",
+    "#contratosocial",
+    "#sociedade",
+    "#empresario",
+    "#planejamentosucessorio",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código Civil, art. 1.028 (conferido em 30/09/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-595943-upbeat-corporate.mp3",
+    "inicio": 34.482,
+    "bpm": 109.96,
+    "salto": 4.3
+  },
+  "video": "posts/videos/2026-10-14_reel-socio-falecido.mp4",
+  "imagens": [
+    "posts/videos/2026-10-14_reel-socio-falecido_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "50.20 s (roteiro 50.20 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -16.4 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.1 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "2026-10-07_averbacao-da-obra",
+  "data_publicacao": "2026-10-07",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Construiu ou ampliou? Averbe a *obra*.",
+  "subtitulo": "Por que a construção precisa constar da matrícula.",
+  "foto": "assets/fotos/escolhidas/pexels-35120035.jpg",
+  "slides": [
+    {
+      "titulo": "O que é averbar",
+      "texto": "É anotar na matrícula do imóvel uma mudança, como uma construção, uma ampliação ou uma demolição (Lei 6.015/1973, art. 167, II, 4)."
+    },
+    {
+      "titulo": "Por que isso importa",
+      "texto": "Sem a averbação, a matrícula mostra só o terreno ou a área antiga. Isso pode dificultar a venda, o financiamento e a partilha em uma herança."
+    },
+    {
+      "titulo": "Primeiro, a prefeitura",
+      "texto": "Em regra, o primeiro passo é regularizar a obra na prefeitura e obter o Habite-se. As exigências variam de acordo com cada município."
+    },
+    {
+      "titulo": "A certidão do INSS da obra",
+      "texto": "A lei exige, em regra, a certidão negativa de débitos previdenciários da obra para averbá-la no Registro de Imóveis (Lei 8.212/1991, art. 47, II)."
+    },
+    {
+      "titulo": "Depois, o cartório",
+      "texto": "Com os documentos em ordem, o pedido de averbação é apresentado ao Cartório de Registro de Imóveis onde o imóvel está matriculado."
+    }
+  ],
+  "chamada_final": "A sua construção já consta da matrícula?",
+  "legenda": "Construir, ampliar ou reformar a casa é uma conquista. Mas, para a lei, a obra só passa a existir oficialmente quando é averbada na matrícula do imóvel.\n\nSem essa anotação, a matrícula continua mostrando apenas o terreno ou a área antiga. Na hora de vender, financiar ou fazer a partilha em uma herança, a diferença costuma aparecer.\n\nEm regra, o caminho passa pela regularização da obra na prefeitura, com a emissão do Habite-se, e pela certidão negativa de débitos previdenciários da obra, exigida pela Lei 8.212/1991 para a averbação. Com os documentos em ordem, o pedido é apresentado ao Cartório de Registro de Imóveis.\n\nAs exigências municipais mudam de cidade para cidade, por isso cada caso merece análise.\n\nSalve para consultar depois e envie para quem está construindo.",
+  "hashtags": [
+    "#averbacao",
+    "#habitese",
+    "#construcao",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#registrodeimoveis",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 6.015/1973, art. 167, II, 4 (conferido em 30/09/2026)",
+    "Lei 8.212/1991, art. 47, II (conferido em 30/09/2026)"
+  ],
+  "imagens": [
+    "posts/imagens/2026-10-07_averbacao-da-obra_01.jpg",
+    "posts/imagens/2026-10-07_averbacao-da-obra_02.jpg",
+    "posts/imagens/2026-10-07_averbacao-da-obra_03.jpg",
+    "posts/imagens/2026-10-07_averbacao-da-obra_04.jpg",
+    "posts/imagens/2026-10-07_averbacao-da-obra_05.jpg",
+    "posts/imagens/2026-10-07_averbacao-da-obra_06.jpg",
+    "posts/imagens/2026-10-07_averbacao-da-obra_07.jpg"
+  ],
+  "alertas_oab": [],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

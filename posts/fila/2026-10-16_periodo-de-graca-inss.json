@@ -1,0 +1,106 @@
+{
+  "id": "2026-10-16_periodo-de-graca-inss",
+  "data_publicacao": "2026-10-16",
+  "formato": "carrossel",
+  "area": "Direito Previdenciário",
+  "titulo": "Parou de contribuir? Você ainda pode estar *protegido*",
+  "subtitulo": "Entenda o período de graça do INSS.",
+  "foto": "assets/fotos/escolhidas/pexels-8441787.jpg",
+  "slides": [
+    {
+      "titulo": "Qualidade de segurado",
+      "texto": "É o vínculo com o INSS que garante o acesso aos benefícios. Ele não termina no mesmo dia em que as contribuições param."
+    },
+    {
+      "titulo": "Regra geral: 12 meses",
+      "texto": "Quem deixa de exercer atividade remunerada mantém a qualidade de segurado por até 12 meses após parar de contribuir. Para o segurado facultativo, o prazo é de 6 meses."
+    },
+    {
+      "titulo": "Pode chegar a 24 meses",
+      "texto": "O prazo é prorrogado para até 24 meses para quem já pagou mais de 120 contribuições mensais sem perder a qualidade de segurado."
+    },
+    {
+      "titulo": "Desempregado: mais 12 meses",
+      "texto": "Quem comprova o desemprego no órgão próprio do Ministério do Trabalho ganha mais 12 meses nesses prazos."
+    },
+    {
+      "titulo": "Por que isso importa",
+      "texto": "Durante esse período, o segurado conserva todos os seus direitos perante a Previdência Social (Lei 8.213/1991, art. 15, § 3º)."
+    }
+  ],
+  "chamada_final": "Você conhecia o período de graça?",
+  "legenda": "Muita gente acredita que, ao parar de contribuir, perde na hora o direito aos benefícios do INSS. Não é bem assim.\n\nA Lei 8.213/1991 garante o chamado período de graça. Quem deixa de exercer atividade remunerada mantém a qualidade de segurado por até 12 meses. O prazo pode chegar a 24 meses para quem já pagou mais de 120 contribuições sem perder essa qualidade, e ganha mais 12 meses para quem comprova o desemprego no órgão do Ministério do Trabalho. Para o segurado facultativo, o prazo é de 6 meses.\n\nDurante esse período, o segurado conserva todos os seus direitos perante a Previdência Social.\n\nCada histórico de contribuições tem particularidades, por isso vale conferir o seu CNIS.\n\nSalve para consultar depois e compartilhe com quem parou de contribuir.",
+  "hashtags": [
+    "#inss",
+    "#qualidadedesegurado",
+    "#periododegraca",
+    "#direitoprevidenciario",
+    "#previdencia",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 8.213/1991, art. 15, II e VI, §§ 1º a 3º (conferido em 30/09/2026)"
+  ],
+  "imagens": [
+    "posts/imagens/2026-10-16_periodo-de-graca-inss_01.jpg",
+    "posts/imagens/2026-10-16_periodo-de-graca-inss_02.jpg",
+    "posts/imagens/2026-10-16_periodo-de-graca-inss_03.jpg",
+    "posts/imagens/2026-10-16_periodo-de-graca-inss_04.jpg",
+    "posts/imagens/2026-10-16_periodo-de-graca-inss_05.jpg",
+    "posts/imagens/2026-10-16_periodo-de-graca-inss_06.jpg",
+    "posts/imagens/2026-10-16_periodo-de-graca-inss_07.jpg"
+  ],
+  "alertas_oab": [],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}

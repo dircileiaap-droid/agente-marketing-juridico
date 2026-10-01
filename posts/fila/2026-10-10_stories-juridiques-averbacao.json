@@ -1,0 +1,84 @@
+{
+  "id": "2026-10-10_stories-juridiques-averbacao",
+  "data_publicacao": "2026-10-10",
+  "tipo": "juridiques",
+  "area": "Direito Imobiliário",
+  "quadros": [
+    {
+      "etiqueta": "JURIDIQUÊS X PORTUGUÊS",
+      "titulo": "*Averbação*",
+      "texto": "Você já ouviu essa palavra no cartório?",
+      "rodape": "toque para traduzir"
+    },
+    {
+      "etiqueta": "EM PORTUGUÊS",
+      "titulo": "Anotar na matrícula uma *mudança* no imóvel.",
+      "texto": "Por exemplo: uma construção, uma demolição ou a troca do nome da rua (Lei 6.015/1973, art. 167, II, 4)."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "Construiu? A obra também precisa ser *averbada*.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "Lei 6.015/1973, art. 167, II, 4 (conferido em 30/09/2026)"
+  ],
+  "formato": "stories",
+  "imagens": [
+    "posts/imagens/2026-10-10_stories-juridiques-averbacao_01.jpg",
+    "posts/imagens/2026-10-10_stories-juridiques-averbacao_02.jpg",
+    "posts/imagens/2026-10-10_stories-juridiques-averbacao_03.jpg"
+  ],
+  "alertas_oab": [],
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026"
+}
