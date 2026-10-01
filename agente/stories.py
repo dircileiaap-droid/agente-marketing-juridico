@@ -58,6 +58,8 @@ def quadro(perfil, post, q, indice, total):
     # encolhe destaque, título e texto juntos até o bloco caber na área segura
     for escala in (1.0, 0.93, 0.86, 0.8, 0.74, 0.68, 0.62):
         tam_dest = int(230 * escala)
+        while q.get("destaque") and fonte("italico", tam_dest).getlength(q["destaque"]) > UTIL and tam_dest > 80:
+            tam_dest -= 6  # o destaque também precisa caber na largura
         tam_t, linhas_t, alt_t = titulo_ajustado(q["titulo"], UTIL, int(520 * escala),
                                                  int(104 * escala), int(56 * escala), 1.08)
         f_tx, linhas_tx = (paragrafo_ajustado(q["texto"], "texto", UTIL, int(420 * escala),

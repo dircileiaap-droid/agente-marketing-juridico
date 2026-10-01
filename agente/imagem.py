@@ -164,11 +164,17 @@ def desenhar_titulo(draw, x, y, tam, linhas, cor, cor_destaque, entrelinha=1.08)
     return y
 
 
+NBSP = " "
+# expressões que não podem ser separadas no fim da linha: "§ 1º", "art. 216-A", "Lei 6.015/1973"
+_COLAR = re.compile(r"(§|art\.|arts\.|Lei|LC|Tema|inciso|n\.º|nº)\s+(?=[\dIVXLC])")
+
+
 def quebrar(texto, f, largura_max):
     linhas = []
+    texto = _COLAR.sub(lambda m: m.group(1) + NBSP, texto)
     for paragrafo in texto.split("\n"):
         atual = ""
-        for palavra in paragrafo.split():
+        for palavra in [p for p in paragrafo.split(" ") if p]:  # split(" "): preserva o espaço fixo
             teste = f"{atual} {palavra}".strip()
             if f.getlength(teste) <= largura_max:
                 atual = teste

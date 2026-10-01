@@ -41,7 +41,8 @@ ao conhecer o tema, sem promessa de resultado.
 | Extinção do crédito | CTN, art. 156 |
 | Decadência (lançamento de ofício) | CTN, art. 173 |
 | Decadência (lançamento por homologação) | CTN, art. 150, § 4º |
-| Prescrição (5 anos da constituição definitiva) | CTN, art. 174 |
+| Prescrição (5 anos da constituição definitiva) | CTN, art. 174, caput |
+| Interrupção da prescrição: despacho de citação, **protesto extrajudicial da CDA**, reconhecimento da dívida, mediação, arbitragem tributária, execução fiscal extrajudicial e outras | CTN, art. 174, § 1º, **com a redação da LC 236/2026** (conferido em 30/09/2026) |
 | Restituição do indébito (5 anos) | CTN, arts. 165 e 168; LC 118/2005, art. 3º |
 | Execução fiscal e prescrição intercorrente | Lei 6.830/1980 (LEF), art. 40 |
 | Isenção de IR por moléstia grave (aposentadoria, reforma e pensão) | Lei 7.713/1988, art. 6º, XIV |

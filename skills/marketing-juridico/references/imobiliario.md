@@ -62,8 +62,10 @@ do Campo e no ABC Paulista. Pessoa física leiga, também pequenos investidores.
 
 | Tese | Fonte |
 |---|---|
-| Base de cálculo do ITBI é o valor da transação declarado pelo contribuinte (presunção de veracidade), não o valor venal de referência fixado unilateralmente pelo município | STJ, Tema 1.113 (REsp 1.937.821/SP) |
-| O fato gerador do ITBI só ocorre com a transferência efetiva da propriedade no registro | STF, Tema 1.124 (ARE 1.294.969) |
+| Base de cálculo do ITBI é o valor de mercado; o valor declarado pelo contribuinte presume-se correto; o município não pode impor valor de referência fixado unilateralmente | STJ, Tema 1.113 (REsp 1.937.821/SP). **Atenção (conferido em 30/09/2026): RE 1.412.419 pendente no STF, com processos suspensos no país. Só citar dizendo que a questão aguarda o STF.** |
+| ITBI na cessão de direitos de compra e venda sem registro | STF, Tema 1.124 (ARE 1.294.969). **Atenção (conferido em 30/09/2026): repercussão geral reconhecida, mas SEM tese firmada. Não afirmar como entendimento definitivo.** |
+| Adjudicação compulsória extrajudicial independe de registro prévio da promessa | Lei 6.015/1973, art. 216-B, § 2º |
+| Averbação da edificação na matrícula | Lei 6.015/1973, art. 167, II, 4 |
 | Preenchidos os requisitos do art. 183 da CF, a usucapião especial urbana não pode ser obstada por lei municipal que fixe módulo mínimo do lote | STF, Tema 815 (RE 422.349) |
 
 ## Ganchos que funcionam
