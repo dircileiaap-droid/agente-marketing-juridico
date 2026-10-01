@@ -42,7 +42,7 @@ def mover_para_publicados(post: dict) -> Path:
 def titulos_recentes(limite: int = 40) -> list[str]:
     todos = publicados() + na_fila()
     todos.sort(key=lambda p: p["data_publicacao"], reverse=True)
-    return [p["titulo"] for p in todos[:limite]]
+    return [p["titulo"] for p in todos[:limite] if p.get("titulo")]
 
 
 def proximas_datas(qtd: int, dias_semana: list[int]) -> list[date]:

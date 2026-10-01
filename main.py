@@ -102,30 +102,33 @@ def cmd_listar(_args):
     if not posts:
         print("Fila vazia.")
     for p in posts:
-        print(f"{p['data_publicacao']}  {p['formato']:9}  {p['titulo']}")
+        print(f"{p['data_publicacao']}  {p['formato']:9}  {p.get('titulo', p['id'])}")
 
 
 def cmd_publicar(args):
     for p in fila.atrasados():
-        print(f"[atrasado, NÃO publicado] {p['data_publicacao']} {p['titulo']}: "
+        print(f"[atrasado, NÃO publicado] {p['data_publicacao']} {p['id']}: "
               "defina nova data no JSON para publicar.")
     pendentes = fila.vencidos()[: args.max]
     if not pendentes:
         print("Nenhum post programado para hoje.")
         return
 
+    from agente import facebook
     base = url_base_imagens()
-    ig = None
+    ig = fb = None
     if not args.simular:
         from agente.instagram import Instagram
         ig = Instagram()
+        fb = facebook.Facebook() if facebook.configurado() else None
 
     for post in pendentes:
         urls = [base + img for img in post["imagens"]]
         legenda = (post.get("legenda", "") + "\n\n" + " ".join(post.get("hashtags", []))).strip()
         video = base + post["video"] if post.get("formato") == "reel" else None
         if args.simular:
-            print(f"[simulação] {post['titulo']}\n  vídeo: {video}\n  imagens: {urls}\n")
+            destino = "Instagram + Facebook" if facebook.configurado() else "Instagram"
+            print(f"[simulação] {post['id']} -> {destino}\n  vídeo: {video}\n  imagens: {urls}\n")
             continue
         if post.get("formato") == "stories":
             ids = [ig.publicar_story(u) for u in urls]  # telas na ordem do roteiro
@@ -136,8 +139,15 @@ def cmd_publicar(args):
             media_id = ig.publicar(urls, legenda)
         post["instagram_id"] = media_id
         post["publicado_em"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        # Facebook: uma falha aqui não desfaz nem bloqueia a publicação no Instagram
+        if fb:
+            try:
+                post["facebook_id"] = fb.publicar(post, urls, video, legenda)
+            except Exception as erro:  # noqa: BLE001
+                post["facebook_erro"] = str(erro)[:500]
+                print(f"[facebook] falhou: {erro}")
         fila.mover_para_publicados(post)
-        print(f"[publicado] {post['titulo']} (id {media_id})")
+        print(f"[publicado] {post['id']} (instagram {media_id}, facebook {post.get('facebook_id', '-')})")
 
 
 def cmd_demo(_args):

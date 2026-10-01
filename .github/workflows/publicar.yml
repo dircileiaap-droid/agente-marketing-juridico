@@ -39,6 +39,8 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_GRAPH_URL: ${{ vars.IG_GRAPH_URL }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python main.py publicar ${{ inputs.simular && '--simular' || '' }}
 
       - name: Registrar publicação no repositório
