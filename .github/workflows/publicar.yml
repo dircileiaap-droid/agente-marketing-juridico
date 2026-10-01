@@ -5,6 +5,8 @@ on:
     # Segunda, quarta e sexta às 21h (Brasília) = terça, quinta e sábado 00h (UTC).
     # O GitHub pode atrasar alguns minutos em horários de pico.
     - cron: "0 0 * * 2,4,6"
+    # Stories: sábado às 14h (Brasília) = sábado 17h (UTC).
+    - cron: "0 17 * * 6"
   workflow_dispatch:
     inputs:
       simular:

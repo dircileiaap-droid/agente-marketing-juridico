@@ -84,6 +84,13 @@ class Instagram:
         self._aguardar(container, limite_s=900)  # vídeo leva mais tempo para processar
         return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
 
+    def publicar_story(self, url_imagem: str) -> str:
+        """Publica uma tela de Stories (imagem JPEG em URL pública). Retorna o ID."""
+        container = self._req("POST", f"{self.user_id}/media", media_type="STORIES",
+                              image_url=url_imagem)["id"]
+        self._aguardar(container)
+        return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
+
     def perfil(self) -> dict:
         return self._req("GET", "me", fields="user_id,username,followers_count,media_count")
 

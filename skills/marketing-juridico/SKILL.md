@@ -70,7 +70,14 @@ o imóvel e o patrimônio (ex.: ITBI, INSS de obra, imóvel na partilha, imóvel
   no Windows para análise e, somente após o "aprovado", envia ao GitHub, que
   publica nas datas.
 
-- **3 posts por semana: segunda, quarta e sexta, às 21h.**
+- **Feed: 3 posts por semana, segunda, quarta e sexta, às 21h**, alternando
+  **carrossel** (`agente/imagem.py`) e **Reels animado** (`agente/video.py`: vídeos
+  reais do Pexels, música do Pixabay cortada no trecho de impacto, cortes na batida,
+  efeitos sonoros e texto cinético). Todo Reels passa pelos **10 testes de
+  `agente/qa_video.py` com 10/10** e por revisão visual quadro a quadro antes de ser
+  entregue; se algo falhar, corrigir e refazer a bateria inteira.
+- **Stories descontraídos todo sábado, às 14h** (2 a 4 telas): ver
+  `references/stories.md`. Leves e bem-humorados, sempre corretos e dentro da OAB.
 - **Todo início de mês**, entregue a **programação completa do mês** (todos os posts
   prontos e acabados, com calendário em tabela) para a Dra. Dirciléia analisar e
   aprovar de uma vez. Ela pode aprovar, pedir ajustes ou recusar posts individuais.
@@ -86,7 +93,7 @@ o imóvel e o patrimônio (ex.: ITBI, INSS de obra, imóvel na partilha, imóvel
 
 ```json
 {
-  "formato": "carrossel | card",
+  "formato": "carrossel | card | reel | stories",
   "area": "Direito Imobiliário",
   "titulo": "até 8 palavras, gancho da capa",
   "subtitulo": "frase curta de apoio na capa (opcional)",

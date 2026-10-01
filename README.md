@@ -97,7 +97,8 @@ Edite `config/perfil.yaml` com seu nome, OAB, @, cores e dias de publicação.
 | Quando | O que acontece | Você faz |
 |---|---|---|
 | Dia 1º de cada mês, 8h | O agente gera **a programação do mês inteiro** (seg, qua e sex) e abre um Pull Request com o calendário, as imagens, as legendas, as fontes e a revisão de cada post | Revisa e faz o merge (= aprova) |
-| Segunda, quarta e sexta, 21h | Publica o post do dia, **somente se aprovado** | Nada |
+| Segunda, quarta e sexta, 21h | Publica o post do dia (carrossel ou Reels animado), **somente se aprovado** | Nada |
+| Sábado, 14h | Publica os **Stories descontraídos** da semana, **somente se aprovados** | Nada |
 | Todo dia, 19h | Coleta seguidores, alcance, curtidas, comentários, salvamentos e compartilhamentos | Nada |
 | Domingo à noite | **Relatório semanal de KPIs** (abre uma Issue no GitHub, que chega por e-mail) | Lê e decide |
 | Último dia do mês | **Relatório mensal de KPIs** com recomendações | Lê e decide |

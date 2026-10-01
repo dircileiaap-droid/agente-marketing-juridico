@@ -122,12 +122,15 @@ def cmd_publicar(args):
 
     for post in pendentes:
         urls = [base + img for img in post["imagens"]]
-        legenda = post["legenda"] + "\n\n" + " ".join(post["hashtags"])
+        legenda = (post.get("legenda", "") + "\n\n" + " ".join(post.get("hashtags", []))).strip()
         video = base + post["video"] if post.get("formato") == "reel" else None
         if args.simular:
             print(f"[simulação] {post['titulo']}\n  vídeo: {video}\n  imagens: {urls}\n")
             continue
-        if video:
+        if post.get("formato") == "stories":
+            ids = [ig.publicar_story(u) for u in urls]  # telas na ordem do roteiro
+            media_id = ",".join(ids)
+        elif video:
             media_id = ig.publicar_reel(video, legenda, urls[0] if urls else None)
         else:
             media_id = ig.publicar(urls, legenda)

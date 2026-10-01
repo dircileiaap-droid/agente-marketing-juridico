@@ -38,15 +38,17 @@ areas:
     temas_exemplo: ["contrato social e acordo de sócios", "holding familiar",
                     "responsabilidade dos sócios", "sociedade limitada unipessoal"]
 
+# Formatos do feed, em rodízio (pedido da Dra. Dirciléia em 30/09/2026)
 formatos:
-  carrossel: 3
-  card: 1
+  carrossel: 1
+  reel: 1
 
 calendario:
-  dias_semana: [0, 2, 4]   # segunda, quarta e sexta, às 21h (horário de Brasília)
+  dias_semana: [0, 2, 4]   # feed: segunda, quarta e sexta, às 21h (horário de Brasília)
+  stories_dias: [5]        # stories descontraídos: sábado, às 14h (horário de Brasília)
   posts_por_lote: 3
-  # Programação mensal: gerada todo dia 1º com todos os posts do mês,
-  # enviada para aprovação (Pull Request). Nada é publicado sem aprovação.
+  # Programação mensal: escrita pelo Claude no início de cada mês, com todos os
+  # posts e stories, e enviada para aprovação. Nada é publicado sem aprovação.
 
 # Metas iniciais de KPI (revisar após o primeiro mês de dados)
 # Linha de base em 30/09/2026: 515 seguidores, 2 a 5 curtidas e 0 comentários por post.
