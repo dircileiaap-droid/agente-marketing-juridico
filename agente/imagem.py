@@ -126,12 +126,26 @@ def _linhas_ricas(texto, tam, largura_max):
     return linhas
 
 
+def largura_linha(linha, tam) -> float:
+    f_n, f_i = fonte("titulo", tam), fonte("italico", tam)
+    espaco = f_n.getlength(" ")
+    total = 0.0
+    for k, (palavra, destaque, colada) in enumerate(linha):
+        if k and not colada:
+            total += espaco
+        total += (f_i if destaque else f_n).getlength(palavra)
+    return total
+
+
 def titulo_ajustado(texto, largura_max, altura_max, tam_max, tam_min, entrelinha=1.08):
+    """Maior tamanho em que o título cabe na altura E nenhuma linha passa da largura
+    (uma palavra longa, como "regularizado?", não pode estourar a margem)."""
     tam = tam_max
     while True:
         linhas = _linhas_ricas(texto, tam, largura_max)
         altura = len(linhas) * tam * entrelinha
-        if altura <= altura_max or tam <= tam_min:
+        larga = max(largura_linha(l, tam) for l in linhas) if linhas else 0
+        if (altura <= altura_max and larga <= largura_max) or tam <= tam_min:
             return tam, linhas, int(altura)
         tam -= 4
 
