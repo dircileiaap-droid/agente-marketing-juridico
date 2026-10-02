@@ -1,0 +1,64 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-25_natal-doacao-imovel_01.jpg",
+    "posts/imagens/2026-12-25_natal-doacao-imovel_02.jpg",
+    "posts/imagens/2026-12-25_natal-doacao-imovel_03.jpg",
+    "posts/imagens/2026-12-25_natal-doacao-imovel_04.jpg",
+    "posts/imagens/2026-12-25_natal-doacao-imovel_05.jpg",
+    "posts/imagens/2026-12-25_natal-doacao-imovel_06.jpg",
+    "posts/imagens/2026-12-25_natal-doacao-imovel_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-12-25_natal-doacao-imovel",
+  "data_publicacao": "2026-12-25",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "data_comemorativa": {
+    "dia": "25",
+    "mes": "Dezembro",
+    "nome": "Natal"
+  },
+  "titulo": "Vai dar um imóvel de *presente*?",
+  "subtitulo": "Veja antes o que a lei exige na doação de imóveis.",
+  "foto": "assets/fotos/escolhidas/pexels-6087540.jpg",
+  "slides": [
+    {
+      "titulo": "Doação exige escritura",
+      "texto": "Em regra, a doação de imóvel de valor superior a 30 salários mínimos exige escritura pública (Código Civil, art. 108)."
+    },
+    {
+      "titulo": "E precisa de registro",
+      "texto": "A propriedade só passa para o nome de quem recebe com o registro da escritura no Registro de Imóveis (art. 1.245)."
+    },
+    {
+      "titulo": "Adiantamento de herança",
+      "texto": "A doação de pais para filhos, ou de um cônjuge ao outro, importa adiantamento do que lhes cabe por herança (art. 544)."
+    },
+    {
+      "titulo": "Há imposto",
+      "texto": "A doação está sujeita ao ITCMD, imposto estadual. Em São Paulo, ele é regulado pela Lei 10.705/2000."
+    },
+    {
+      "titulo": "Doar e continuar morando",
+      "texto": "É possível doar e reservar o usufruto: quem doa mantém o direito de usar o imóvel ou de receber o aluguel enquanto viver (arts. 1.394 e 1.410)."
+    }
+  ],
+  "chamada_final": "Feliz Natal! Que o seu lar esteja sempre protegido.",
+  "legenda": "Feliz Natal! Que esta data seja de paz, união e muito carinho em todos os lares.\n\nE, falando em lar: muitas famílias pensam em doar um imóvel aos filhos. Antes de fazer esse presente, vale conhecer as regras:\n\n1. Em regra, a doação de imóvel de valor superior a 30 salários mínimos exige escritura pública.\n2. A propriedade só passa para o nome de quem recebe com o registro no Registro de Imóveis.\n3. A doação de pais para filhos importa adiantamento de herança.\n4. Incide o ITCMD, imposto estadual; em São Paulo, regulado pela Lei 10.705/2000.\n5. É possível reservar o usufruto e continuar usando o imóvel ou recebendo o aluguel enquanto viver.\n\nCada família tem uma realidade, e a doação merece planejamento.\n\nSalve este post e compartilhe com quem está pensando nisso.",
+  "hashtags": [
+    "#doacao",
+    "#usufruto",
+    "#itcmd",
+    "#planejamentosucessorio",
+    "#natal",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código Civil, arts. 108, 544, 1.245, 1.394 e 1.410, I (conferido em 02/10/2026)",
+    "Lei estadual SP 10.705/2000 (ITCMD)"
+  ]
+}

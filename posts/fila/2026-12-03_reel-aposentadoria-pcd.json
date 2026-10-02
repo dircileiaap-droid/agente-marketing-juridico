@@ -1,0 +1,124 @@
+{
+  "imagens": [
+    "posts/videos/2026-12-03_reel-aposentadoria-pcd_capa.jpg"
+  ],
+  "video": "posts/videos/2026-12-03_reel-aposentadoria-pcd.mp4",
+  "musica": {
+    "arquivo": "assets/audio/pixabay-409347-inspiring-cinematic.mp3",
+    "inicio": 38.208,
+    "bpm": 89.1,
+    "salto": 8.2
+  },
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "44.43 s (roteiro 44.44 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -15.3 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.1 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "id": "2026-12-03_reel-aposentadoria-pcd",
+  "data_publicacao": "2026-12-03",
+  "formato": "reel",
+  "area": "Direito Previdenciário",
+  "data_comemorativa": {
+    "dia": "03",
+    "mes": "Dezembro",
+    "nome": "Pessoa com Deficiência"
+  },
+  "titulo": "Aposentadoria da pessoa com *deficiência*",
+  "subtitulo": "Regras próprias e mais favoráveis",
+  "video_capa": "assets/videos/pexels-8132006.mp4",
+  "video_final": "assets/videos/pexels-7171085.mp4",
+  "trilha": "assets/audio/pixabay-409347-inspiring-cinematic.mp3",
+  "slides": [
+    {
+      "titulo": "Por tempo de contribuição",
+      "texto": "Deficiência grave: 25 anos de contribuição, se homem, e 20, se mulher. Moderada: 29 e 24. Leve: 33 e 28 anos.",
+      "video": "assets/videos/pexels-8132148.mp4"
+    },
+    {
+      "titulo": "Por idade",
+      "texto": "Aos 60 anos, se homem, e 55, se mulher, com 15 anos de contribuição e deficiência comprovada durante esse período, em qualquer grau.",
+      "video": "assets/videos/pexels-8132234.mp4"
+    },
+    {
+      "titulo": "A avaliação",
+      "texto": "O grau da deficiência é atestado por perícia própria do INSS, com avaliação médica e funcional.",
+      "video": "assets/videos/pexels-7546130.mp4"
+    }
+  ],
+  "chamada_final": "Informação certa abre caminho para direitos.",
+  "legenda": "Hoje, 3 de dezembro, é o Dia Internacional da Pessoa com Deficiência. Uma data para falar de inclusão e de direitos.\n\nA Lei Complementar 142/2013 garante à pessoa com deficiência segurada do INSS uma aposentadoria com regras próprias:\n\n1. Por tempo de contribuição: com deficiência grave, 25 anos (homem) e 20 anos (mulher); moderada, 29 e 24 anos; leve, 33 e 28 anos.\n2. Por idade: 60 anos (homem) e 55 anos (mulher), com 15 anos de contribuição e deficiência comprovada durante igual período, em qualquer grau.\n3. Avaliação: o grau da deficiência é atestado por perícia própria do INSS, médica e funcional.\n\nEssas regras continuam valendo depois da Reforma da Previdência (EC 103/2019, art. 22).\n\nSalve este vídeo e compartilhe com quem pode ter esse direito.",
+  "hashtags": [
+    "#pessoacomdeficiencia",
+    "#aposentadoria",
+    "#inss",
+    "#direitoprevidenciario",
+    "#inclusao",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "LC 142/2013, arts. 2º a 5º (conferido em 02/10/2026)",
+    "EC 103/2019, art. 22 (conferido em 02/10/2026)"
+  ]
+}

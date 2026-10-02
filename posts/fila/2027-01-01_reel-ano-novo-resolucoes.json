@@ -1,0 +1,126 @@
+{
+  "imagens": [
+    "posts/videos/2027-01-01_reel-ano-novo-resolucoes_capa.jpg"
+  ],
+  "video": "posts/videos/2027-01-01_reel-ano-novo-resolucoes.mp4",
+  "musica": {
+    "arquivo": "assets/audio/pixabay-583436-trailer-energetic.mp3",
+    "inicio": 2.299,
+    "bpm": 105.47,
+    "salto": 2.5
+  },
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "42.67 s (roteiro 42.67 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -16.6 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.4 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "id": "2027-01-01_reel-ano-novo-resolucoes",
+  "data_publicacao": "2027-01-01",
+  "formato": "reel",
+  "area": "Direito Imobiliário",
+  "data_comemorativa": {
+    "dia": "01",
+    "mes": "Janeiro",
+    "nome": "Ano-Novo"
+  },
+  "titulo": "3 resoluções para o seu *imóvel* em 2027",
+  "subtitulo": "Comece o ano com tudo em ordem",
+  "video_capa": "assets/videos/pexels-38457587.mp4",
+  "video_final": "assets/videos/pexels-7646544.mp4",
+  "trilha": "assets/audio/pixabay-583436-trailer-energetic.mp3",
+  "slides": [
+    {
+      "titulo": "Registre a escritura",
+      "texto": "Sem o registro no Cartório de Registro de Imóveis, o imóvel continua no nome do vendedor (Código Civil, art. 1.245).",
+      "video": "assets/videos/pexels-8814706.mp4"
+    },
+    {
+      "titulo": "Averbe a construção",
+      "texto": "Construiu ou ampliou? A obra precisa ser averbada na matrícula para existir oficialmente.",
+      "video": "assets/videos/pexels-7817202.mp4"
+    },
+    {
+      "titulo": "Confira a matrícula",
+      "texto": "A certidão mostra quem é o dono e se há penhora ou hipoteca. Qualquer pessoa pode pedi-la no cartório.",
+      "video": "assets/videos/pexels-8731516.mp4"
+    }
+  ],
+  "chamada_final": "Feliz 2027! Qual será a sua primeira resolução?",
+  "legenda": "Feliz Ano-Novo! Que 2027 seja um ano de conquistas, e de conquistas bem documentadas.\n\nTrês resoluções para o seu imóvel:\n\n1. Registre a escritura: sem o registro no Cartório de Registro de Imóveis, a propriedade continua no nome do vendedor (Código Civil, art. 1.245).\n2. Averbe a construção: a obra só existe oficialmente quando é averbada na matrícula (Lei 6.015/1973, art. 167, II, 4).\n3. Confira a matrícula: a certidão mostra quem é o dono e se há penhora, hipoteca ou outra restrição. Qualquer pessoa pode pedi-la, sem precisar explicar o motivo (Lei 6.015/1973, art. 17).\n\nSalve este vídeo e compartilhe com quem quer começar o ano com tudo em ordem.",
+  "hashtags": [
+    "#anonovo",
+    "#matricula",
+    "#escritura",
+    "#averbacao",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#registrodeimoveis",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código Civil, art. 1.245 (conferido em 02/10/2026)",
+    "Lei 6.015/1973, arts. 17 e 167, II, 4 (conferido em 02/10/2026)"
+  ]
+}

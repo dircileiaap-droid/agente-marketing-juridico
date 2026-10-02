@@ -1,0 +1,123 @@
+{
+  "imagens": [
+    "posts/videos/2026-12-21_reel-verao-temporada_capa.jpg"
+  ],
+  "video": "posts/videos/2026-12-21_reel-verao-temporada.mp4",
+  "musica": {
+    "arquivo": "assets/audio/pixabay-595943-upbeat-corporate.mp3",
+    "inicio": 34.482,
+    "bpm": 109.96,
+    "salto": 4.3
+  },
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "44.17 s (roteiro 44.20 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -16.0 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.2 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "id": "2026-12-21_reel-verao-temporada",
+  "data_publicacao": "2026-12-21",
+  "formato": "reel",
+  "area": "Direito Imobiliário",
+  "data_comemorativa": {
+    "dia": "21",
+    "mes": "Dezembro",
+    "nome": "Começa o verão"
+  },
+  "titulo": "Imóvel na temporada: 3 regras da *lei*",
+  "subtitulo": "Para quem aluga no verão",
+  "video_capa": "assets/videos/pexels-39576501.mp4",
+  "video_final": "assets/videos/pexels-35879035.mp4",
+  "trilha": "assets/audio/pixabay-595943-upbeat-corporate.mp3",
+  "slides": [
+    {
+      "titulo": "Até 90 dias",
+      "texto": "A locação para temporada é contratada por até 90 dias, para lazer, cursos, tratamento de saúde ou obras, com ou sem mobília.",
+      "video": "assets/videos/pexels-9536490.mp4"
+    },
+    {
+      "titulo": "Pagamento antecipado",
+      "texto": "O locador pode receber de uma só vez e antecipadamente os aluguéis e encargos, além de exigir uma garantia.",
+      "video": "assets/videos/pexels-8814707.mp4"
+    },
+    {
+      "titulo": "Atenção ao prazo",
+      "texto": "Se o inquilino ficar mais de 30 dias após o fim do contrato, sem oposição, a locação passa a ser por prazo indeterminado.",
+      "video": "assets/videos/pexels-31921650.mp4"
+    }
+  ],
+  "chamada_final": "Vai alugar neste verão? Salve para conferir.",
+  "legenda": "O verão começou hoje, e com ele a procura por imóveis para alugar na temporada. Seja você proprietário ou inquilino, vale conhecer as regras da Lei do Inquilinato:\n\n1. Prazo: a locação para temporada é contratada por até 90 dias, para lazer, cursos, tratamento de saúde, obras no próprio imóvel e situações semelhantes, esteja ou não mobiliado.\n2. Pagamento: o locador pode receber de uma só vez e antecipadamente os aluguéis e encargos, além de exigir uma das garantias previstas na lei.\n3. Prazo encerrado: se o inquilino permanecer no imóvel por mais de 30 dias após o fim do contrato, sem oposição do locador, a locação passa a ser por prazo indeterminado, e o pagamento antecipado deixa de ser exigível.\n\nContrato por escrito, com prazo e regras claras, evita surpresas.\n\nSalve este vídeo e compartilhe com quem vai alugar neste verão.",
+  "hashtags": [
+    "#aluguel",
+    "#temporada",
+    "#leidoinquilinato",
+    "#verao",
+    "#direitoimobiliario",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 8.245/1991, arts. 48, 49 e 50 (conferido em 02/10/2026)"
+  ]
+}

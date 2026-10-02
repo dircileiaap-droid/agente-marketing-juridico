@@ -1,0 +1,60 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-08_dia-da-justica-cartorio_01.jpg",
+    "posts/imagens/2026-12-08_dia-da-justica-cartorio_02.jpg",
+    "posts/imagens/2026-12-08_dia-da-justica-cartorio_03.jpg",
+    "posts/imagens/2026-12-08_dia-da-justica-cartorio_04.jpg",
+    "posts/imagens/2026-12-08_dia-da-justica-cartorio_05.jpg",
+    "posts/imagens/2026-12-08_dia-da-justica-cartorio_06.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-12-08_dia-da-justica-cartorio",
+  "data_publicacao": "2026-12-08",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "data_comemorativa": {
+    "dia": "08",
+    "mes": "Dezembro",
+    "nome": "Dia da Justiça"
+  },
+  "titulo": "Nem tudo precisa de *processo*: resolva no cartório",
+  "subtitulo": "Caminhos extrajudiciais para regularizar o seu imóvel.",
+  "foto": "assets/fotos/escolhidas/pexels-8112197.jpg",
+  "slides": [
+    {
+      "titulo": "Usucapião",
+      "texto": "Pode ser pedida diretamente no Cartório de Registro de Imóveis da cidade do imóvel, sem processo judicial (Lei 6.015/1973, art. 216-A)."
+    },
+    {
+      "titulo": "Adjudicação compulsória",
+      "texto": "Quem comprou por promessa de compra e venda e não recebeu a escritura definitiva pode pedir a transferência no Registro de Imóveis (Lei 6.015/1973, art. 216-B)."
+    },
+    {
+      "titulo": "Inventário e partilha",
+      "texto": "Se todos os herdeiros forem capazes e estiverem de acordo, o inventário pode ser feito por escritura pública, em cartório (CPC, art. 610, § 1º)."
+    },
+    {
+      "titulo": "Sempre com advogado",
+      "texto": "Nos três caminhos, a lei exige advogado. No inventário, as partes também podem ser assistidas por defensor público (CPC, art. 610, § 2º)."
+    }
+  ],
+  "chamada_final": "Você sabia que esses caminhos existiam?",
+  "legenda": "Hoje, 8 de dezembro, é o Dia da Justiça. E justiça também é ter acesso a caminhos mais simples para resolver o que é seu.\n\nVárias situações do seu imóvel podem ser resolvidas em cartório, sem processo judicial:\n\n1. Usucapião extrajudicial, no Registro de Imóveis da cidade do imóvel.\n2. Adjudicação compulsória, para quem comprou por promessa de compra e venda e não recebeu a escritura definitiva.\n3. Inventário e partilha por escritura pública, quando todos os herdeiros são capazes e estão de acordo.\n\nEm todos esses caminhos, a lei exige a participação de advogado. Cada caso precisa de análise dos documentos para saber se a via extrajudicial é possível.\n\nSalve este post e envie para quem precisa regularizar um imóvel.",
+  "hashtags": [
+    "#diadajustica",
+    "#cartorio",
+    "#usucapiaoextrajudicial",
+    "#adjudicacaocompulsoria",
+    "#inventarioextrajudicial",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 6.015/1973, arts. 216-A e 216-B (conferido em 02/10/2026)",
+    "CPC, art. 610, §§ 1º e 2º (conferido em 02/10/2026)",
+    "Lei 1.408/1951 (Dia da Justiça)"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-02_finados-testamento_01.jpg",
+    "posts/imagens/2026-11-02_finados-testamento_02.jpg",
+    "posts/imagens/2026-11-02_finados-testamento_03.jpg",
+    "posts/imagens/2026-11-02_finados-testamento_04.jpg",
+    "posts/imagens/2026-11-02_finados-testamento_05.jpg",
+    "posts/imagens/2026-11-02_finados-testamento_06.jpg",
+    "posts/imagens/2026-11-02_finados-testamento_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-02_finados-testamento",
+  "data_publicacao": "2026-11-02",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "data_comemorativa": {
+    "dia": "02",
+    "mes": "Novembro",
+    "nome": "Dia de Finados"
+  },
+  "titulo": "Testamento: um gesto de *cuidado* com quem fica",
+  "subtitulo": "Como planejar o destino dos seus bens, inclusive do imóvel.",
+  "foto": "assets/fotos/escolhidas/pexels-34192102.jpg",
+  "slides": [
+    {
+      "titulo": "Quem pode fazer",
+      "texto": "Toda pessoa capaz pode fazer testamento a partir dos 16 anos, desde que tenha pleno discernimento no momento do ato (Código Civil, arts. 1.857 e 1.860)."
+    },
+    {
+      "titulo": "Existe um limite",
+      "texto": "Quem tem herdeiros necessários (descendentes, ascendentes ou cônjuge) só pode dispor de metade dos bens. A outra metade é a legítima (arts. 1.789, 1.845 e 1.846)."
+    },
+    {
+      "titulo": "As formas comuns",
+      "texto": "A lei prevê três formas de testamento ordinário: o público, o cerrado e o particular (art. 1.862)."
+    },
+    {
+      "titulo": "O testamento público",
+      "texto": "É escrito pelo tabelião no livro de notas, lido em voz alta ao testador e a duas testemunhas e, em seguida, assinado por todos (art. 1.864)."
+    },
+    {
+      "titulo": "Pode ser mudado",
+      "texto": "O testamento é ato personalíssimo e pode ser mudado a qualquer tempo pelo próprio testador (art. 1.858)."
+    }
+  ],
+  "chamada_final": "Você já pensou em planejar o destino dos seus bens?",
+  "legenda": "No Dia de Finados, lembramos com carinho de quem partiu. A data também convida a uma reflexão: como deixar tudo organizado para quem fica?\n\nO testamento é um dos instrumentos para isso. Toda pessoa capaz, a partir dos 16 anos, pode fazê-lo. Quem tem herdeiros necessários (descendentes, ascendentes ou cônjuge) pode dispor livremente de metade dos bens; a outra metade, chamada legítima, pertence a esses herdeiros.\n\nO testamento público é lavrado pelo tabelião, lido em voz alta na presença de duas testemunhas e assinado por todos. E pode ser mudado a qualquer tempo.\n\nCada família tem uma realidade, por isso o planejamento merece análise cuidadosa.\n\nSalve este post e compartilhe com quem precisa dessa informação.",
+  "hashtags": [
+    "#testamento",
+    "#planejamentosucessorio",
+    "#heranca",
+    "#diadefinados",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código Civil, arts. 1.789, 1.845, 1.846, 1.857, 1.858, 1.860, 1.862 e 1.864 (conferido em 02/10/2026)"
+  ]
+}

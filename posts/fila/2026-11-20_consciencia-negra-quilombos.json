@@ -1,0 +1,65 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-20_consciencia-negra-quilombos_01.jpg",
+    "posts/imagens/2026-11-20_consciencia-negra-quilombos_02.jpg",
+    "posts/imagens/2026-11-20_consciencia-negra-quilombos_03.jpg",
+    "posts/imagens/2026-11-20_consciencia-negra-quilombos_04.jpg",
+    "posts/imagens/2026-11-20_consciencia-negra-quilombos_05.jpg",
+    "posts/imagens/2026-11-20_consciencia-negra-quilombos_06.jpg",
+    "posts/imagens/2026-11-20_consciencia-negra-quilombos_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-20_consciencia-negra-quilombos",
+  "data_publicacao": "2026-11-20",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "data_comemorativa": {
+    "dia": "20",
+    "mes": "Novembro",
+    "nome": "Consciência Negra"
+  },
+  "titulo": "Terras quilombolas: propriedade *reconhecida* pela Constituição",
+  "subtitulo": "Entenda como funciona a titulação dos territórios.",
+  "foto": "assets/fotos/escolhidas/pexels-32201027.jpg",
+  "slides": [
+    {
+      "titulo": "Um direito constitucional",
+      "texto": "A Constituição reconhece a propriedade definitiva das terras aos remanescentes das comunidades dos quilombos que as ocupam e determina que o Estado emita os títulos (ADCT, art. 68)."
+    },
+    {
+      "titulo": "Quem são",
+      "texto": "Grupos com trajetória histórica própria e relações territoriais específicas, com presunção de ancestralidade negra ligada à resistência à opressão histórica (Decreto 4.887/2003, art. 2º)."
+    },
+    {
+      "titulo": "A autodefinição",
+      "texto": "A identidade quilombola é atestada pela autodefinição da própria comunidade, inscrita na Fundação Cultural Palmares, que expede a certidão (art. 2º, § 1º, e art. 3º, § 4º)."
+    },
+    {
+      "titulo": "Quem conduz a titulação",
+      "texto": "O INCRA identifica, delimita, demarca e titula as terras, sem prejuízo da atuação dos estados, do Distrito Federal e dos municípios (art. 3º)."
+    },
+    {
+      "titulo": "Um título coletivo",
+      "texto": "O título é coletivo, em nome da comunidade representada por sua associação, e não pode ser vendido, penhorado nem adquirido por usucapião (art. 17)."
+    }
+  ],
+  "chamada_final": "Você conhecia esse direito previsto na Constituição?",
+  "legenda": "Hoje, 20 de novembro, é o Dia Nacional de Zumbi e da Consciência Negra, feriado nacional desde a Lei 14.759/2023.\n\nÉ uma data para lembrar que a terra também é parte da história e da identidade de um povo. A Constituição de 1988 reconheceu aos remanescentes das comunidades dos quilombos a propriedade definitiva das terras que ocupam e determinou que o Estado emita os títulos (ADCT, art. 68).\n\nO Decreto 4.887/2003 regulamenta o procedimento: a comunidade se autodefine, obtém a certidão da Fundação Cultural Palmares e o INCRA conduz a delimitação, a demarcação e a titulação. O título é coletivo, com cláusulas de inalienabilidade, imprescritibilidade e impenhorabilidade. Em 2018, o Supremo Tribunal Federal confirmou a validade do decreto (ADI 3.239).\n\nRegularizar a terra é garantir o direito de permanecer nela.\n\nSalve e compartilhe este conhecimento.",
+  "hashtags": [
+    "#consciencianegra",
+    "#quilombola",
+    "#regularizacaofundiaria",
+    "#direitoaterra",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 14.759/2023, art. 1º (conferido em 02/10/2026)",
+    "ADCT, art. 68 (conferido em 02/10/2026)",
+    "Decreto 4.887/2003, arts. 2º, 3º e 17 (conferido em 02/10/2026)",
+    "STF, ADI 3.239, julgada em 08/02/2018 (notícia oficial do STF)"
+  ]
+}
