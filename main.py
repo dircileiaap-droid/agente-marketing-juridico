@@ -105,13 +105,34 @@ def cmd_listar(_args):
         print(f"{p['data_publicacao']}  {p['formato']:9}  {p.get('titulo', p['id'])}")
 
 
+def turno_atual() -> str:
+    """Turno pelo horário de Brasília: 7h-11h manhã (posts com "horario": "10h"),
+    12h-18h Stories, demais horas feed das 21h (inclui atrasos do GitHub após a meia-noite)."""
+    from agente.config import agora
+    hora = agora().hour
+    if 7 <= hora < 12:
+        return "manha"
+    return "stories" if 12 <= hora < 19 else "feed"
+
+
+def do_turno(post: dict, turno: str) -> bool:
+    if turno == "todos":
+        return True
+    if post.get("horario") == "10h":
+        return turno == "manha"
+    return (post.get("formato") == "stories") == (turno == "stories") and turno != "manha"
+
+
 def cmd_publicar(args):
     for p in fila.atrasados():
         print(f"[atrasado, NÃO publicado] {p['data_publicacao']} {p['id']}: "
               "defina nova data no JSON para publicar.")
-    pendentes = fila.vencidos()[: args.max]
+    # Turno: a execução das 10h publica só posts marcados "horario": "10h"; a das 14h, só
+    # Stories; a das 21h, o restante do feed (assim, cada peça sai no seu horário).
+    turno = args.turno or turno_atual()
+    pendentes = [p for p in fila.vencidos() if do_turno(p, turno)][: args.max]
     if not pendentes:
-        print("Nenhum post programado para hoje.")
+        print(f"Nenhum post programado para hoje (turno: {turno}).")
         return
 
     from agente import facebook
@@ -226,6 +247,7 @@ def main():
     pub = sub.add_parser("publicar", help="publica os posts do dia")
     pub.add_argument("--simular", action="store_true")
     pub.add_argument("--max", type=int, default=1)
+    pub.add_argument("--turno", choices=["manha", "feed", "stories", "todos"], help="padrão: pelo horário")
     pub.set_defaults(func=cmd_publicar)
 
     sub.add_parser("demo", help="gera imagens de exemplo").set_defaults(func=cmd_demo)

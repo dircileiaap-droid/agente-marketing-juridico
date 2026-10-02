@@ -13,6 +13,11 @@ def hoje() -> date:
     """Data de hoje no horário de Brasília (o GitHub roda no horário UTC)."""
     return datetime.now(FUSO).date()
 
+
+def agora() -> datetime:
+    """Data e hora atuais no horário de Brasília."""
+    return datetime.now(FUSO)
+
 RAIZ = Path(__file__).resolve().parent.parent
 PASTA_CONFIG = RAIZ / "config"
 PASTA_PROMPTS = RAIZ / "prompts"

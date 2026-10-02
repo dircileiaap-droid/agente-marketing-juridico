@@ -42,7 +42,9 @@ o imóvel e o patrimônio (ex.: ITBI, INSS de obra, imóvel na partilha, imóvel
 ## Fluxo de trabalho
 
 1. **Pauta.** Escolha área, tema e formato (ver `references/estrategia_engajamento.md`).
-   Evite repetir títulos recentes.
+   Evite repetir títulos recentes. Antes, reserve as **datas comemorativas e estações** do
+   mês (`references/datas_comemorativas.md` e `conteudo/calendario.py`): elas saem no
+   próprio dia, às 21h.
 2. **Pesquisa.** Confirme cada fundamento em fonte oficial:
    planalto.gov.br (leis), gov.br/inss e in.gov.br (normativas), stf.jus.br, stj.jus.br,
    tnu (jurisprudência), cnj.jus.br (provimentos), tjsp.jus.br (Normas da Corregedoria).

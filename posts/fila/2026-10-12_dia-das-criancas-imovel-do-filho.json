@@ -1,0 +1,64 @@
+{
+  "imagens": [
+    "posts/imagens/2026-10-12_dia-das-criancas-imovel-do-filho_01.jpg",
+    "posts/imagens/2026-10-12_dia-das-criancas-imovel-do-filho_02.jpg",
+    "posts/imagens/2026-10-12_dia-das-criancas-imovel-do-filho_03.jpg",
+    "posts/imagens/2026-10-12_dia-das-criancas-imovel-do-filho_04.jpg",
+    "posts/imagens/2026-10-12_dia-das-criancas-imovel-do-filho_05.jpg",
+    "posts/imagens/2026-10-12_dia-das-criancas-imovel-do-filho_06.jpg",
+    "posts/imagens/2026-10-12_dia-das-criancas-imovel-do-filho_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-10-12_dia-das-criancas-imovel-do-filho",
+  "data_publicacao": "2026-10-12",
+  "horario": "10h",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "data_comemorativa": {
+    "dia": "12",
+    "mes": "Outubro",
+    "nome": "Dia das Crianças"
+  },
+  "titulo": "Imóvel no nome do *filho*: os pais podem vender?",
+  "subtitulo": "A proteção que a lei dá ao patrimônio das crianças.",
+  "foto": "assets/fotos/escolhidas/pexels-33014349.jpg",
+  "slides": [
+    {
+      "titulo": "A criança pode ser dona",
+      "texto": "Um imóvel pode estar no nome de uma criança, recebido por herança ou por doação. Toda pessoa é capaz de direitos e deveres (Código Civil, art. 1º)."
+    },
+    {
+      "titulo": "Os pais administram",
+      "texto": "Enquanto o filho é menor, os pais administram os bens dele, no exercício do poder familiar (art. 1.689, II)."
+    },
+    {
+      "titulo": "Vender exige autorização",
+      "texto": "Os pais não podem vender nem hipotecar o imóvel do filho sem prévia autorização do juiz (art. 1.691)."
+    },
+    {
+      "titulo": "Só no interesse da criança",
+      "texto": "A autorização depende de necessidade ou de evidente interesse do filho, demonstrados ao juiz no pedido."
+    },
+    {
+      "titulo": "Sem autorização, o ato é nulo",
+      "texto": "A venda feita sem autorização pode ser declarada nula a pedido do próprio filho, dos herdeiros ou do representante legal (art. 1.691, parágrafo único)."
+    }
+  ],
+  "chamada_final": "Você sabia dessa proteção da lei?",
+  "legenda": "Feliz Dia das Crianças! Hoje é dia de celebrar quem enche a casa de alegria.\n\nE, falando em casa: muitas crianças são donas de imóveis, recebidos por herança ou por doação. A lei protege esse patrimônio.\n\nEnquanto o filho é menor, os pais administram os bens dele. Mas não podem vender nem hipotecar o imóvel sem prévia autorização do juiz, que só é dada por necessidade ou evidente interesse da criança (Código Civil, art. 1.691).\n\nSe a venda for feita sem essa autorização, o próprio filho, os herdeiros ou o representante legal podem pedir que o ato seja declarado nulo.\n\nCada situação exige análise dos documentos e do motivo do pedido.\n\nSalve este post e compartilhe com quem precisa saber disso.",
+  "hashtags": [
+    "#diadascriancas",
+    "#imovel",
+    "#heranca",
+    "#alvarajudicial",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#registrodeimoveis",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Código Civil, arts. 1º, 1.689 e 1.691 (conferido em 02/10/2026)"
+  ]
+}

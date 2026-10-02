@@ -9,7 +9,7 @@ No título, palavras entre *asteriscos* saem em itálico na cor de destaque.
 import re
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 from .config import RAIZ
 from .fotos import obter_foto
@@ -241,6 +241,12 @@ class Desenhista:
 
     def capa(self, post: dict, total: int = 1):
         img = self._fundo_foto(obter_foto(post))
+        if post.get("data_comemorativa"):
+            # sombra vinho suave atrás do selo de data: legível mesmo sobre céu ou parede clara
+            sombra = Image.new("RGBA", (LARGURA, ALTURA), (0, 0, 0, 0))
+            ImageDraw.Draw(sombra).rectangle((LARGURA - 420, 0, LARGURA, 300), fill=_hex(self.escura, 170))
+            sombra = sombra.filter(ImageFilter.GaussianBlur(70))
+            img = Image.alpha_composite(img.convert("RGBA"), sombra).convert("RGB")
         draw = ImageDraw.Draw(img)
         self._assinatura(draw, self.clara)
 
@@ -253,9 +259,13 @@ class Desenhista:
 
         tam, linhas, altura = titulo_ajustado(post["titulo"], UTIL, 560, 118, 70)
         y_titulo = base_y - altura
-        # etiqueta da área
+        # etiqueta: a data comemorativa (quando houver) ou a área
+        data = post.get("data_comemorativa")
+        if data:
+            self._selo_data(draw, data)
+        etiqueta = (data["nome"] if data else post["area"]).upper()
         draw.line((MARGEM, y_titulo - 58, MARGEM + 60, y_titulo - 58), fill=self.destaque_clara, width=3)
-        texto_espacado(draw, (MARGEM + 78, y_titulo - 70), post["area"].upper(), fonte("negrito", 22),
+        texto_espacado(draw, (MARGEM + 78, y_titulo - 70), etiqueta, fonte("negrito", 22),
                        self.clara, 0.22)
         y = desenhar_titulo(draw, MARGEM, y_titulo, tam, linhas, self.clara, self.destaque_clara)
 
@@ -274,6 +284,14 @@ class Desenhista:
             draw.text((LARGURA - MARGEM - 60 - larg, ALTURA - 100), "arraste", font=f, fill=self.clara)
             seta(draw, LARGURA - MARGEM - 46, ALTURA - 84, self.destaque_clara)
         return img
+
+    def _selo_data(self, draw, data):
+        """Selo de calendário no canto superior direito: dia em Bodoni itálico e mês espaçado."""
+        f_dia, f_mes = fonte("italico", 150), fonte("negrito", 22)
+        direita = LARGURA - MARGEM
+        draw.text((direita, 40), data["dia"], font=f_dia, fill=self.destaque_clara, anchor="ra")
+        y_mes = draw.textbbox((direita, 40), data["dia"], font=f_dia, anchor="ra")[3] + 16
+        texto_espacado(draw, (direita, y_mes), data["mes"].upper(), f_mes, self.clara, 0.3, ancora_direita=True)
 
     def conteudo(self, post: dict, numero: int, slide: dict, pagina: int, total: int):
         img = Image.new("RGB", (LARGURA, ALTURA), self.clara)

@@ -93,6 +93,9 @@ def testar(arquivo: Path, post: dict, cenas: list) -> list:
     textos_tela = [e.texto for c in cenas for e in c.elementos if e.texto]
     fonte_roteiro = " ".join([post["titulo"].replace("*", ""), post.get("subtitulo", ""), post.get("chamada_final", ""),
                               post["area"]] + [s["titulo"] + " " + s["texto"] for s in post["slides"]])
+    if post.get("data_comemorativa"):
+        dc = post["data_comemorativa"]
+        fonte_roteiro += f" {dc['nome']} {dc['dia']} {dc['mes']}"
     fora_do_roteiro = [t for t in textos_tela
                        if t.replace("*", "") not in fonte_roteiro
                        and not re.search(r"pacheco|salve|envie|siga|@", t, re.I)]
@@ -132,7 +135,7 @@ def testar(arquivo: Path, post: dict, cenas: list) -> list:
     curtos = []
     for c in cenas:
         palavras = sum(len(e.texto.split()) for e in c.elementos
-                       if e.texto and e.nome not in ("assinatura", "rodape", "etiqueta"))
+                       if e.texto and e.nome not in ("assinatura", "rodape", "etiqueta", "data"))
         ultimo = max((e.visivel_em() for e in c.elementos), default=0)
         disponivel = c.duracao - ultimo + (ultimo * 0.5)  # lê enquanto o texto entra
         if palavras and disponivel < palavras / LEITURA:

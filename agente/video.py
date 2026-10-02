@@ -220,9 +220,23 @@ class Roteirista:
         b, els = self.b, [self._assinatura()]
         img, d = _camada()
         y_tag = 900
+        data = post.get("data_comemorativa")
+        etiqueta = data["nome"] if data else post["area"]
         d.line((M, y_tag + 16, M + 70, y_tag + 16), fill=self.destaque_clara, width=4)
-        texto_espacado(d, (M + 92, y_tag), post["area"].upper(), fonte("negrito", 30), self.clara, 0.22)
-        els.append(Elemento(_sombra(img), 0.0, "esquerda", 0.35, self.clara, "etiqueta", post["area"]))
+        texto_espacado(d, (M + 92, y_tag), etiqueta.upper(), fonte("negrito", 30), self.clara, 0.22)
+        els.append(Elemento(_sombra(img), 0.0, "esquerda", 0.35, self.clara, "etiqueta", etiqueta))
+        if data:
+            # selo de calendário acima da etiqueta: dia grande em itálico e mês espaçado
+            img, d = _camada()
+            f_dia = fonte("italico", 170)
+            caixa = d.textbbox((0, 0), data["dia"], font=f_dia)
+            y_dia = y_tag - 50 - caixa[3]  # números terminam 50 px acima da etiqueta
+            d.text((M - 6, y_dia), data["dia"], font=f_dia, fill=self.clara)
+            f_mes = fonte("negrito", 32)
+            texto_espacado(d, (M + caixa[2] + 24, y_dia + caixa[3] - f_mes.size - 8), data["mes"].upper(),
+                           f_mes, self.clara, 0.3)
+            els.append(Elemento(_sombra(img, 8, 170), 0.0, "pop", 0.4, self.clara, "data",
+                                f"{data['dia']} {data['mes']}"))
 
         # título linha a linha, no compasso da música
         tam, linhas, _ = titulo_ajustado(post["titulo"], UTIL, 430, 132, 90, 1.06)
@@ -244,7 +258,8 @@ class Roteirista:
                 y += int(f.size * 1.45)
             els.append(Elemento(_sombra(img), self.b * 0.5 * len(linhas) + 0.1, "subir", 0.4, self.clara,
                                 "subtitulo", post["subtitulo"]))
-        return Cena(duracao, FundoVideo(video, duracao, self.escura, 0.46), els, "capa")
+        # com selo de data, o véu escurece mais cedo para o dia e o mês ficarem legíveis
+        return Cena(duracao, FundoVideo(video, duracao, self.escura, 0.34 if data else 0.46), els, "capa")
 
     def slide(self, post, n, total, slide, duracao, video):
         b, els = self.b, [self._assinatura()]
