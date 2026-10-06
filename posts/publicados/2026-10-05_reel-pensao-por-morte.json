@@ -1,0 +1,170 @@
+{
+  "id": "2026-10-05_reel-pensao-por-morte",
+  "data_publicacao": "2026-10-05",
+  "formato": "reel",
+  "area": "Direito Previdenciário",
+  "titulo": "Pensão por morte: 3 pontos *essenciais*",
+  "subtitulo": "O que a família precisa saber",
+  "video_capa": "assets/videos/pexels-7413807.mp4",
+  "video_final": "assets/videos/pexels-6624500.mp4",
+  "trilha": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+  "slides": [
+    {
+      "titulo": "Existe prazo para pedir",
+      "texto": "Pedida em até 90 dias do óbito, a pensão é paga desde a data do falecimento. Para filhos menores de 16 anos, o prazo é de 180 dias.",
+      "video": "assets/videos/pexels-7550648.mp4"
+    },
+    {
+      "titulo": "Quem tem direito",
+      "texto": "Primeiro, cônjuge, companheiro e filhos menores de 21 anos ou com invalidez ou deficiência. Na falta deles, os pais e, depois, os irmãos, nos termos da lei.",
+      "video": "assets/videos/pexels-8208901.mp4"
+    },
+    {
+      "titulo": "Não exige carência",
+      "texto": "A pensão não depende de um número mínimo de contribuições. Em regra, basta que o falecido mantivesse a qualidade de segurado do INSS.",
+      "video": "assets/videos/pexels-7247823.mp4"
+    }
+  ],
+  "chamada_final": "Informação certa no momento difícil faz diferença.",
+  "legenda": "A perda de alguém querido já é difícil o bastante. Conhecer os direitos da família ajuda a evitar prejuízos em um momento delicado.\n\n1. Prazo: quando a pensão por morte é pedida em até 90 dias do óbito, ela é paga desde a data do falecimento. Para filhos menores de 16 anos, o prazo é de 180 dias. Depois disso, o pagamento começa na data do pedido.\n2. Dependentes: em primeiro lugar estão o cônjuge, o companheiro e os filhos menores de 21 anos ou com invalidez ou deficiência. Na falta deles, os pais e, depois, os irmãos, nos termos da lei.\n3. Carência: a pensão não exige um número mínimo de contribuições. Em regra, basta que o falecido mantivesse a qualidade de segurado.\n\nSalve este vídeo e compartilhe com quem pode precisar dessa informação.",
+  "hashtags": [
+    "#pensaopormorte",
+    "#inss",
+    "#direitoprevidenciario",
+    "#previdencia",
+    "#familia",
+    "#abcpaulista",
+    "#advocacia",
+    "#saobernardodocampo"
+  ],
+  "fontes": [
+    "Lei 8.213/1991, arts. 15, 16, 26, I, e 74, I e II (conferido em 30/09/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+    "inicio": 66.003,
+    "bpm": 70.79,
+    "salto": 4.4
+  },
+  "video": "posts/videos/2026-10-05_reel-pensao-por-morte.mp4",
+  "imagens": [
+    "posts/videos/2026-10-05_reel-pensao-por-morte_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "53.37 s (roteiro 53.40 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -20.5 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.0 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "revisao": {
+    "aprovado_pelo_revisor": true,
+    "revisado_por": "Claude (skill marketing-juridico)",
+    "data": "2026-10-01",
+    "etapas": [
+      {
+        "etapa": "Ética OAB: vedações",
+        "ok": true
+      },
+      {
+        "etapa": "Ética OAB: tom",
+        "ok": true
+      },
+      {
+        "etapa": "Exatidão jurídica",
+        "ok": true
+      },
+      {
+        "etapa": "Fontes",
+        "ok": true
+      },
+      {
+        "etapa": "Prazos, valores e requisitos",
+        "ok": true
+      },
+      {
+        "etapa": "Ortografia",
+        "ok": true
+      },
+      {
+        "etapa": "Gramática e norma culta",
+        "ok": true
+      },
+      {
+        "etapa": "Clareza",
+        "ok": true
+      },
+      {
+        "etapa": "Coerência entre peças",
+        "ok": true
+      },
+      {
+        "etapa": "Acabamento visual",
+        "ok": true
+      }
+    ],
+    "alertas_oab": [],
+    "fontes_conferidas_online": "30/09/2026"
+  },
+  "aprovado_por": "Dirciléia Pacheco, aprovação da programação de outubro em 01/10/2026",
+  "instagram_id": "18106746110189851",
+  "publicado_em": "2026-10-06T00:05:06+00:00"
+}
