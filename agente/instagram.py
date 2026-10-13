@@ -55,6 +55,18 @@ class Instagram:
             time.sleep(5)
         raise ErroInstagram(f"Tempo esgotado processando {container_id}")
 
+    def _publicar_container(self, container: str) -> str:
+        """media_publish com novas tentativas: às vezes o Instagram informa FINISHED, mas
+        ainda responde "media is not ready" (código 9007, subcódigo 2207027). Nesse erro
+        nada foi publicado, então repetir é seguro e não duplica o post."""
+        for tentativa in range(12):
+            try:
+                return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
+            except ErroInstagram as erro:
+                if "2207027" not in str(erro) or tentativa == 11:
+                    raise
+                time.sleep(20)
+
     def publicar(self, urls_imagens: list[str], legenda: str) -> str:
         """Publica imagem única ou carrossel (2 a 10 imagens). Retorna o ID do post."""
         if len(urls_imagens) == 1:
@@ -72,7 +84,7 @@ class Instagram:
                                   children=",".join(filhos), caption=legenda)["id"]
 
         self._aguardar(container)
-        return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
+        return self._publicar_container(container)
 
     def publicar_reel(self, url_video: str, legenda: str, url_capa: str | None = None) -> str:
         """Publica um Reels (MP4 H.264 em URL pública). Retorna o ID do post."""
@@ -82,14 +94,14 @@ class Instagram:
             params["cover_url"] = url_capa
         container = self._req("POST", f"{self.user_id}/media", **params)["id"]
         self._aguardar(container, limite_s=900)  # vídeo leva mais tempo para processar
-        return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
+        return self._publicar_container(container)
 
     def publicar_story(self, url_imagem: str) -> str:
         """Publica uma tela de Stories (imagem JPEG em URL pública). Retorna o ID."""
         container = self._req("POST", f"{self.user_id}/media", media_type="STORIES",
                               image_url=url_imagem)["id"]
         self._aguardar(container)
-        return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
+        return self._publicar_container(container)
 
     def perfil(self) -> dict:
         return self._req("GET", "me", fields="user_id,username,followers_count,media_count")
