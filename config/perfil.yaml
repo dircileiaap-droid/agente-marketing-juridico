@@ -67,6 +67,14 @@ visual:
   cor_areia: "#E4D5BF"
   cor_texto_escuro: "#2E1B16"
 
+# Alcance (pedido de 13/10/2026): localização em todo post do feed e no máximo 5 hashtags
+# (recomendação atual do Instagram). ID da localização "São Bernardo do Campo" (Facebook Places),
+# conferido em 13/10/2026 na busca de locais do Instagram e aceito pela API.
+alcance:
+  localizacao_id: "109424702408766"
+  max_hashtags: 5
+  story_aviso: true      # Story "NOVO POST NO FEED" logo após cada post do feed
+
 hashtags_fixas:
   - "#advocacia"
   - "#saobernardodocampo"

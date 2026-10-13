@@ -105,6 +105,15 @@ def cmd_listar(_args):
         print(f"{p['data_publicacao']}  {p['formato']:9}  {p.get('titulo', p['id'])}")
 
 
+FIXAS = {"#abcpaulista", "#advocacia", "#saobernardodocampo"}
+
+
+def hashtags_finais(post: dict, maximo: int = 5) -> list[str]:
+    """As mais específicas do tema + #saobernardodocampo, sem repetir (máximo 5)."""
+    temas = [h for h in post.get("hashtags", []) if h not in FIXAS]
+    return list(dict.fromkeys(temas[: maximo - 1] + ["#saobernardodocampo"]))[:maximo]
+
+
 def turno_atual() -> str:
     """Turno pelo horário de Brasília: 7h-11h manhã (posts com "horario": "10h"),
     12h-18h Stories, demais horas feed das 21h (inclui atrasos do GitHub após a meia-noite)."""
@@ -136,6 +145,8 @@ def cmd_publicar(args):
         return
 
     from agente import facebook
+    alcance = carregar_perfil().get("alcance", {})
+    local = alcance.get("localizacao_id")
     base = url_base_imagens()
     ig = fb = None
     if not args.simular:
@@ -145,21 +156,30 @@ def cmd_publicar(args):
 
     for post in pendentes:
         urls = [base + img for img in post["imagens"]]
-        legenda = (post.get("legenda", "") + "\n\n" + " ".join(post.get("hashtags", []))).strip()
+        tags = hashtags_finais(post, alcance.get("max_hashtags", 5))
+        legenda = (post.get("legenda", "") + "\n\n" + " ".join(tags)).strip()
         video = base + post["video"] if post.get("formato") == "reel" else None
         if args.simular:
             destino = "Instagram + Facebook" if facebook.configurado() else "Instagram"
-            print(f"[simulação] {post['id']} -> {destino}\n  vídeo: {video}\n  imagens: {urls}\n")
+            print(f"[simulação] {post['id']} -> {destino}\n  vídeo: {video}\n  imagens: {urls}\n"
+                  f"  local: {local}  hashtags: {tags}\n  story de aviso: {post.get('story_aviso')}\n")
             continue
         if post.get("formato") == "stories":
             ids = [ig.publicar_story(u) for u in urls]  # telas na ordem do roteiro
             media_id = ",".join(ids)
         elif video:
-            media_id = ig.publicar_reel(video, legenda, urls[0] if urls else None)
+            media_id = ig.publicar_reel(video, legenda, urls[0] if urls else None, local)
         else:
-            media_id = ig.publicar(urls, legenda)
+            media_id = ig.publicar(urls, legenda, local)
         post["instagram_id"] = media_id
         post["publicado_em"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        # Story "NOVO POST NO FEED": uma falha aqui não afeta o post já publicado
+        if post.get("story_aviso") and alcance.get("story_aviso", True):
+            try:
+                post["story_aviso_id"] = ig.publicar_story(base + post["story_aviso"])
+            except Exception as erro:  # noqa: BLE001
+                post["story_aviso_erro"] = str(erro)[:300]
+                print(f"[story de aviso] falhou: {erro}")
         # Facebook: uma falha aqui não desfaz nem bloqueia a publicação no Instagram
         if fb:
             try:

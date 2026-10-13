@@ -105,3 +105,38 @@ def gerar_stories(post: dict, perfil: dict, pasta: Path) -> list[Path]:
         quadro(perfil, post, q, i, total).save(caminho, "JPEG", quality=94, subsampling=0)
         caminhos.append(caminho)
     return caminhos
+
+
+def aviso_novo_post(post: dict, perfil: dict, capa: Path, pasta: Path) -> Path:
+    """Story "NOVO POST": capa do post em moldura, para avisar os seguidores.
+
+    Publicado logo depois do post no feed (a API não permite o adesivo de link,
+    por isso o texto convida a abrir o perfil)."""
+    from PIL import ImageOps
+    v, adv = perfil["visual"], perfil["advogado"]
+    img = Image.new("RGB", (W, H), v["cor_escura"])
+    d = ImageDraw.Draw(img)
+    acento = v["cor_destaque_clara"]
+    texto_espacado(d, (M, TOPO_SEGURO + 10), adv["assinatura"], fonte("texto", 26), acento, 0.28)
+
+    y = _pilula(d, M, TOPO_SEGURO + 110, "NOVO POST NO FEED", fonte("negrito", 34), v["cor_destaque"],
+                v["cor_clara"]) + 50
+    # capa (4:5 no carrossel; 9:16 no Reels, recortada em 4:5) com fio terracota
+    f_cham = fonte("italico", 64)
+    alt = (BASE_SEGURA - 90) - y - (60 + int(f_cham.size * 1.3))  # cabe entre a etiqueta e a chamada
+    larg = int(alt / 1.25)
+    x = (W - larg) // 2
+    miniatura = ImageOps.fit(Image.open(capa).convert("RGB"), (larg, alt), method=Image.LANCZOS)
+    d.rectangle((x - 6, y - 6, x + larg + 5, y + alt + 5), outline=acento, width=3)
+    img.paste(miniatura, (x, y))
+    y += alt + 60
+
+    chamada = "Toque no perfil e confira." if post.get("formato") != "reel" else "Toque no perfil e assista."
+    d.text((W // 2, y), chamada, font=f_cham, fill=v["cor_clara"], anchor="ma")
+    d.line((M, BASE_SEGURA - 50, W - M, BASE_SEGURA - 50), fill=acento, width=2)
+    d.text((M, BASE_SEGURA - 30), f"{adv['nome']}  |  {adv['oab']}", font=fonte("texto", 28),
+           fill=v["cor_clara"])
+    pasta.mkdir(parents=True, exist_ok=True)
+    caminho = pasta / f"{post['id']}_aviso.jpg"
+    img.save(caminho, "JPEG", quality=94, subsampling=0)
+    return caminho

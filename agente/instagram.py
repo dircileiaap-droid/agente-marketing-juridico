@@ -67,11 +67,13 @@ class Instagram:
                     raise
                 time.sleep(20)
 
-    def publicar(self, urls_imagens: list[str], legenda: str) -> str:
-        """Publica imagem única ou carrossel (2 a 10 imagens). Retorna o ID do post."""
+    def publicar(self, urls_imagens: list[str], legenda: str, local: str | None = None) -> str:
+        """Publica imagem única ou carrossel (2 a 10 imagens). Retorna o ID do post.
+        local: ID de localização (ex.: São Bernardo do Campo), exibido acima do post."""
+        extra = {"location_id": local} if local else {}
         if len(urls_imagens) == 1:
             container = self._req("POST", f"{self.user_id}/media",
-                                  image_url=urls_imagens[0], caption=legenda)["id"]
+                                  image_url=urls_imagens[0], caption=legenda, **extra)["id"]
         else:
             filhos = []
             for url in urls_imagens[:10]:
@@ -81,15 +83,18 @@ class Instagram:
             for filho in filhos:
                 self._aguardar(filho)
             container = self._req("POST", f"{self.user_id}/media", media_type="CAROUSEL",
-                                  children=",".join(filhos), caption=legenda)["id"]
+                                  children=",".join(filhos), caption=legenda, **extra)["id"]
 
         self._aguardar(container)
         return self._publicar_container(container)
 
-    def publicar_reel(self, url_video: str, legenda: str, url_capa: str | None = None) -> str:
+    def publicar_reel(self, url_video: str, legenda: str, url_capa: str | None = None,
+                      local: str | None = None) -> str:
         """Publica um Reels (MP4 H.264 em URL pública). Retorna o ID do post."""
         params = {"media_type": "REELS", "video_url": url_video, "caption": legenda,
                   "share_to_feed": "true"}
+        if local:
+            params["location_id"] = local
         if url_capa:
             params["cover_url"] = url_capa
         container = self._req("POST", f"{self.user_id}/media", **params)["id"]

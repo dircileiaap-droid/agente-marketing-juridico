@@ -3,6 +3,7 @@
   python -m conteudo.produzir 2026-10 imagens   -> carrosséis e stories do mês
   python -m conteudo.produzir 2026-10 reels     -> Reels do mês (com os 10 testes)
   python -m conteudo.produzir 2026-10-05        -> só os posts dessa data
+  python -m conteudo.produzir 2026-10 avisos    -> Stories "NOVO POST NO FEED" (também no "tudo")
 """
 import json
 import sys
@@ -67,6 +68,19 @@ def reels(filtro: str):
         print(qa_video.relatorio(resultado))
 
 
+def avisos(filtro: str):
+    """Story "NOVO POST NO FEED" de cada carrossel e Reels (usa a capa já produzida)."""
+    from agente.stories import aviso_novo_post
+    perfil = carregar_perfil()
+    for arq, p in _posts(filtro):
+        if p["formato"] not in ("carrossel", "card", "reel") or not p.get("imagens"):
+            continue
+        c = aviso_novo_post(p, perfil, RAIZ / p["imagens"][0], PASTA_IMAGENS)
+        p["story_aviso"] = c.relative_to(RAIZ).as_posix()
+        _salvar(arq, p)
+        print(f"[ok] aviso {p['id']}")
+
+
 if __name__ == "__main__":
     filtro = sys.argv[1]
     modo = sys.argv[2] if len(sys.argv) > 2 else "tudo"
@@ -74,3 +88,5 @@ if __name__ == "__main__":
         imagens(filtro)
     if modo in ("reels", "tudo"):
         reels(filtro)
+    if modo in ("avisos", "tudo"):
+        avisos(filtro)
