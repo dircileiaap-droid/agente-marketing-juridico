@@ -13,7 +13,7 @@ import json
 from datetime import date, datetime, timedelta
 
 from . import fila
-from .config import RAIZ, carregar_perfil, hoje
+from .config import FUSO, RAIZ, carregar_perfil, hoje
 
 PASTA_METRICAS = RAIZ / "dados" / "metricas"
 ARQ_APRENDIZADOS = RAIZ / "dados" / "aprendizados.json"
@@ -21,6 +21,11 @@ METRICAS_POST = ["reach", "saved", "shares", "total_interactions", "views"]
 
 
 # ---------------------------------------------------------------- coleta
+
+
+def _data_brasilia(timestamp: str) -> str:
+    """"2026-10-13T00:08:04+0000" -> "2026-10-12" (data do post no horário de Brasília)."""
+    return datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S%z").astimezone(FUSO).date().isoformat()
 
 def _insights_post(ig, media_id: str) -> dict:
     """Busca as métricas do post; se o lote falhar, tenta uma a uma."""
@@ -53,7 +58,7 @@ def coletar(dias: int = 90) -> dict:
             continue
         registro = {
             "id": m["id"],
-            "data": m["timestamp"][:10],
+            "data": _data_brasilia(m["timestamp"]),  # 21h de Brasília já é o dia seguinte em UTC
             "permalink": m.get("permalink", ""),
             "tipo": m.get("media_type", ""),
             "legenda": (m.get("caption") or "")[:90].replace("\n", " "),
