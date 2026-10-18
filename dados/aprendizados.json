@@ -1,11 +1,14 @@
 {
-  "gerado_em": "2026-10-11",
+  "gerado_em": "2026-10-18",
   "melhores_posts": [
-    "Construiu ou ampliou? Averbe a obra.",
-    "Pensão por morte: 3 pontos essenciais",
-    "Aposentado com doença grave: isenção de IR"
+    "Sócio faleceu: o que acontece com a empresa?",
+    "Imóvel no nome do filho: os pais podem vender?",
+    "Contrato de gaveta: riscos e caminhos"
   ],
-  "piores_posts": [],
-  "melhor_area": "Direito Imobiliário",
-  "melhor_formato": "carrossel"
+  "piores_posts": [
+    "Contrato de gaveta: riscos e caminhos",
+    "Parou de contribuir? Você ainda pode estar protegido"
+  ],
+  "melhor_area": "Direito Empresarial",
+  "melhor_formato": "reel"
 }
