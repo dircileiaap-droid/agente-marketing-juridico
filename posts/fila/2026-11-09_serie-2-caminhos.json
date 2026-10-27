@@ -1,0 +1,53 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-09_serie-2-caminhos_01.jpg",
+    "posts/imagens/2026-11-09_serie-2-caminhos_02.jpg",
+    "posts/imagens/2026-11-09_serie-2-caminhos_03.jpg",
+    "posts/imagens/2026-11-09_serie-2-caminhos_04.jpg",
+    "posts/imagens/2026-11-09_serie-2-caminhos_05.jpg",
+    "posts/imagens/2026-11-09_serie-2-caminhos_06.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-09_serie-2-caminhos",
+  "data_publicacao": "2026-11-09",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Os *caminhos* para regularizar o seu imóvel",
+  "subtitulo": "Série Regularize seu imóvel · parte 2 de 4",
+  "foto": "assets/fotos/escolhidas/pexels-36575138.jpg",
+  "slides": [
+    {
+      "titulo": "Escritura e registro",
+      "texto": "Comprou de quem consta na matrícula? Lavre a escritura e registre no cartório (Código Civil, arts. 108 e 1.245)."
+    },
+    {
+      "titulo": "Adjudicação compulsória",
+      "texto": "Pagou pela promessa de compra e não recebeu a escritura? O pedido pode ser feito no Registro de Imóveis (Lei 6.015/1973, art. 216-B)."
+    },
+    {
+      "titulo": "Usucapião",
+      "texto": "Mora no imóvel há anos, como dono, mesmo sem escritura? Pode caber a usucapião, inclusive em cartório (art. 216-A)."
+    },
+    {
+      "titulo": "REURB",
+      "texto": "O bairro inteiro é um loteamento irregular? A regularização fundiária urbana pode titular os moradores (Lei 13.465/2017)."
+    }
+  ],
+  "chamada_final": "Qual desses caminhos é o mais parecido com o seu caso?",
+  "legenda": "Parte 2 da série Regularize seu imóvel: os caminhos.\n\nCada situação tem um caminho próprio na lei:\n\n1. Escritura e registro, quando quem vende consta como dono na matrícula.\n2. Adjudicação compulsória, quando a promessa de compra foi paga e a escritura definitiva não saiu. Pode ser feita no próprio Registro de Imóveis.\n3. Usucapião, para quem tem a posse do imóvel há anos, como dono. Também pode ser pedida em cartório.\n4. REURB, para núcleos urbanos informais, como loteamentos irregulares.\n\nDescobrir qual é o caminho certo depende da análise dos documentos.\n\nNa parte 3: os prazos do cartório.\n\nQual desses caminhos é o mais parecido com a sua situação?",
+  "hashtags": [
+    "#regularizacaodeimoveis",
+    "#usucapiao",
+    "#adjudicacaocompulsoria",
+    "#reurb",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Código Civil, arts. 108 e 1.245 (conferido em 26/10/2026)",
+    "Lei 6.015/1973, arts. 216-A e 216-B (conferido em 26/10/2026)",
+    "Lei 13.465/2017 (conferido em 26/10/2026)"
+  ],
+  "story_aviso": "posts/imagens/2026-11-09_serie-2-caminhos_aviso.jpg"
+}

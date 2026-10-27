@@ -1,0 +1,57 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-27_mei-remissao-dividas_01.jpg",
+    "posts/imagens/2026-11-27_mei-remissao-dividas_02.jpg",
+    "posts/imagens/2026-11-27_mei-remissao-dividas_03.jpg",
+    "posts/imagens/2026-11-27_mei-remissao-dividas_04.jpg",
+    "posts/imagens/2026-11-27_mei-remissao-dividas_05.jpg",
+    "posts/imagens/2026-11-27_mei-remissao-dividas_06.jpg",
+    "posts/imagens/2026-11-27_mei-remissao-dividas_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-27_mei-remissao-dividas",
+  "data_publicacao": "2026-11-27",
+  "horario": "18h",
+  "formato": "carrossel",
+  "area": "Direito Tributário",
+  "titulo": "MEI com dívida? A nova lei *perdoa* débitos",
+  "subtitulo": "Entenda a remissão da Lei Complementar 238/2026.",
+  "foto": "assets/fotos/escolhidas/pexels-6205772.jpg",
+  "slides": [
+    {
+      "titulo": "O que é a remissão",
+      "texto": "É o perdão integral das dívidas com a União de quem está enquadrado como MEI (LC 238/2026, art. 5º)."
+    },
+    {
+      "titulo": "Quais dívidas",
+      "texto": "As contribuições mensais do MEI ao INSS, com juros, multas e encargos, inscritas ou não em dívida ativa, até 13 de outubro de 2026 (art. 5º, § 1º)."
+    },
+    {
+      "titulo": "Quando vale",
+      "texto": "Os efeitos começam em 1º de janeiro de 2027, com regulamentação da Procuradoria-Geral da Fazenda Nacional (arts. 9º e 10, II)."
+    },
+    {
+      "titulo": "As contrapartidas",
+      "texto": "Manter em dia as contribuições dos 6 meses seguintes à entrada em vigor da lei e desistir de eventuais ações judiciais sobre essas dívidas (arts. 5º, § 4º, e 6º)."
+    },
+    {
+      "titulo": "Sem devolução",
+      "texto": "Valores já pagos antes da lei não são devolvidos nem compensados (art. 5º, § 3º)."
+    }
+  ],
+  "chamada_final": "Você conhece algum MEI com dívidas em atraso?",
+  "legenda": "A Lei Complementar 238/2026, publicada em 21 de outubro, trouxe uma notícia importante para quem é MEI e está com as contribuições em atraso.\n\n1. A lei concede remissão, ou seja, perdão integral, das dívidas com a União de quem está enquadrado como MEI.\n2. Entram as contribuições mensais do MEI ao INSS, com juros, multas e encargos, inscritas ou não em dívida ativa, até 13 de outubro de 2026.\n3. Os efeitos começam em 1º de janeiro de 2027, e a Procuradoria-Geral da Fazenda Nacional vai regulamentar o procedimento.\n4. Contrapartidas: manter em dia as contribuições que vencerem nos 6 meses seguintes à entrada em vigor da lei, sob pena de cancelamento, e desistir de ações judiciais sobre essas dívidas.\n5. O que já foi pago não é devolvido nem compensado.\n\nCompartilhe com quem é MEI.",
+  "hashtags": [
+    "#mei",
+    "#remissao",
+    "#direitotributario",
+    "#dividaativa",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "LC 238/2026, arts. 5º, 6º, 9º e 10 (conferido em 26/10/2026)"
+  ],
+  "story_aviso": "posts/imagens/2026-11-27_mei-remissao-dividas_aviso.jpg"
+}

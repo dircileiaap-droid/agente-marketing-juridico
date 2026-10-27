@@ -1,0 +1,34 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-28_stories-mei-empregados_01.jpg",
+    "posts/imagens/2026-11-28_stories-mei-empregados_02.jpg",
+    "posts/imagens/2026-11-28_stories-mei-empregados_03.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-28_stories-mei-empregados",
+  "data_publicacao": "2026-11-28",
+  "tipo": "complete",
+  "area": "Direito Empresarial",
+  "quadros": [
+    {
+      "etiqueta": "COMPLETE A FRASE",
+      "titulo": "A partir de 2027, o MEI poderá ter até…",
+      "rodape": "toque para ver a resposta"
+    },
+    {
+      "etiqueta": "RESPOSTA",
+      "destaque": "2 empregados!",
+      "titulo": "Com salário mínimo ou piso da *categoria*.",
+      "texto": "Lei Complementar 238/2026, que alterou o art. 18-C da Lei do Simples Nacional."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "E o limite sobe para *R$ 110 mil* em 2027.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "LC 238/2026, arts. 1º, 2º e 10, II (conferido em 26/10/2026)"
+  ],
+  "formato": "stories"
+}

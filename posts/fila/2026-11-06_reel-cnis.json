@@ -1,0 +1,118 @@
+{
+  "id": "2026-11-06_reel-cnis",
+  "data_publicacao": "2026-11-06",
+  "formato": "reel",
+  "area": "Direito Previdenciário",
+  "titulo": "Vai se aposentar? Confira o *CNIS* antes",
+  "subtitulo": "O extrato que o INSS usa",
+  "video_capa": "assets/videos/pexels-7546130.mp4",
+  "video_final": "assets/videos/pexels-5798910.mp4",
+  "trilha": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+  "slides": [
+    {
+      "titulo": "O que é",
+      "texto": "O INSS usa o CNIS para calcular o benefício e o tempo de contribuição.",
+      "video": "assets/videos/pexels-6964001.mp4"
+    },
+    {
+      "titulo": "Faltou um vínculo?",
+      "texto": "Com carteira de trabalho e holerites, você pode pedir a correção.",
+      "video": "assets/videos/pexels-7550648.mp4"
+    },
+    {
+      "titulo": "Trabalho insalubre?",
+      "texto": "Peça à empresa o PPP, o perfil profissiográfico previdenciário.",
+      "video": "assets/videos/pexels-7247861.mp4"
+    }
+  ],
+  "chamada_final": "Conferir antes evita surpresas no pedido.",
+  "legenda": "Antes de pedir a aposentadoria, confira o seu CNIS, o Cadastro Nacional de Informações Sociais.\n\n1. É com as informações do CNIS que o INSS calcula o benefício e comprova o tempo de contribuição (Lei 8.213/1991, art. 29-A).\n2. Se faltar algum vínculo ou salário, o segurado pode pedir, a qualquer momento, a inclusão ou a correção, com documentos como carteira de trabalho, holerites e contratos (art. 29-A, § 2º).\n3. Se você trabalhou exposto a agentes nocivos, a empresa deve fornecer o PPP, o perfil profissiográfico previdenciário (art. 58, § 4º).\n\nVocê já conferiu o seu CNIS? Conte nos comentários.",
+  "hashtags": [
+    "#cnis",
+    "#aposentadoria",
+    "#inss",
+    "#direitoprevidenciario",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Lei 8.213/1991, arts. 29-A, caput e § 2º, e 58, § 4º (conferido em 26/10/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+    "inicio": 66.003,
+    "bpm": 70.79,
+    "salto": 4.4
+  },
+  "video": "posts/videos/2026-11-06_reel-cnis.mp4",
+  "imagens": [
+    "posts/videos/2026-11-06_reel-cnis_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "38.10 s (roteiro 38.14 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -20.6 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.2 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-11-06_reel-cnis_aviso.jpg"
+}

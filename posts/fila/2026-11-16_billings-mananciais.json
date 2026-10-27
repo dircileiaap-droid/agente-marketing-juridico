@@ -1,0 +1,57 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-16_billings-mananciais_01.jpg",
+    "posts/imagens/2026-11-16_billings-mananciais_02.jpg",
+    "posts/imagens/2026-11-16_billings-mananciais_03.jpg",
+    "posts/imagens/2026-11-16_billings-mananciais_04.jpg",
+    "posts/imagens/2026-11-16_billings-mananciais_05.jpg",
+    "posts/imagens/2026-11-16_billings-mananciais_06.jpg",
+    "posts/imagens/2026-11-16_billings-mananciais_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-16_billings-mananciais",
+  "data_publicacao": "2026-11-16",
+  "horario": "18h",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Imóvel perto da *Billings*? A lei tem regras próprias",
+  "subtitulo": "O que muda nas áreas de manancial de São Bernardo do Campo.",
+  "foto": "assets/fotos/escolhidas/pexels-9325480.jpg",
+  "slides": [
+    {
+      "titulo": "Uma lei para a Billings",
+      "texto": "A Lei estadual 13.579/2009 definiu a Área de Proteção e Recuperação dos Mananciais da Billings, que abrange partes de São Bernardo do Campo (arts. 1º e 9º)."
+    },
+    {
+      "titulo": "Alvará do Estado e do município",
+      "texto": "Loteamentos, obras e ampliações nessa área dependem de alvará dos órgãos ambientais do Estado e do município (art. 59)."
+    },
+    {
+      "titulo": "O esgoto é condição",
+      "texto": "Para regularizar uma edificação, a lei exige a ligação à rede pública de esgoto, onde ela for exigida (art. 75, I)."
+    },
+    {
+      "titulo": "Lote mínimo especial",
+      "texto": "Só para fins de regularização, a lei admite lote mínimo de 125 m² em algumas subáreas (art. 75, parágrafo único)."
+    },
+    {
+      "titulo": "Interesse social",
+      "texto": "Assentamentos de interesse social sem saneamento podem receber programas de recuperação, os PRIS (arts. 32 e 33)."
+    }
+  ],
+  "chamada_final": "Você sabia que a Billings tem uma lei própria?",
+  "legenda": "Boa parte de São Bernardo do Campo fica na bacia da represa Billings. E quem tem imóvel nessa região precisa conhecer uma lei específica.\n\nA Lei estadual 13.579/2009 definiu a Área de Proteção e Recuperação dos Mananciais da Billings, a APRM-B. Nela:\n\n1. Loteamentos, obras e ampliações dependem de alvará dos órgãos ambientais do Estado e do município.\n2. A regularização de edificações exige a ligação à rede pública de esgoto, onde ela for exigida.\n3. Só para fins de regularização, admite-se lote mínimo de 125 m² em algumas subáreas.\n4. Assentamentos de interesse social sem saneamento podem receber programas de recuperação, os PRIS.\n\nAntes de comprar ou regularizar, vale verificar se o imóvel está na área de manancial.\n\nVocê sabia que a Billings tem uma lei própria? Conte nos comentários.",
+  "hashtags": [
+    "#billings",
+    "#mananciais",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Lei estadual SP 13.579/2009, arts. 1º, 9º, 32, 33, 59 e 75 (conferido em 26/10/2026, al.sp.gov.br)"
+  ],
+  "story_aviso": "posts/imagens/2026-11-16_billings-mananciais_aviso.jpg"
+}

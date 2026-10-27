@@ -13,7 +13,11 @@ REGRAS = [
     (r"\bganhe\b|\bvenca\b|\bcausa ganha\b|\bsucesso garantido\b|\bresolvemos\b",
      "promessa de resultado"),
     (r"\bconsulta (gratis|gratuita)\b|\bsem custo\b|\bgratis\b", "oferta de gratuidade"),
-    (r"r\$\s?\d|\bhonorarios?\b|\bpreco\b|\bdesconto\b|\bparcelamos\b", "menção a valores/honorários"),
+    # valores em R$ só são alerta quando ligados a serviço (honorários, consulta etc.);
+    # limites e valores da lei (ex.: "R$ 440 mil", teto do MEI) são conteúdo informativo
+    (r"(honorarios?|consultas?|atendimentos?|servicos?|pacotes?)[^.\n]{0,40}r\$\s?\d"
+     r"|r\$\s?\d[^.\n]{0,40}(honorarios?|consultas?|atendimentos?|pacotes?)"
+     r"|\bhonorarios?\b|\bpreco\b|\bdesconto\b|\bparcelamos\b", "menção a valores/honorários"),
     (r"\bcontrate\b|\bligue (ja|agora)\b|\bwhats\s?app\b|\bzap\b|\bchame no direct\b"
      r"|\bme chame\b|\bagende (ja|agora|sua)\b|\bentre em contato\b", "captação de clientela"),
     (r"\b[Cc]omenta [A-Z]{3,}\b", "captação por palavra-chave nos comentários"),
@@ -22,7 +26,8 @@ REGRAS = [
     (r"\bespecialista\b", "uso de 'especialista' (só com título comprovado)"),
     (r"\burgente\b|\bultima chance\b|\bso hoje\b|\bimperdivel\b|\baproveite\b"
      r"|\bultimas vagas\b|\bo prazo esta acabando\b", "urgência/tom mercantil"),
-    (r"\bfature\b|\bfaturamento\b|\baumente (seus|o seu) lucro", "tom mercantil"),
+    # "faturamento" sozinho é termo técnico (ex.: limite do MEI); o alerta é para apelo comercial
+    (r"\bfature mais\b|\baumente (seu|o seu) faturamento\b|\baumente (seus|o seu) lucro", "tom mercantil"),
     (r"\bganhei\b|\bmeu cliente\b|\bminha cliente\b|\bcaso real\b", "exposição de caso/cliente"),
 ]
 

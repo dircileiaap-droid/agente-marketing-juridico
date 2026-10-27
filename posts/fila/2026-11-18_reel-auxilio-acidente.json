@@ -1,0 +1,118 @@
+{
+  "id": "2026-11-18_reel-auxilio-acidente",
+  "data_publicacao": "2026-11-18",
+  "formato": "reel",
+  "area": "Direito Previdenciário",
+  "titulo": "Auxílio-acidente: você *conhece*?",
+  "subtitulo": "Indenização paga pelo INSS",
+  "video_capa": "assets/videos/pexels-4352133.mp4",
+  "video_final": "assets/videos/pexels-8814513.mp4",
+  "trilha": "assets/audio/pixabay-595943-upbeat-corporate.mp3",
+  "slides": [
+    {
+      "titulo": "Quem tem direito",
+      "texto": "Empregados, domésticos, avulsos e segurados especiais.",
+      "video": "assets/videos/pexels-7516761.mp4"
+    },
+    {
+      "titulo": "Quando",
+      "texto": "Sequela de acidente que reduziu a capacidade para o seu trabalho.",
+      "video": "assets/videos/pexels-6624500.mp4"
+    },
+    {
+      "titulo": "Como é pago",
+      "texto": "Sem carência, mesmo trabalhando, até a véspera da aposentadoria.",
+      "video": "assets/videos/pexels-7413807.mp4"
+    }
+  ],
+  "chamada_final": "Informação certa evita perder direitos.",
+  "legenda": "O auxílio-acidente é uma indenização paga pelo INSS e ainda é pouco conhecido.\n\n1. Quem tem direito: o segurado empregado, o empregado doméstico, o trabalhador avulso e o segurado especial (Lei 8.213/1991, art. 18, § 1º).\n2. Quando: depois da consolidação das lesões de um acidente de qualquer natureza, se ficarem sequelas que reduzam a capacidade para o trabalho que a pessoa exercia (art. 86).\n3. Como é pago: não exige carência (art. 26, I), corresponde a 50% do salário de benefício e é devido mesmo que a pessoa continue trabalhando, até a véspera da aposentadoria (art. 86, §§ 1º e 2º).\n\nVocê conhecia esse benefício? Compartilhe com quem precisa saber.",
+  "hashtags": [
+    "#auxilioacidente",
+    "#inss",
+    "#direitoprevidenciario",
+    "#acidentedetrabalho",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Lei 8.213/1991, arts. 18, § 1º, 26, I, e 86 (conferido em 26/10/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-595943-upbeat-corporate.mp3",
+    "inicio": 34.482,
+    "bpm": 109.96,
+    "salto": 4.3
+  },
+  "video": "posts/videos/2026-11-18_reel-auxilio-acidente.mp4",
+  "imagens": [
+    "posts/videos/2026-11-18_reel-auxilio-acidente_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "28.92 s (roteiro 28.92 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -15.4 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.0 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-11-18_reel-auxilio-acidente_aviso.jpg"
+}

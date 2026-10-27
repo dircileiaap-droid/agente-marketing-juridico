@@ -1,0 +1,56 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-04_serie-1-matricula_01.jpg",
+    "posts/imagens/2026-11-04_serie-1-matricula_02.jpg",
+    "posts/imagens/2026-11-04_serie-1-matricula_03.jpg",
+    "posts/imagens/2026-11-04_serie-1-matricula_04.jpg",
+    "posts/imagens/2026-11-04_serie-1-matricula_05.jpg",
+    "posts/imagens/2026-11-04_serie-1-matricula_06.jpg",
+    "posts/imagens/2026-11-04_serie-1-matricula_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-04_serie-1-matricula",
+  "data_publicacao": "2026-11-04",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Por onde começar? Pela *matrícula*.",
+  "subtitulo": "Série Regularize seu imóvel · parte 1 de 4",
+  "foto": "assets/fotos/escolhidas/pexels-6862446.jpg",
+  "slides": [
+    {
+      "titulo": "Cada imóvel tem a sua",
+      "texto": "Todo imóvel registrado tem uma matrícula própria no Cartório de Registro de Imóveis (Lei 6.015/1973, art. 176, § 1º, I)."
+    },
+    {
+      "titulo": "O que ela mostra",
+      "texto": "Quem é o dono, a descrição do imóvel e se há penhora, hipoteca ou outra restrição registrada."
+    },
+    {
+      "titulo": "Qualquer pessoa pode pedir",
+      "texto": "A certidão pode ser pedida no cartório sem informar o motivo do pedido (art. 17)."
+    },
+    {
+      "titulo": "A certidão completa",
+      "texto": "A certidão de inteiro teor reproduz toda a matrícula e basta para comprovar a propriedade, os ônus e as restrições do imóvel (art. 19, § 11)."
+    },
+    {
+      "titulo": "O primeiro passo",
+      "texto": "Com a certidão em mãos, dá para saber o que falta para o imóvel ficar regular no seu nome."
+    }
+  ],
+  "chamada_final": "Você já tem a certidão atualizada do seu imóvel?",
+  "legenda": "Começa hoje a série Regularize seu imóvel, em 4 partes. Salve para acompanhar.\n\nParte 1: o primeiro passo é a matrícula. Todo imóvel registrado tem uma matrícula própria no Cartório de Registro de Imóveis, com o nome do dono, a descrição do imóvel e as restrições registradas, como penhora ou hipoteca.\n\nQualquer pessoa pode pedir a certidão, sem precisar explicar o motivo. A certidão de inteiro teor reproduz toda a matrícula e basta para comprovar a propriedade, os ônus e as restrições do imóvel.\n\nCom ela em mãos, fica claro o que falta para o imóvel ficar regular no seu nome.\n\nNa parte 2: os caminhos para regularizar.\n\nVocê já tem a certidão atualizada do seu imóvel? Conte nos comentários.",
+  "hashtags": [
+    "#matricula",
+    "#regularizacaodeimoveis",
+    "#registrodeimoveis",
+    "#cartorio",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Lei 6.015/1973, arts. 17, 19, § 11, e 176, § 1º, I (conferido em 26/10/2026)"
+  ],
+  "story_aviso": "posts/imagens/2026-11-04_serie-1-matricula_aviso.jpg"
+}

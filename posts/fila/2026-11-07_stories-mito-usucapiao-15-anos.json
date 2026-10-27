@@ -1,0 +1,34 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-07_stories-mito-usucapiao-15-anos_01.jpg",
+    "posts/imagens/2026-11-07_stories-mito-usucapiao-15-anos_02.jpg",
+    "posts/imagens/2026-11-07_stories-mito-usucapiao-15-anos_03.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-07_stories-mito-usucapiao-15-anos",
+  "data_publicacao": "2026-11-07",
+  "tipo": "mito_verdade",
+  "area": "Direito Imobiliário",
+  "quadros": [
+    {
+      "etiqueta": "MITO OU VERDADE?",
+      "titulo": "Usucapião só depois de 15 anos.",
+      "rodape": "toque para ver a resposta"
+    },
+    {
+      "etiqueta": "RESPOSTA",
+      "destaque": "Mito!",
+      "titulo": "A lei prevê prazos *menores*.",
+      "texto": "10 anos para quem mora no imóvel e 5 anos em área urbana de até 250 m² usada como moradia, por quem não tem outro imóvel (Código Civil, arts. 1.238 e 1.240)."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "Cada caso tem o seu *prazo*.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "Código Civil, arts. 1.238, parágrafo único, e 1.240 (conferido em 26/10/2026)"
+  ],
+  "formato": "stories"
+}

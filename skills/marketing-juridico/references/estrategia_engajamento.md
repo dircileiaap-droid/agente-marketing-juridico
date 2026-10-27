@@ -67,7 +67,7 @@ Automático (já no código):
   (`python -m conteudo.produzir AAAA-MM avisos`, também no modo "tudo").
 
 Regras de conteúdo a partir de novembro/2026:
-- **Reels de 20 a 25 segundos**: capa + 2 ou 3 telas com até 12 palavras cada + encerramento.
+- **Reels curtos**: capa + 2 ou 3 telas com até 12 palavras cada + encerramento. Com o teste de leitura (3 palavras/s), 3 telas dão ~30 a 38 s (novembro/2026); para 20 a 25 s, usar 2 telas.
   A frase de impacto da capa é o gancho do primeiro segundo (pergunta ou afirmação surpreendente).
 - **Carrosséis "salváveis"**: checklist, passo a passo, comparativo ("X ou Y?"), documentos
   necessários. Pelo menos 1 por semana.

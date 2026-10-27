@@ -1,0 +1,34 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-21_stories-certidao-4-horas_01.jpg",
+    "posts/imagens/2026-11-21_stories-certidao-4-horas_02.jpg",
+    "posts/imagens/2026-11-21_stories-certidao-4-horas_03.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-21_stories-certidao-4-horas",
+  "data_publicacao": "2026-11-21",
+  "tipo": "voce_sabia",
+  "area": "Direito Imobiliário",
+  "quadros": [
+    {
+      "etiqueta": "VOCÊ SABIA?",
+      "titulo": "A certidão eletrônica da matrícula pode sair em até *4 horas*.",
+      "rodape": "toque para entender"
+    },
+    {
+      "etiqueta": "EXPLICANDO",
+      "titulo": "É a certidão de *inteiro teor*.",
+      "texto": "Pedida no horário de expediente, com o número da matrícula, contadas as horas do pagamento (Lei 6.015/1973, art. 19, § 10, I)."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "Situação jurídica: até *1 dia*.",
+      "texto": "Certidão da situação jurídica atualizada. Demais certidões: até 5 dias.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "Lei 6.015/1973, art. 19, § 10 (conferido em 26/10/2026)"
+  ],
+  "formato": "stories"
+}

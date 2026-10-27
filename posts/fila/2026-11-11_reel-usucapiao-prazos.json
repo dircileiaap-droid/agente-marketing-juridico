@@ -1,0 +1,118 @@
+{
+  "id": "2026-11-11_reel-usucapiao-prazos",
+  "data_publicacao": "2026-11-11",
+  "formato": "reel",
+  "area": "Direito Imobiliário",
+  "titulo": "Usucapião: 3 prazos da *lei*",
+  "subtitulo": "Do mais longo ao mais curto",
+  "video_capa": "assets/videos/pexels-8208901.mp4",
+  "video_final": "assets/videos/pexels-7646544.mp4",
+  "trilha": "assets/audio/pixabay-409347-inspiring-cinematic.mp3",
+  "slides": [
+    {
+      "titulo": "15 anos",
+      "texto": "Posse contínua e sem oposição, mesmo sem título nem boa-fé.",
+      "video": "assets/videos/pexels-7646797.mp4"
+    },
+    {
+      "titulo": "10 anos",
+      "texto": "Se você mora no imóvel ou fez nele obras produtivas.",
+      "video": "assets/videos/pexels-7986204.mp4"
+    },
+    {
+      "titulo": "5 anos",
+      "texto": "Área urbana de até 250 m², usada como moradia, sem outro imóvel.",
+      "video": "assets/videos/pexels-7647330.mp4"
+    }
+  ],
+  "chamada_final": "Cada caso exige análise dos requisitos.",
+  "legenda": "Muita gente acha que a usucapião sempre exige 15 anos. Não é bem assim.\n\n1. 15 anos: posse contínua e sem oposição, mesmo sem título e sem boa-fé (Código Civil, art. 1.238).\n2. 10 anos: o mesmo caso, quando o possuidor mora no imóvel ou nele realizou obras ou serviços de caráter produtivo (art. 1.238, parágrafo único).\n3. 5 anos: área urbana de até 250 m², usada como moradia da pessoa ou da família, por quem não é dono de outro imóvel (art. 1.240).\n\nHá outras modalidades, e cada uma tem requisitos próprios.\n\nVocê conhecia esses prazos? Conte nos comentários.",
+  "hashtags": [
+    "#usucapiao",
+    "#regularizacaodeimoveis",
+    "#direitoimobiliario",
+    "#posse",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Código Civil, arts. 1.238 e 1.240 (conferido em 26/10/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-409347-inspiring-cinematic.mp3",
+    "inicio": 38.208,
+    "bpm": 89.1,
+    "salto": 8.2
+  },
+  "video": "posts/videos/2026-11-11_reel-usucapiao-prazos.mp4",
+  "imagens": [
+    "posts/videos/2026-11-11_reel-usucapiao-prazos_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "35.00 s (roteiro 35.02 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -16.0 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.1 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-11-11_reel-usucapiao-prazos_aviso.jpg"
+}

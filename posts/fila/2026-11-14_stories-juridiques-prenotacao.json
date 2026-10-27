@@ -1,0 +1,34 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-14_stories-juridiques-prenotacao_01.jpg",
+    "posts/imagens/2026-11-14_stories-juridiques-prenotacao_02.jpg",
+    "posts/imagens/2026-11-14_stories-juridiques-prenotacao_03.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-14_stories-juridiques-prenotacao",
+  "data_publicacao": "2026-11-14",
+  "tipo": "juridiques",
+  "area": "Direito Imobiliário",
+  "quadros": [
+    {
+      "etiqueta": "JURIDIQUÊS X PORTUGUÊS",
+      "titulo": "*Prenotação*",
+      "texto": "Você já ouviu essa palavra no cartório?",
+      "rodape": "toque para traduzir"
+    },
+    {
+      "etiqueta": "EM PORTUGUÊS",
+      "titulo": "É o *protocolo* do seu título no cartório.",
+      "texto": "Ele marca a ordem de chegada: o número de ordem define a prioridade do título (Lei 6.015/1973, art. 186)."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "Comprou? Protocole e *registre*.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "Lei 6.015/1973, art. 186; Código Civil, art. 1.246 (conferido em 26/10/2026)"
+  ],
+  "formato": "stories"
+}

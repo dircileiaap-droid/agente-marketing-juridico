@@ -1,0 +1,119 @@
+{
+  "id": "2026-11-13_reel-isencao-ir-venda-imovel",
+  "data_publicacao": "2026-11-13",
+  "formato": "reel",
+  "area": "Direito Tributário",
+  "titulo": "Vendeu um imóvel? O IR pode ser *isento*",
+  "subtitulo": "Duas isenções previstas em lei",
+  "video_capa": "assets/videos/pexels-8293116.mp4",
+  "video_final": "assets/videos/pexels-7414173.mp4",
+  "trilha": "assets/audio/pixabay-576594-upbeat-corporate.mp3",
+  "slides": [
+    {
+      "titulo": "Único imóvel",
+      "texto": "Vendido por até R$ 440 mil, sem outra venda em 5 anos.",
+      "video": "assets/videos/pexels-7247823.mp4"
+    },
+    {
+      "titulo": "Comprou outro em 180 dias",
+      "texto": "Residencial vendido e valor aplicado em outro residencial: isento.",
+      "video": "assets/videos/pexels-7817162.mp4"
+    },
+    {
+      "titulo": "Atenção",
+      "texto": "A isenção da recompra vale uma vez a cada 5 anos.",
+      "video": "assets/videos/pexels-13511897.mp4"
+    }
+  ],
+  "chamada_final": "Informação antes da venda faz diferença.",
+  "legenda": "Quem vende um imóvel com lucro, em regra, paga imposto de renda sobre o ganho de capital. Mas a lei prevê isenções:\n\n1. Único imóvel: é isento o ganho na venda do único imóvel do vendedor, por até R$ 440 mil, se não houve outra venda nos últimos 5 anos (Lei 9.250/1995, art. 23).\n2. Recompra em 180 dias: é isento o ganho na venda de imóvel residencial quando o valor é aplicado, em até 180 dias do contrato, na compra de outro imóvel residencial no Brasil. Se só parte do valor for aplicada, a isenção é proporcional (Lei 11.196/2005, art. 39).\n3. Essa isenção da recompra pode ser usada uma vez a cada 5 anos (art. 39, § 5º).\n\nVocê sabia dessas isenções? Conte nos comentários.",
+  "hashtags": [
+    "#impostoderenda",
+    "#ganhodecapital",
+    "#direitotributario",
+    "#vendadeimovel",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Lei 9.250/1995, art. 23 (conferido em 26/10/2026)",
+    "Lei 11.196/2005, art. 39 (conferido em 26/10/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-576594-upbeat-corporate.mp3",
+    "inicio": 17.775,
+    "bpm": 120.19,
+    "salto": 1.4
+  },
+  "video": "posts/videos/2026-11-13_reel-isencao-ir-venda-imovel.mp4",
+  "imagens": [
+    "posts/videos/2026-11-13_reel-isencao-ir-venda-imovel_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "33.95 s (roteiro 33.95 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -17.0 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.1 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-11-13_reel-isencao-ir-venda-imovel_aviso.jpg"
+}

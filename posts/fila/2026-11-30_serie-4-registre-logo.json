@@ -1,0 +1,57 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-30_serie-4-registre-logo_01.jpg",
+    "posts/imagens/2026-11-30_serie-4-registre-logo_02.jpg",
+    "posts/imagens/2026-11-30_serie-4-registre-logo_03.jpg",
+    "posts/imagens/2026-11-30_serie-4-registre-logo_04.jpg",
+    "posts/imagens/2026-11-30_serie-4-registre-logo_05.jpg",
+    "posts/imagens/2026-11-30_serie-4-registre-logo_06.jpg",
+    "posts/imagens/2026-11-30_serie-4-registre-logo_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-30_serie-4-registre-logo",
+  "data_publicacao": "2026-11-30",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Comprou? Registre *logo*.",
+  "subtitulo": "Série Regularize seu imóvel · parte 4 de 4",
+  "foto": "assets/fotos/escolhidas/pexels-29094497.jpg",
+  "slides": [
+    {
+      "titulo": "Sem registro, não é seu",
+      "texto": "Enquanto o título não é registrado, o vendedor continua sendo considerado o dono (Código Civil, art. 1.245, § 1º)."
+    },
+    {
+      "titulo": "Quem chega primeiro",
+      "texto": "O número de ordem no protocolo define a prioridade do título no cartório (Lei 6.015/1973, art. 186)."
+    },
+    {
+      "titulo": "Vale desde o protocolo",
+      "texto": "O registro produz efeitos desde que o título é apresentado e prenotado no protocolo (Código Civil, art. 1.246)."
+    },
+    {
+      "titulo": "Por que isso importa",
+      "texto": "Se o mesmo imóvel for negociado duas vezes, a prioridade é, em regra, de quem levou o título ao cartório primeiro."
+    },
+    {
+      "titulo": "Fim da série",
+      "texto": "Matrícula, caminhos, prazos e registro: com essas etapas, o imóvel fica regular no seu nome."
+    }
+  ],
+  "chamada_final": "Qual parte da série foi mais útil para você?",
+  "legenda": "Parte 4, a última da série Regularize seu imóvel: registre logo.\n\nAssinar a escritura não basta. Enquanto o título não é registrado, o vendedor continua sendo considerado o dono (Código Civil, art. 1.245, § 1º).\n\nNo cartório, vale a ordem de chegada: o número de ordem no protocolo define a prioridade do título (Lei 6.015/1973, art. 186), e o registro produz efeitos desde a prenotação (Código Civil, art. 1.246). Se o mesmo imóvel for negociado duas vezes, a prioridade é, em regra, de quem levou o título ao cartório primeiro.\n\nRecapitulando a série: 1. matrícula, 2. caminhos, 3. prazos e 4. registro. Salve os quatro posts.\n\nQual parte da série foi mais útil para você?",
+  "hashtags": [
+    "#registrodeimoveis",
+    "#escritura",
+    "#regularizacaodeimoveis",
+    "#cartorio",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Código Civil, arts. 1.245, § 1º, e 1.246 (conferido em 26/10/2026)",
+    "Lei 6.015/1973, art. 186 (conferido em 26/10/2026)"
+  ],
+  "story_aviso": "posts/imagens/2026-11-30_serie-4-registre-logo_aviso.jpg"
+}

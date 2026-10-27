@@ -1,0 +1,119 @@
+{
+  "id": "2026-11-25_reel-mei-novo-limite",
+  "data_publicacao": "2026-11-25",
+  "formato": "reel",
+  "area": "Direito Empresarial",
+  "titulo": "MEI: o limite vai *subir*",
+  "subtitulo": "Nova lei de outubro de 2026",
+  "video_capa": "assets/videos/pexels-7288127.mp4",
+  "video_final": "assets/videos/pexels-6565543.mp4",
+  "trilha": "assets/audio/pixabay-583436-trailer-energetic.mp3",
+  "slides": [
+    {
+      "titulo": "Em 2027",
+      "texto": "O limite anual de faturamento do MEI passa para R$ 110 mil.",
+      "video": "assets/videos/pexels-5404980.mp4"
+    },
+    {
+      "titulo": "A partir de 2028",
+      "texto": "O limite sobe para R$ 140 mil por ano.",
+      "video": "assets/videos/pexels-7308223.mp4"
+    },
+    {
+      "titulo": "Empregados",
+      "texto": "O MEI poderá ter até 2 empregados.",
+      "video": "assets/videos/pexels-6602213.mp4"
+    }
+  ],
+  "chamada_final": "Informação certa ajuda a planejar o negócio.",
+  "legenda": "Novidade para quem é MEI: a Lei Complementar 238, publicada em 21 de outubro de 2026, muda as regras.\n\n1. Em 2027, o limite anual de receita bruta do MEI passa de R$ 81 mil para R$ 110 mil (art. 2º).\n2. A partir de 2028, o limite passa a ser de R$ 140 mil por ano (arts. 1º e 10, I).\n3. A partir de 2027, o MEI poderá ter até 2 empregados, com salário mínimo ou o piso da categoria (art. 1º, que alterou o art. 18-C da Lei do Simples Nacional).\n\nEm 2026, continua valendo o limite de R$ 81 mil. A própria lei condiciona a ampliação à previsão nas leis orçamentárias de 2027 a 2029 (art. 3º).\n\nVocê é MEI? Conte nos comentários o que essa mudança significa para o seu negócio.",
+  "hashtags": [
+    "#mei",
+    "#microempreendedor",
+    "#simplesnacional",
+    "#direitoempresarial",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "LC 238/2026, arts. 1º, 2º, 3º e 10 (conferido em 26/10/2026)",
+    "LC 123/2006, art. 18-A (conferido em 26/10/2026)"
+  ],
+  "musica": {
+    "arquivo": "assets/audio/pixabay-583436-trailer-energetic.mp3",
+    "inicio": 2.299,
+    "bpm": 105.47,
+    "salto": 2.5
+  },
+  "video": "posts/videos/2026-11-25_reel-mei-novo-limite.mp4",
+  "imagens": [
+    "posts/videos/2026-11-25_reel-mei-novo-limite_capa.jpg"
+  ],
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "32.43 s (roteiro 32.43 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -17.3 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -0.9 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-11-25_reel-mei-novo-limite_aviso.jpg"
+}

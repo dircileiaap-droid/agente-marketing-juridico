@@ -10,6 +10,8 @@ on:
     # Manhã: 10h (Brasília) = 13h (UTC), só para posts com "horario": "10h"
     # (ex.: Dia das Crianças, 12/10/2026). Sem post marcado, termina sem publicar.
     - cron: "0 13 * * *"
+    # Tarde: 18h (Brasília) = 21h (UTC), só para posts com "horario": "18h" (teste de horário).
+    - cron: "0 21 * * *"
     # Stories: sábado às 14h (Brasília) = sábado 17h (UTC).
     - cron: "0 17 * * 6"
   workflow_dispatch:

@@ -1,0 +1,56 @@
+{
+  "imagens": [
+    "posts/imagens/2026-11-23_serie-3-prazos-cartorio_01.jpg",
+    "posts/imagens/2026-11-23_serie-3-prazos-cartorio_02.jpg",
+    "posts/imagens/2026-11-23_serie-3-prazos-cartorio_03.jpg",
+    "posts/imagens/2026-11-23_serie-3-prazos-cartorio_04.jpg",
+    "posts/imagens/2026-11-23_serie-3-prazos-cartorio_05.jpg",
+    "posts/imagens/2026-11-23_serie-3-prazos-cartorio_06.jpg",
+    "posts/imagens/2026-11-23_serie-3-prazos-cartorio_07.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-11-23_serie-3-prazos-cartorio",
+  "data_publicacao": "2026-11-23",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Quanto tempo o cartório tem para *registrar*?",
+  "subtitulo": "Série Regularize seu imóvel · parte 3 de 4",
+  "foto": "assets/fotos/escolhidas/pexels-8406965.jpg",
+  "slides": [
+    {
+      "titulo": "Prazo geral: 10 dias",
+      "texto": "Depois do protocolo, o cartório tem, em regra, 10 dias para registrar ou emitir nota devolutiva com as exigências (Lei 6.015/1973, art. 188)."
+    },
+    {
+      "titulo": "Casos simples: 5 dias",
+      "texto": "Sem exigências, a escritura de compra e venda sem cláusulas especiais e a averbação de construção devem ser registradas em 5 dias (art. 188, § 1º, I)."
+    },
+    {
+      "titulo": "Exigências cumpridas",
+      "texto": "Se o título voltar com as exigências cumpridas, dentro do prazo da prenotação, o prazo também é de 5 dias (art. 188, § 1º, III)."
+    },
+    {
+      "titulo": "Certidões",
+      "texto": "Inteiro teor eletrônica: até 4 horas. Situação jurídica atualizada: até 1 dia. Demais certidões: até 5 dias (art. 19, § 10)."
+    },
+    {
+      "titulo": "Prazo descumprido",
+      "texto": "O descumprimento dos prazos sujeita o cartório às penalidades da lei, conforme as regras do CNJ (art. 188, § 2º)."
+    }
+  ],
+  "chamada_final": "Você sabia que o cartório tem prazos definidos em lei?",
+  "legenda": "Parte 3 da série Regularize seu imóvel: os prazos do cartório.\n\nDesde a Lei 14.382/2022, a Lei de Registros Públicos fixa prazos claros:\n\n1. Em regra, 10 dias do protocolo para registrar ou emitir a nota devolutiva com as exigências.\n2. 5 dias para a escritura de compra e venda sem cláusulas especiais e para a averbação de construção, quando não há exigências.\n3. 5 dias também para o título que volta com as exigências cumpridas, dentro do prazo da prenotação.\n4. Certidões: até 4 horas para o inteiro teor eletrônico (com o número da matrícula e no horário de expediente), até 1 dia para a situação jurídica atualizada e até 5 dias nos demais casos, contados do pagamento.\n\nNa parte 4, a última: por que registrar logo.\n\nVocê sabia desses prazos? Conte nos comentários.",
+  "hashtags": [
+    "#cartorio",
+    "#registrodeimoveis",
+    "#regularizacaodeimoveis",
+    "#escritura",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Lei 6.015/1973, arts. 19, § 10, e 188, com a redação da Lei 14.382/2022 (conferido em 26/10/2026)"
+  ],
+  "story_aviso": "posts/imagens/2026-11-23_serie-3-prazos-cartorio_aviso.jpg"
+}
