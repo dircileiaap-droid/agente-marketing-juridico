@@ -1,6 +1,6 @@
 """Fila de posts: cada post é um arquivo JSON em posts/fila/ ou posts/publicados/."""
 import json
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from .config import PASTA_FILA, PASTA_PUBLICADOS, hoje
@@ -79,6 +79,35 @@ def vencidos() -> list[dict]:
     dia_hoje = hoje()
     limite = (dia_hoje - timedelta(days=TOLERANCIA_ATRASO_DIAS)).isoformat()
     return [p for p in na_fila() if limite <= p["data_publicacao"] <= dia_hoje.isoformat()]
+
+
+HORA_PADRAO = {"stories": 14}  # demais formatos: 21h (feed)
+
+
+def agora_brasilia() -> datetime:
+    from .config import agora
+    return agora()
+
+
+def horario_alvo(post: dict) -> datetime:
+    """Data e hora (Brasília) em que o post deve sair: "horario" do post (ex.: "10h",
+    "18h") ou o padrão do formato (Stories 14h, feed 21h)."""
+    from .config import FUSO
+    if post.get("horario"):
+        hora = int(post["horario"].rstrip("h"))
+    else:
+        hora = HORA_PADRAO.get(post.get("formato"), 21)
+    dia = date.fromisoformat(post["data_publicacao"])
+    return datetime(dia.year, dia.month, dia.day, hora, tzinfo=FUSO)
+
+
+def devidos(momento: datetime | None = None) -> list[dict]:
+    """Posts cujo horário já chegou (nunca antes), com até 2 dias de atraso, do mais antigo
+    para o mais novo."""
+    momento = momento or agora_brasilia()
+    limite = momento - timedelta(days=TOLERANCIA_ATRASO_DIAS)
+    prontos = [p for p in na_fila() if limite <= horario_alvo(p) <= momento]
+    return sorted(prontos, key=horario_alvo)
 
 
 def atrasados() -> list[dict]:

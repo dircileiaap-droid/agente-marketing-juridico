@@ -114,45 +114,17 @@ def hashtags_finais(post: dict, maximo: int = 5) -> list[str]:
     return list(dict.fromkeys(temas[: maximo - 1] + ["#saobernardodocampo"]))[:maximo]
 
 
-def turno_atual() -> str:
-    """Turno pelo horário de Brasília: 7h-11h manhã (posts com "horario": "10h"),
-    12h-16h Stories (14h), 17h-19h tarde (posts com "horario": "18h"), demais horas feed
-    das 21h (inclui atrasos do GitHub após a meia-noite)."""
-    from agente.config import agora
-    hora = agora().hour
-    if 7 <= hora < 12:
-        return "manha"
-    if 12 <= hora < 17:
-        return "stories"
-    return "tarde" if 17 <= hora < 20 else "feed"
-
-
-TURNO_DO_HORARIO = {"10h": "manha", "18h": "tarde"}
-
-
-def do_turno(post: dict, turno: str) -> bool:
-    if turno == "todos":
-        return True
-    if post.get("horario") in TURNO_DO_HORARIO:
-        return turno == TURNO_DO_HORARIO[post["horario"]]
-    if post.get("formato") == "stories":
-        return turno in ("stories", "tarde")  # 18h: segunda chance se o GitHub atrasar muito
-    return turno == "feed"
-
-
 def cmd_publicar(args):
     for p in fila.atrasados():
         print(f"[atrasado, NÃO publicado] {p['data_publicacao']} {p['id']}: "
               "defina nova data no JSON para publicar.")
-    # Turno: a execução das 10h publica só posts marcados "horario": "10h"; a das 14h, só
-    # Stories; a das 21h, o restante do feed (assim, cada peça sai no seu horário).
-    turno = args.turno or turno_atual()
-    pendentes = [p for p in fila.vencidos() if do_turno(p, turno)]
-    # primeiro o que é deste horário (ex.: post das 18h); Stories atrasados vêm depois
-    pendentes.sort(key=lambda p: (TURNO_DO_HORARIO.get(p.get("horario")) != turno, p["data_publicacao"]))
-    pendentes = pendentes[: args.max]
+    # Cada post tem data e horário (feed 21h, Stories 14h, ou "horario": "10h"/"18h").
+    # Só sai quando esse horário JÁ PASSOU: se o GitHub atrasar, o post sai um pouco
+    # depois, nunca antes (em nov/2026 execuções atrasadas de madrugada publicavam o
+    # post do dia às 0h30). O mais antigo sai primeiro.
+    pendentes = fila.devidos()[: args.max]
     if not pendentes:
-        print(f"Nenhum post programado para hoje (turno: {turno}).")
+        print(f"Nenhum post no horário agora ({fila.agora_brasilia():%d/%m %H:%M}).")
         return
 
     from agente import facebook
@@ -278,7 +250,6 @@ def main():
     pub = sub.add_parser("publicar", help="publica os posts do dia")
     pub.add_argument("--simular", action="store_true")
     pub.add_argument("--max", type=int, default=1)
-    pub.add_argument("--turno", choices=["manha", "tarde", "feed", "stories", "todos"], help="padrão: pelo horário")
     pub.set_defaults(func=cmd_publicar)
 
     sub.add_parser("demo", help="gera imagens de exemplo").set_defaults(func=cmd_demo)
