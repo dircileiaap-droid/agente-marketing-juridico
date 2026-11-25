@@ -246,7 +246,11 @@ def cmd_demo(_args):
 
 def cmd_verificar_token(_args):
     from agente.instagram import Instagram
-    print(Instagram().perfil())
+    ig = Instagram()
+    print("Conta:", ig.perfil().get("username"))
+    # exige a permissão de publicação (não publica nada)
+    ig._req("GET", f"{ig.user_id}/content_publishing_limit", fields="quota_usage")
+    print("Permissão de publicar: ok")
 
 
 def cmd_renovar_token(_args):
