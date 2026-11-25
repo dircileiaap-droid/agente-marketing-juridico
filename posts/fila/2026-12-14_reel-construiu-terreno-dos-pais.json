@@ -1,0 +1,113 @@
+{
+  "imagens": [
+    "posts/videos/2026-12-14_reel-construiu-terreno-dos-pais_capa.jpg"
+  ],
+  "video": "posts/videos/2026-12-14_reel-construiu-terreno-dos-pais.mp4",
+  "musica": {
+    "arquivo": "assets/audio/pixabay-409347-inspiring-cinematic.mp3",
+    "inicio": 38.208,
+    "bpm": 89.1,
+    "salto": 8.2
+  },
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "27.60 s (roteiro 27.61 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -16.2 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.4 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-12-14_reel-construiu-terreno-dos-pais_aviso.jpg",
+  "id": "2026-12-14_reel-construiu-terreno-dos-pais",
+  "data_publicacao": "2026-12-14",
+  "formato": "reel",
+  "area": "Direito Imobiliário",
+  "titulo": "Construiu no terreno dos *pais*?",
+  "subtitulo": "Veja o que diz a lei",
+  "video_capa": "assets/videos/pexels-8965542.mp4",
+  "video_final": "assets/videos/pexels-8187790.mp4",
+  "trilha": "assets/audio/pixabay-409347-inspiring-cinematic.mp3",
+  "slides": [
+    {
+      "titulo": "De quem é a casa?",
+      "texto": "A lei presume que a construção é do dono do terreno.",
+      "video": "assets/videos/pexels-8487246.mp4"
+    },
+    {
+      "titulo": "E quem construiu?",
+      "texto": "De boa-fé, em regra, perde a obra, mas tem direito a indenização.",
+      "video": "assets/videos/pexels-8057838.mp4"
+    }
+  ],
+  "chamada_final": "Combine antes e coloque no papel.",
+  "legenda": "É comum no Brasil: o filho constrói a própria casa no terreno dos pais. Mas a quem ela pertence?\n\n1. A lei presume que a construção foi feita pelo dono do terreno e à custa dele, até que se prove o contrário (Código Civil, art. 1.253).\n2. Em regra, quem constrói em terreno alheio perde a construção para o proprietário. Se agiu de boa-fé, tem direito a indenização (art. 1.255).\n3. Se a construção, feita de boa-fé, exceder consideravelmente o valor do terreno, quem construiu pode adquirir a propriedade do solo, pagando a indenização fixada judicialmente, se não houver acordo (art. 1.255, parágrafo único).\n\nGuardar notas e recibos e colocar o combinado no papel ajuda a evitar conflitos, inclusive na herança.\n\nVocê conhece alguém nessa situação? Compartilhe.",
+  "hashtags": [
+    "#construcao",
+    "#direitoimobiliario",
+    "#regularizacaodeimoveis",
+    "#heranca",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Código Civil, arts. 1.253 e 1.255 (conferido em 25/11/2026)"
+  ]
+}

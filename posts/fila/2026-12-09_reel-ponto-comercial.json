@@ -1,0 +1,113 @@
+{
+  "imagens": [
+    "posts/videos/2026-12-09_reel-ponto-comercial_capa.jpg"
+  ],
+  "video": "posts/videos/2026-12-09_reel-ponto-comercial.mp4",
+  "musica": {
+    "arquivo": "assets/audio/pixabay-576594-upbeat-corporate.mp3",
+    "inicio": 17.775,
+    "bpm": 120.19,
+    "salto": 1.4
+  },
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "22.96 s (roteiro 22.96 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -16.5 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.2 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-12-09_reel-ponto-comercial_aviso.jpg",
+  "id": "2026-12-09_reel-ponto-comercial",
+  "data_publicacao": "2026-12-09",
+  "formato": "reel",
+  "area": "Direito Empresarial",
+  "titulo": "Seu *ponto comercial* pode ser protegido",
+  "subtitulo": "Conheça a ação renovatória",
+  "video_capa": "assets/videos/pexels-8024269.mp4",
+  "video_final": "assets/videos/pexels-8195368.mp4",
+  "trilha": "assets/audio/pixabay-576594-upbeat-corporate.mp3",
+  "slides": [
+    {
+      "titulo": "Requisitos",
+      "texto": "Contrato escrito, 5 anos de locação e 3 no mesmo ramo.",
+      "video": "assets/videos/pexels-7735908.mp4"
+    },
+    {
+      "titulo": "Prazo",
+      "texto": "Entre 1 ano e 6 meses antes do fim do contrato.",
+      "video": "assets/videos/pexels-13511897.mp4"
+    }
+  ],
+  "chamada_final": "Quando vence o seu contrato?",
+  "legenda": "Quem aluga um imóvel para o seu comércio pode ter direito à renovação do contrato, por igual prazo. É a chamada ação renovatória (Lei 8.245/1991, art. 51).\n\nOs requisitos são cumulativos:\n\n1. Contrato escrito e com prazo determinado.\n2. Prazo mínimo de 5 anos, em um contrato ou na soma de contratos escritos e ininterruptos.\n3. Exploração do mesmo ramo por pelo menos 3 anos ininterruptos.\n\nAtenção ao prazo: a ação deve ser proposta entre 1 ano e 6 meses antes do fim do contrato em vigor. Depois disso, o direito se perde (art. 51, § 5º). A lei também prevê casos em que o locador não é obrigado a renovar (art. 52).\n\nQuando vence o seu contrato? Salve para não esquecer.",
+  "hashtags": [
+    "#pontocomercial",
+    "#acaorenovatoria",
+    "#locacaocomercial",
+    "#direitoempresarial",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Lei 8.245/1991, arts. 51 e 52 (conferido em 25/11/2026)"
+  ]
+}

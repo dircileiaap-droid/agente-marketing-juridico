@@ -1,0 +1,58 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-16_direito-de-laje_01.jpg",
+    "posts/imagens/2026-12-16_direito-de-laje_02.jpg",
+    "posts/imagens/2026-12-16_direito-de-laje_03.jpg",
+    "posts/imagens/2026-12-16_direito-de-laje_04.jpg",
+    "posts/imagens/2026-12-16_direito-de-laje_05.jpg",
+    "posts/imagens/2026-12-16_direito-de-laje_06.jpg",
+    "posts/imagens/2026-12-16_direito-de-laje_07.jpg"
+  ],
+  "alertas_oab": [],
+  "story_aviso": "posts/imagens/2026-12-16_direito-de-laje_aviso.jpg",
+  "id": "2026-12-16_direito-de-laje",
+  "data_publicacao": "2026-12-16",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Mora na *laje*? Ela pode ter matrícula própria",
+  "subtitulo": "Conheça o direito real de laje.",
+  "foto": "assets/fotos/escolhidas/pexels-34640157.jpg",
+  "escurecer": 0.45,
+  "slides": [
+    {
+      "titulo": "O que é",
+      "texto": "O dono da construção-base pode ceder a parte de cima ou de baixo para que outra pessoa tenha ali uma unidade distinta (Código Civil, art. 1.510-A)."
+    },
+    {
+      "titulo": "Matrícula própria",
+      "texto": "A laje é registrada com a abertura de matrícula própria e averbação na matrícula da construção-base (Lei 6.015/1973, art. 176, § 9º)."
+    },
+    {
+      "titulo": "O que o titular pode fazer",
+      "texto": "Com a matrícula, o titular pode usar, gozar e dispor da sua unidade, inclusive vendê-la (art. 1.510-A, § 3º)."
+    },
+    {
+      "titulo": "O terreno não entra",
+      "texto": "A laje não dá ao titular uma fração do terreno nem participação nas áreas já edificadas (art. 1.510-A, § 4º)."
+    },
+    {
+      "titulo": "Deveres e limites",
+      "texto": "O titular paga os tributos da sua unidade e deve respeitar as regras do município (art. 1.510-A, §§ 2º e 5º)."
+    }
+  ],
+  "chamada_final": "Você sabia que a laje pode ser registrada?",
+  "legenda": "Filhos que constroem em cima da casa dos pais, uma casa sobre a outra no mesmo terreno: essa realidade tem previsão em lei. É o direito real de laje, criado pela Lei 13.465/2017.\n\n1. O dono da construção-base pode ceder a superfície superior ou inferior para que outra pessoa mantenha ali uma unidade distinta.\n2. A laje ganha matrícula própria no Registro de Imóveis.\n3. O titular pode usar, gozar e dispor da sua unidade.\n4. A laje não dá direito a fração do terreno.\n5. O titular responde pelos encargos e tributos da sua unidade e deve respeitar as posturas do município.\n\nCada situação exige análise dos documentos e da construção.\n\nVocê sabia que a laje pode ser registrada? Conte nos comentários.",
+  "hashtags": [
+    "#direitodelaje",
+    "#laje",
+    "#regularizacaodeimoveis",
+    "#registrodeimoveis",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Código Civil, art. 1.510-A, com a Lei 13.465/2017 (conferido em 25/11/2026)",
+    "Lei 6.015/1973, art. 176, § 9º (conferido em 25/11/2026)"
+  ]
+}

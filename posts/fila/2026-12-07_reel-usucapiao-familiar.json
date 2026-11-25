@@ -1,0 +1,113 @@
+{
+  "imagens": [
+    "posts/videos/2026-12-07_reel-usucapiao-familiar_capa.jpg"
+  ],
+  "video": "posts/videos/2026-12-07_reel-usucapiao-familiar.mp4",
+  "musica": {
+    "arquivo": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+    "inicio": 66.003,
+    "bpm": 70.79,
+    "salto": 4.4
+  },
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "27.10 s (roteiro 27.12 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -20.6 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.2 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-12-07_reel-usucapiao-familiar_aviso.jpg",
+  "id": "2026-12-07_reel-usucapiao-familiar",
+  "data_publicacao": "2026-12-07",
+  "formato": "reel",
+  "area": "Direito Imobiliário",
+  "titulo": "2 anos para a *usucapião familiar*",
+  "subtitulo": "Quando o ex abandona o lar",
+  "video_capa": "assets/videos/pexels-6381010.mp4",
+  "video_final": "assets/videos/pexels-7292491.mp4",
+  "trilha": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+  "slides": [
+    {
+      "titulo": "O imóvel",
+      "texto": "Urbano, de até 250 m², dividido com o ex que abandonou o lar.",
+      "video": "assets/videos/pexels-8502728.mp4"
+    },
+    {
+      "titulo": "A posse",
+      "texto": "2 anos de moradia exclusiva, sem oposição e sem outro imóvel.",
+      "video": "assets/videos/pexels-7986204.mp4"
+    }
+  ],
+  "chamada_final": "Você conhecia essa regra?",
+  "legenda": "Existe uma modalidade de usucapião com prazo de apenas 2 anos: a usucapião familiar (Código Civil, art. 1.240-A).\n\nEla pode beneficiar quem:\n\n1. Divide a propriedade de um imóvel urbano de até 250 m² com ex-cônjuge ou ex-companheiro que abandonou o lar.\n2. Exerce, por 2 anos ininterruptos e sem oposição, a posse direta e exclusiva do imóvel, usando-o como sua moradia ou de sua família.\n3. Não é proprietário de outro imóvel urbano ou rural.\n\nCumpridos os requisitos, a pessoa adquire o domínio integral. O direito só pode ser reconhecido uma vez ao mesmo possuidor.\n\nO abandono do lar precisa ser analisado em cada caso.\n\nVocê conhecia essa regra? Conte nos comentários.",
+  "hashtags": [
+    "#usucapiaofamiliar",
+    "#usucapiao",
+    "#direitoimobiliario",
+    "#divorcio",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Código Civil, art. 1.240-A e § 1º (conferido em 25/11/2026)"
+  ]
+}

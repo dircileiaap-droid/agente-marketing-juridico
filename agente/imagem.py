@@ -9,7 +9,7 @@ No título, palavras entre *asteriscos* saem em itálico na cor de destaque.
 import re
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
 from .config import RAIZ
 from .fotos import obter_foto
@@ -243,7 +243,10 @@ class Desenhista:
         texto_espacado(draw, (MARGEM, 84), self.adv["assinatura"], fonte("texto", 22), cor, 0.28)
 
     def capa(self, post: dict, total: int = 1):
-        img = self._fundo_foto(obter_foto(post))
+        foto = obter_foto(post)
+        if foto is not None and post.get("escurecer"):  # foto clara demais para o título (0 a 1)
+            foto = ImageEnhance.Brightness(foto.convert("RGB")).enhance(post["escurecer"])
+        img = self._fundo_foto(foto)
         if post.get("data_comemorativa"):
             # sombra vinho suave atrás do selo de data: legível mesmo sobre céu ou parede clara
             sombra = Image.new("RGBA", (LARGURA, ALTURA), (0, 0, 0, 0))

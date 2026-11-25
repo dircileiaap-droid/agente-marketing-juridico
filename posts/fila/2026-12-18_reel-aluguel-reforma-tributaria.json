@@ -1,0 +1,113 @@
+{
+  "imagens": [
+    "posts/videos/2026-12-18_reel-aluguel-reforma-tributaria_capa.jpg"
+  ],
+  "video": "posts/videos/2026-12-18_reel-aluguel-reforma-tributaria.mp4",
+  "musica": {
+    "arquivo": "assets/audio/pixabay-595943-upbeat-corporate.mp3",
+    "inicio": 34.482,
+    "bpm": 109.96,
+    "salto": 4.3
+  },
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "26.19 s (roteiro 26.19 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -15.7 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.2 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-12-18_reel-aluguel-reforma-tributaria_aviso.jpg",
+  "id": "2026-12-18_reel-aluguel-reforma-tributaria",
+  "data_publicacao": "2026-12-18",
+  "formato": "reel",
+  "area": "Direito Tributário",
+  "titulo": "Reforma tributária: e o seu *aluguel*?",
+  "subtitulo": "Para pessoas físicas que alugam",
+  "video_capa": "assets/videos/pexels-7646762.mp4",
+  "video_final": "assets/videos/pexels-7817154.mp4",
+  "trilha": "assets/audio/pixabay-595943-upbeat-corporate.mp3",
+  "slides": [
+    {
+      "titulo": "Quem entra na regra",
+      "texto": "Receita acima de R$ 240 mil por ano e mais de 3 imóveis.",
+      "video": "assets/videos/pexels-6794390.mp4"
+    },
+    {
+      "titulo": "Os dois juntos",
+      "texto": "Em regra, é preciso cumprir os dois requisitos no ano anterior.",
+      "video": "assets/videos/pexels-7646797.mp4"
+    }
+  ],
+  "chamada_final": "Você tem imóveis alugados?",
+  "legenda": "A reforma tributária criou o IBS e a CBS. Mas nem toda pessoa física que aluga imóvel será contribuinte desses tributos.\n\nNa locação, a pessoa física entra no regime regular quando, no ano anterior, cumprir os dois requisitos (LC 214/2025, art. 251, § 1º, I):\n\n1. Receita total com locação acima de R$ 240 mil, valor atualizado pelo IPCA (§ 5º).\n2. Locação de mais de 3 imóveis distintos.\n\nA lei também prevê o enquadramento no próprio ano, quando o valor exceder esse limite em 20% (§ 2º, II).\n\nO imposto de renda sobre o aluguel tem regras próprias e não se confunde com esses tributos.\n\nVocê tem imóveis alugados? Compartilhe com quem precisa saber.",
+  "hashtags": [
+    "#reformatributaria",
+    "#aluguel",
+    "#ibs",
+    "#direitotributario",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "LC 214/2025, art. 251, §§ 1º, 2º e 5º (conferido em 25/11/2026)"
+  ]
+}

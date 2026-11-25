@@ -1,0 +1,58 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-02_checklist-antes-de-comprar_01.jpg",
+    "posts/imagens/2026-12-02_checklist-antes-de-comprar_02.jpg",
+    "posts/imagens/2026-12-02_checklist-antes-de-comprar_03.jpg",
+    "posts/imagens/2026-12-02_checklist-antes-de-comprar_04.jpg",
+    "posts/imagens/2026-12-02_checklist-antes-de-comprar_05.jpg",
+    "posts/imagens/2026-12-02_checklist-antes-de-comprar_06.jpg",
+    "posts/imagens/2026-12-02_checklist-antes-de-comprar_07.jpg"
+  ],
+  "alertas_oab": [],
+  "story_aviso": "posts/imagens/2026-12-02_checklist-antes-de-comprar_aviso.jpg",
+  "id": "2026-12-02_checklist-antes-de-comprar",
+  "data_publicacao": "2026-12-02",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Vai comprar um imóvel? Faça este *checklist*",
+  "subtitulo": "5 pontos para conferir antes de assinar.",
+  "foto": "assets/fotos/escolhidas/pexels-34992176.jpg",
+  "slides": [
+    {
+      "titulo": "Matrícula atualizada",
+      "texto": "A certidão de inteiro teor mostra o dono, os ônus e as restrições do imóvel (Lei 6.015/1973, art. 19, § 11)."
+    },
+    {
+      "titulo": "Estado civil de quem vende",
+      "texto": "Em regra, a pessoa casada precisa da autorização do cônjuge para vender, exceto na separação absoluta de bens (Código Civil, art. 1.647, I)."
+    },
+    {
+      "titulo": "Dívidas de condomínio",
+      "texto": "Quem compra responde pelos débitos do vendedor com o condomínio, inclusive multas e juros (Código Civil, art. 1.345)."
+    },
+    {
+      "titulo": "IPTU e taxas",
+      "texto": "Os tributos do imóvel passam para quem compra, salvo quando a prova de quitação consta do título (CTN, art. 130)."
+    },
+    {
+      "titulo": "Escritura e registro",
+      "texto": "Pagar e assinar não basta. A propriedade só se transfere com o registro no Cartório de Registro de Imóveis (Código Civil, art. 1.245)."
+    }
+  ],
+  "chamada_final": "Qual destes pontos você não conferia?",
+  "legenda": "Comprar um imóvel é, para muita gente, o maior negócio da vida. Antes de assinar, confira:\n\n1. Matrícula atualizada, com o dono, os ônus e as restrições do imóvel.\n2. Estado civil de quem vende: em regra, o cônjuge precisa autorizar a venda, exceto na separação absoluta de bens.\n3. Condomínio: quem compra responde pelos débitos do vendedor, inclusive multas e juros.\n4. IPTU e taxas: passam para quem compra, salvo quando a prova de quitação consta do título.\n5. Escritura e registro: a propriedade só se transfere com o registro.\n\nCada negócio pode exigir outras verificações.\n\nSalve este checklist. Qual destes pontos você não conferia?",
+  "hashtags": [
+    "#compradeimovel",
+    "#matricula",
+    "#direitoimobiliario",
+    "#regularizacaodeimoveis",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Lei 6.015/1973, art. 19, § 11 (conferido em 25/11/2026)",
+    "Código Civil, arts. 1.245, 1.345 e 1.647, I (conferido em 25/11/2026)",
+    "CTN, art. 130 (conferido em 25/11/2026)"
+  ]
+}

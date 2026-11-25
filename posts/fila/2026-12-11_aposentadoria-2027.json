@@ -1,0 +1,56 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-11_aposentadoria-2027_01.jpg",
+    "posts/imagens/2026-12-11_aposentadoria-2027_02.jpg",
+    "posts/imagens/2026-12-11_aposentadoria-2027_03.jpg",
+    "posts/imagens/2026-12-11_aposentadoria-2027_04.jpg",
+    "posts/imagens/2026-12-11_aposentadoria-2027_05.jpg",
+    "posts/imagens/2026-12-11_aposentadoria-2027_06.jpg",
+    "posts/imagens/2026-12-11_aposentadoria-2027_07.jpg"
+  ],
+  "alertas_oab": [],
+  "story_aviso": "posts/imagens/2026-12-11_aposentadoria-2027_aviso.jpg",
+  "id": "2026-12-11_aposentadoria-2027",
+  "data_publicacao": "2026-12-11",
+  "formato": "carrossel",
+  "area": "Direito Previdenciário",
+  "titulo": "Aposentadoria em 2027: o que *muda*",
+  "subtitulo": "As regras de transição sobem em janeiro.",
+  "foto": "assets/fotos/escolhidas/pexels-6626087.jpg",
+  "slides": [
+    {
+      "titulo": "Para quem valem",
+      "texto": "Para quem já era filiado ao INSS quando a Reforma da Previdência entrou em vigor, em novembro de 2019 (EC 103/2019)."
+    },
+    {
+      "titulo": "Regra dos pontos",
+      "texto": "Em 2027: 94 pontos para a mulher e 104 para o homem, com 30 e 35 anos de contribuição (art. 15)."
+    },
+    {
+      "titulo": "Como somar os pontos",
+      "texto": "Some a idade e o tempo de contribuição. Exemplo: 62 anos de idade e 32 de contribuição dão 94 pontos."
+    },
+    {
+      "titulo": "Idade progressiva",
+      "texto": "Em 2027: 60 anos para a mulher e 65 para o homem, com 30 e 35 anos de contribuição (art. 16)."
+    },
+    {
+      "titulo": "Há outras regras",
+      "texto": "Existem ainda a regra por idade e as de pedágio. A mais adequada depende do histórico de cada pessoa (arts. 17, 18 e 20)."
+    }
+  ],
+  "chamada_final": "Você sabe em qual regra se encaixa?",
+  "legenda": "Em janeiro, duas regras de transição da aposentadoria ficam mais exigentes. Elas valem para quem já era filiado ao INSS quando a Reforma da Previdência entrou em vigor, em novembro de 2019.\n\n1. Regra dos pontos (EC 103/2019, art. 15): em 2027, 94 pontos para a mulher, com 30 anos de contribuição, e 104 para o homem, com 35 anos. Os pontos são a soma da idade com o tempo de contribuição.\n2. Idade progressiva (art. 16): em 2027, 60 anos para a mulher, com 30 de contribuição, e 65 para o homem, com 35.\n\nHá ainda a regra por idade (art. 18) e as de pedágio (arts. 17 e 20). Para professores, essas duas regras têm requisitos reduzidos.\n\nVocê sabe em qual regra se encaixa? Salve este post e confira o seu tempo de contribuição.",
+  "hashtags": [
+    "#aposentadoria",
+    "#inss",
+    "#regrasdetransicao",
+    "#direitoprevidenciario",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "EC 103/2019, arts. 15, 16, 17, 18, 20 e 36 (conferido em 25/11/2026)"
+  ]
+}

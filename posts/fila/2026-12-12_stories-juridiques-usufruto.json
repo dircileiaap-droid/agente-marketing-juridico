@@ -1,0 +1,35 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-12_stories-juridiques-usufruto_01.jpg",
+    "posts/imagens/2026-12-12_stories-juridiques-usufruto_02.jpg",
+    "posts/imagens/2026-12-12_stories-juridiques-usufruto_03.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-12-12_stories-juridiques-usufruto",
+  "data_publicacao": "2026-12-12",
+  "tipo": "juridiques",
+  "area": "Direito Imobiliário",
+  "quadros": [
+    {
+      "etiqueta": "JURIDIQUÊS X PORTUGUÊS",
+      "titulo": "*Usufruto*",
+      "texto": "Você sabe o que essa palavra quer dizer?",
+      "rodape": "toque para traduzir"
+    },
+    {
+      "etiqueta": "EM PORTUGUÊS",
+      "titulo": "Usar o imóvel sem ser o *dono*.",
+      "texto": "O usufrutuário pode morar, administrar e ficar com o aluguel (Código Civil, art. 1.394)."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "No imóvel, o usufruto precisa de *registro*.",
+      "texto": "Código Civil, art. 1.391.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "Código Civil, arts. 1.391 e 1.394 (conferido em 25/11/2026)"
+  ],
+  "formato": "stories"
+}

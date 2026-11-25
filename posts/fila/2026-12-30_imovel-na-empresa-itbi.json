@@ -1,0 +1,59 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-30_imovel-na-empresa-itbi_01.jpg",
+    "posts/imagens/2026-12-30_imovel-na-empresa-itbi_02.jpg",
+    "posts/imagens/2026-12-30_imovel-na-empresa-itbi_03.jpg",
+    "posts/imagens/2026-12-30_imovel-na-empresa-itbi_04.jpg",
+    "posts/imagens/2026-12-30_imovel-na-empresa-itbi_05.jpg",
+    "posts/imagens/2026-12-30_imovel-na-empresa-itbi_06.jpg",
+    "posts/imagens/2026-12-30_imovel-na-empresa-itbi_07.jpg"
+  ],
+  "alertas_oab": [],
+  "story_aviso": "posts/imagens/2026-12-30_imovel-na-empresa-itbi_aviso.jpg",
+  "id": "2026-12-30_imovel-na-empresa-itbi",
+  "data_publicacao": "2026-12-30",
+  "formato": "carrossel",
+  "area": "Direito Empresarial",
+  "titulo": "Imóvel na empresa: o STF *decidiu* sobre o ITBI",
+  "subtitulo": "O que diz o Tema 1.348.",
+  "foto": "assets/fotos/escolhidas/pexels-20776189.jpg",
+  "escurecer": 0.55,
+  "slides": [
+    {
+      "titulo": "A regra",
+      "texto": "O ITBI não incide sobre o imóvel que o sócio transfere à empresa para realizar o capital social (Constituição, art. 156, § 2º, I)."
+    },
+    {
+      "titulo": "A dúvida",
+      "texto": "A imunidade vale também para empresas que vivem de comprar, vender ou alugar imóveis?"
+    },
+    {
+      "titulo": "A decisão",
+      "texto": "Em 19/10/2026, o STF decidiu que sim: na realização do capital, a imunidade independe da atividade da empresa (Tema 1.348, RE 1.495.108)."
+    },
+    {
+      "titulo": "Os limites",
+      "texto": "A imunidade vai até o valor do capital a ser integralizado (Tema 796), e o município pode apurar simulação ou fraude."
+    },
+    {
+      "titulo": "E o registro?",
+      "texto": "A certidão da Junta Comercial é documento hábil para transferir o imóvel no registro (Lei 8.934/1994, art. 64)."
+    }
+  ],
+  "chamada_final": "Você sabia dessa decisão do STF?",
+  "legenda": "Uma decisão importante para quem pensa em colocar imóvel na empresa ou em holding.\n\nA Constituição afasta o ITBI na transmissão de bens à pessoa jurídica em realização de capital. A dúvida era se isso valia também para empresas com atividade imobiliária.\n\nNo julgamento do Tema 1.348 (RE 1.495.108), concluído em 19 de outubro de 2026, o STF decidiu, por maioria, que a imunidade na realização do capital social é incondicionada, independentemente da atividade da empresa.\n\nDois limites:\n1. O valor do capital social a ser integralizado (Tema 796).\n2. Os municípios podem demonstrar eventual simulação ou fraude à lei.\n\nNa conferência de 25/11/2026, o andamento do STF registrava a ata do julgamento, publicada em 22/10. A decisão ainda pode ser objeto de recurso.\n\nVocê sabia dessa decisão? Conte nos comentários.",
+  "hashtags": [
+    "#itbi",
+    "#holding",
+    "#direitoempresarial",
+    "#stf",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "STF, Tema 1.348, RE 1.495.108: andamento oficial, julgamento de 19/10/2026 (conferido em 25/11/2026)",
+    "Constituição, art. 156, § 2º, I (conferido em 25/11/2026)",
+    "Lei 8.934/1994, art. 64 (conferido em 25/11/2026)"
+  ]
+}

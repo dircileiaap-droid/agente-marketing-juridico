@@ -307,7 +307,7 @@ class Roteirista:
         d.line((M, y, M + 160, y), fill=self.destaque_clara, width=5)
         els.append(Elemento(img, b * 0.8, "crescer", 0.4, None, "fio"))
         y += 70
-        chamadas = ("SALVE PARA CONSULTAR DEPOIS", "ENVIE PARA QUEM PRECISA",
+        chamadas = ("SALVE E COMPARTILHE",
                     f"SIGA {self.adv['instagram'].upper()}")
         for i, linha in enumerate(chamadas):
             cor = self.clara
@@ -332,7 +332,7 @@ def montar_roteiro(post, perfil):
     cenas = [r.capa(post, _duracao_leitura(capa, batida), _resolver(post["video_capa"]))]
     for i, s in enumerate(slides, start=1):
         cenas.append(r.slide(post, i, len(slides), s, _duracao_leitura(s, batida), _resolver(s["video"])))
-    chamadas = "salve para consultar depois envie para quem precisa siga " + perfil["advogado"]["instagram"]
+    chamadas = "salve e compartilhe siga " + perfil["advogado"]["instagram"]
     final = {"titulo": post.get("chamada_final", ""), "texto": chamadas}
     cenas.append(r.encerramento(post, _duracao_leitura(final, batida), _resolver(post["video_final"])))
     return cenas, batida

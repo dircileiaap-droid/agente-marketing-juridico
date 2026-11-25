@@ -1,0 +1,59 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-04_itbi-valor-de-mercado_01.jpg",
+    "posts/imagens/2026-12-04_itbi-valor-de-mercado_02.jpg",
+    "posts/imagens/2026-12-04_itbi-valor-de-mercado_03.jpg",
+    "posts/imagens/2026-12-04_itbi-valor-de-mercado_04.jpg",
+    "posts/imagens/2026-12-04_itbi-valor-de-mercado_05.jpg",
+    "posts/imagens/2026-12-04_itbi-valor-de-mercado_06.jpg",
+    "posts/imagens/2026-12-04_itbi-valor-de-mercado_07.jpg"
+  ],
+  "alertas_oab": [],
+  "story_aviso": "posts/imagens/2026-12-04_itbi-valor-de-mercado_aviso.jpg",
+  "id": "2026-12-04_itbi-valor-de-mercado",
+  "data_publicacao": "2026-12-04",
+  "formato": "carrossel",
+  "area": "Direito Tributário",
+  "titulo": "ITBI: o que mudou na *base de cálculo*",
+  "subtitulo": "As novas regras do Código Tributário Nacional.",
+  "foto": "assets/fotos/escolhidas/pexels-34855832.jpg",
+  "escurecer": 0.6,
+  "slides": [
+    {
+      "titulo": "O que é o ITBI",
+      "texto": "É o imposto municipal sobre a transmissão onerosa de imóveis entre vivos, como a compra e venda (Constituição, art. 156, II)."
+    },
+    {
+      "titulo": "O novo valor venal",
+      "texto": "Desde janeiro de 2026, o CTN define valor venal como o valor à vista do imóvel, em condições normais de mercado (art. 38, § 1º)."
+    },
+    {
+      "titulo": "Critérios técnicos",
+      "texto": "A estimativa deve usar critérios técnicos, como preços de mercado, dados de cartórios e características do imóvel (art. 38, § 2º)."
+    },
+    {
+      "titulo": "Transparência",
+      "texto": "O município deve divulgar os critérios que usou para estimar o valor (art. 38, § 3º)."
+    },
+    {
+      "titulo": "É possível contestar",
+      "texto": "O contribuinte pode contestar a estimativa com avaliação contraditória, na forma da lei municipal (art. 38, § 3º)."
+    }
+  ],
+  "chamada_final": "Você sabia que o valor do ITBI pode ser contestado?",
+  "legenda": "A Lei Complementar 227, de 13 de janeiro de 2026, mudou as regras do ITBI no Código Tributário Nacional.\n\n1. A base de cálculo continua sendo o valor venal, que agora é definido como o valor pelo qual o imóvel seria negociado à vista, em condições normais de mercado.\n2. Esse valor deve ser estimado por critérios técnicos, como a análise de preços do mercado, as informações de cartórios e as características do imóvel.\n3. O município deve divulgar os critérios usados.\n4. O contribuinte pode contestar a estimativa com avaliação contraditória, em procedimento próprio, conforme a lei municipal.\n\nVocê sabia que o valor do ITBI pode ser contestado? Conte nos comentários.",
+  "hashtags": [
+    "#itbi",
+    "#direitotributario",
+    "#compradeimovel",
+    "#imposto",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "CTN, art. 38, com a redação da LC 227/2026 (conferido em 25/11/2026)",
+    "LC 227/2026, arts. 165 e 182 (conferido em 25/11/2026)",
+    "Constituição, art. 156, II (conferido em 25/11/2026)"
+  ]
+}

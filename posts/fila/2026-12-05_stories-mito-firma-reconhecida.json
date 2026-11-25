@@ -1,0 +1,34 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-05_stories-mito-firma-reconhecida_01.jpg",
+    "posts/imagens/2026-12-05_stories-mito-firma-reconhecida_02.jpg",
+    "posts/imagens/2026-12-05_stories-mito-firma-reconhecida_03.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-12-05_stories-mito-firma-reconhecida",
+  "data_publicacao": "2026-12-05",
+  "tipo": "mito_verdade",
+  "area": "Direito Imobiliário",
+  "quadros": [
+    {
+      "etiqueta": "MITO OU VERDADE?",
+      "titulo": "Contrato com firma reconhecida transfere o imóvel.",
+      "rodape": "toque para ver a resposta"
+    },
+    {
+      "etiqueta": "RESPOSTA",
+      "destaque": "Mito!",
+      "titulo": "A firma só confirma a *assinatura*.",
+      "texto": "A propriedade se transfere com o registro do título no Registro de Imóveis (Código Civil, art. 1.245)."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "Quem não registra *não é dono*.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "Código Civil, art. 1.245; CPC, art. 411, I (conferido em 25/11/2026)"
+  ],
+  "formato": "stories"
+}

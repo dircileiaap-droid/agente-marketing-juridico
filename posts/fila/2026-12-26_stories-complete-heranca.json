@@ -1,0 +1,34 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-26_stories-complete-heranca_01.jpg",
+    "posts/imagens/2026-12-26_stories-complete-heranca_02.jpg",
+    "posts/imagens/2026-12-26_stories-complete-heranca_03.jpg"
+  ],
+  "alertas_oab": [],
+  "id": "2026-12-26_stories-complete-heranca",
+  "data_publicacao": "2026-12-26",
+  "tipo": "complete",
+  "area": "Direito Imobiliário",
+  "quadros": [
+    {
+      "etiqueta": "COMPLETE A FRASE",
+      "titulo": "Até a partilha, a herança é…",
+      "rodape": "toque para ver a resposta"
+    },
+    {
+      "etiqueta": "RESPOSTA",
+      "destaque": "Indivisível!",
+      "titulo": "Nenhum herdeiro é dono *exclusivo* de um bem.",
+      "texto": "Código Civil, art. 1.791, parágrafo único."
+    },
+    {
+      "etiqueta": "SALVE PARA LEMBRAR",
+      "titulo": "Partilha registrada, imóvel em *ordem*.",
+      "rodape": "compartilhe com quem precisa"
+    }
+  ],
+  "fontes": [
+    "Código Civil, art. 1.791, parágrafo único (conferido em 25/11/2026)"
+  ],
+  "formato": "stories"
+}

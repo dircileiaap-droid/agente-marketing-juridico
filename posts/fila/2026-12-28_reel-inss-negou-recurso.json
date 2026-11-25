@@ -1,0 +1,113 @@
+{
+  "imagens": [
+    "posts/videos/2026-12-28_reel-inss-negou-recurso_capa.jpg"
+  ],
+  "video": "posts/videos/2026-12-28_reel-inss-negou-recurso.mp4",
+  "musica": {
+    "arquivo": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+    "inicio": 66.003,
+    "bpm": 70.79,
+    "salto": 4.4
+  },
+  "testes_video": {
+    "resultado": "10/10",
+    "detalhes": [
+      {
+        "n": 1,
+        "teste": "Formato técnico (H.264 High, 1080x1920, 30 fps, AAC 48 kHz, faststart)",
+        "ok": true,
+        "obs": "vídeo=('High', '1080', '1920', '30') áudio=('48000', 'stereo') faststart=True"
+      },
+      {
+        "n": 2,
+        "teste": "Duração entre 15 e 90 s e igual ao roteiro",
+        "ok": true,
+        "obs": "25.40 s (roteiro 25.43 s)"
+      },
+      {
+        "n": 3,
+        "teste": "Áudio presente e audível (média acima de -30 dB)",
+        "ok": true,
+        "obs": "média -20.7 dB"
+      },
+      {
+        "n": 4,
+        "teste": "Áudio sem distorção (pico até -0,5 dB)",
+        "ok": true,
+        "obs": "pico -1.1 dB"
+      },
+      {
+        "n": 5,
+        "teste": "Sem silêncio inesperado no meio do vídeo",
+        "ok": true,
+        "obs": "silêncios em nenhum"
+      },
+      {
+        "n": 6,
+        "teste": "Sem quadros pretos nem imagem congelada",
+        "ok": true,
+        "obs": "pretos=nenhum congelados=nenhum"
+      },
+      {
+        "n": 7,
+        "teste": "Textos idênticos ao roteiro, ética OAB, sem travessão/espaço duplo",
+        "ok": true,
+        "obs": "fora do roteiro=nenhum alertas=nenhum espaço duplo=False"
+      },
+      {
+        "n": 8,
+        "teste": "Legibilidade: contraste texto x fundo (WCAG)",
+        "ok": true,
+        "obs": "abaixo do mínimo: nenhum"
+      },
+      {
+        "n": 9,
+        "teste": "Textos dentro das áreas seguras do Reels",
+        "ok": true,
+        "obs": "fora: nenhum"
+      },
+      {
+        "n": 10,
+        "teste": "Tempo de leitura suficiente em cada cena",
+        "ok": true,
+        "obs": "curtos: nenhum"
+      }
+    ]
+  },
+  "story_aviso": "posts/imagens/2026-12-28_reel-inss-negou-recurso_aviso.jpg",
+  "id": "2026-12-28_reel-inss-negou-recurso",
+  "data_publicacao": "2026-12-28",
+  "formato": "reel",
+  "area": "Direito Previdenciário",
+  "titulo": "O INSS *negou* o seu pedido?",
+  "subtitulo": "Existe recurso administrativo",
+  "video_capa": "assets/videos/pexels-8172125.mp4",
+  "video_final": "assets/videos/pexels-7393176.mp4",
+  "trilha": "assets/audio/pixabay-590331-inspiring-emotional.mp3",
+  "slides": [
+    {
+      "titulo": "O prazo",
+      "texto": "São 30 dias, contados da ciência da decisão.",
+      "video": "assets/videos/pexels-7219070.mp4"
+    },
+    {
+      "titulo": "Quem julga",
+      "texto": "O Conselho de Recursos da Previdência Social, o CRPS.",
+      "video": "assets/videos/pexels-7821798.mp4"
+    }
+  ],
+  "chamada_final": "Leia com atenção o motivo da negativa.",
+  "legenda": "Receber uma negativa do INSS não significa que o caminho acabou.\n\n1. Cabe recurso ao Conselho de Recursos da Previdência Social, o CRPS (Decreto 3.048/1999, art. 305, I).\n2. O prazo é de 30 dias, contados da ciência da decisão (art. 305, § 1º, II).\n3. O próprio INSS pode rever a sua decisão e reconhecer o direito (art. 305, § 3º).\n\nAntes de recorrer, leia com atenção o motivo da negativa: muitas vezes, falta um documento ou há um erro no cadastro. Conforme o caso, também é possível buscar o Poder Judiciário.\n\nVocê já passou por isso? Salve e compartilhe com quem precisa.",
+  "hashtags": [
+    "#inss",
+    "#recursoadministrativo",
+    "#beneficionegado",
+    "#direitoprevidenciario",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Decreto 3.048/1999, art. 305, I, § 1º, II, e § 3º (conferido em 25/11/2026)"
+  ]
+}

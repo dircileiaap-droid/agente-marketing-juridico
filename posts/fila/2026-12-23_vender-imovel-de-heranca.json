@@ -1,0 +1,57 @@
+{
+  "imagens": [
+    "posts/imagens/2026-12-23_vender-imovel-de-heranca_01.jpg",
+    "posts/imagens/2026-12-23_vender-imovel-de-heranca_02.jpg",
+    "posts/imagens/2026-12-23_vender-imovel-de-heranca_03.jpg",
+    "posts/imagens/2026-12-23_vender-imovel-de-heranca_04.jpg",
+    "posts/imagens/2026-12-23_vender-imovel-de-heranca_05.jpg",
+    "posts/imagens/2026-12-23_vender-imovel-de-heranca_06.jpg",
+    "posts/imagens/2026-12-23_vender-imovel-de-heranca_07.jpg"
+  ],
+  "alertas_oab": [],
+  "story_aviso": "posts/imagens/2026-12-23_vender-imovel-de-heranca_aviso.jpg",
+  "id": "2026-12-23_vender-imovel-de-heranca",
+  "data_publicacao": "2026-12-23",
+  "formato": "carrossel",
+  "area": "Direito Imobiliário",
+  "titulo": "Dá para vender um imóvel de *herança*?",
+  "subtitulo": "O que a lei permite antes da partilha.",
+  "foto": "assets/fotos/escolhidas/pexels-17790673.jpg",
+  "slides": [
+    {
+      "titulo": "A herança é indivisível",
+      "texto": "Até a partilha, o direito dos herdeiros à propriedade e à posse da herança é indivisível (Código Civil, art. 1.791, parágrafo único)."
+    },
+    {
+      "titulo": "Vender sozinho não vale",
+      "texto": "É ineficaz a venda de um bem da herança por um herdeiro, enquanto durar a indivisibilidade, sem autorização do juiz (art. 1.793, § 3º)."
+    },
+    {
+      "titulo": "Cessão de direitos",
+      "texto": "O herdeiro pode ceder a sua parte na herança, como um todo, por escritura pública (art. 1.793)."
+    },
+    {
+      "titulo": "Venda pelo inventariante",
+      "texto": "No inventário em cartório, o inventariante pode ser autorizado por escritura a vender um bem, sem autorização do juiz (Resolução CNJ 35/2007, art. 11-A)."
+    },
+    {
+      "titulo": "Há condições",
+      "texto": "Parte ou todo o valor é vinculado às despesas do inventário, com garantia e prazo de até 1 ano para pagá-las (art. 11-A, II, VI e § 1º)."
+    }
+  ],
+  "chamada_final": "Você já passou por essa situação na família?",
+  "legenda": "O imóvel ficou de herança, mas o inventário ainda não terminou. Dá para vender?\n\n1. Até a partilha, a herança é indivisível: nenhum herdeiro é dono exclusivo de um bem.\n2. Por isso, é ineficaz a venda de um bem por um herdeiro, sem prévia autorização do juiz, enquanto durar a indivisibilidade.\n3. O herdeiro pode ceder os seus direitos na herança, por escritura pública. A cessão sobre um bem específico, sozinha, é ineficaz.\n4. No inventário em cartório, o inventariante pode ser autorizado, por escritura, a vender um bem, com condições: parte ou todo o valor vinculado às despesas do inventário, garantia, ausência de indisponibilidade de bens dos herdeiros e do cônjuge, e prazo de até 1 ano para pagar as despesas, entre outras.\n\nCada família exige análise própria.\n\nVocê já passou por essa situação? Conte nos comentários.",
+  "hashtags": [
+    "#heranca",
+    "#inventario",
+    "#vendadeimovel",
+    "#direitoimobiliario",
+    "#saobernardodocampo",
+    "#abcpaulista",
+    "#advocacia"
+  ],
+  "fontes": [
+    "Código Civil, arts. 1.791 e 1.793 (conferido em 25/11/2026)",
+    "Resolução CNJ 35/2007, art. 11-A, incluído pela Resolução 571/2024 (conferido em 25/11/2026)"
+  ]
+}
