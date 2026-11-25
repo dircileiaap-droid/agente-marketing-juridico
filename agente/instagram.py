@@ -57,13 +57,13 @@ class Instagram:
 
     def _publicar_container(self, container: str) -> str:
         """media_publish com novas tentativas: às vezes o Instagram informa FINISHED, mas
-        ainda responde "media is not ready" (código 9007, subcódigo 2207027). Nesse erro
-        nada foi publicado, então repetir é seguro e não duplica o post."""
+        ainda responde "media is not ready" (2207027) ou "media not found" (2207006).
+        Repete o MESMO container, que só pode ser publicado uma vez: não duplica o post."""
         for tentativa in range(12):
             try:
                 return self._req("POST", f"{self.user_id}/media_publish", creation_id=container)["id"]
             except ErroInstagram as erro:
-                if "2207027" not in str(erro) or tentativa == 11:
+                if not any(c in str(erro) for c in ("2207027", "2207006")) or tentativa == 11:
                     raise
                 time.sleep(20)
 
@@ -107,6 +107,9 @@ class Instagram:
                               image_url=url_imagem)["id"]
         self._aguardar(container)
         return self._publicar_container(container)
+
+    def recentes(self, limite: int = 10) -> list[dict]:
+        return self._req("GET", f"{self.user_id}/media", fields="id,caption,timestamp", limit=limite).get("data", [])
 
     def perfil(self) -> dict:
         return self._req("GET", "me", fields="user_id,username,followers_count,media_count")

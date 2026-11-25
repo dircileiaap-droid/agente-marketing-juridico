@@ -110,6 +110,12 @@ def devidos(momento: datetime | None = None) -> list[dict]:
     return sorted(prontos, key=horario_alvo)
 
 
+def proximo_alvo(momento: datetime | None = None) -> datetime | None:
+    """Horário do próximo post que ainda vai sair."""
+    momento = momento or agora_brasilia()
+    return min((a for p in na_fila() if (a := horario_alvo(p)) > momento), default=None)
+
+
 def atrasados() -> list[dict]:
     """Posts que perderam a data (não são publicados sozinhos: precisam de nova data)."""
     limite = (hoje() - timedelta(days=TOLERANCIA_ATRASO_DIAS)).isoformat()

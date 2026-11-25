@@ -2,11 +2,16 @@ name: Publicar no Instagram
 
 on:
   schedule:
-    # Confere a fila a cada hora (no minuto 7, fora da hora cheia, quando o GitHub atrasa
-    # menos). Cada post só sai quando o SEU horário já passou: feed 21h, Stories 14h ou o
-    # "horario" do post ("10h", "18h"), no horário de Brasília. Sem post no horário, a
-    # execução termina sem publicar nada.
-    - cron: "7 * * * *"
+    # O GitHub atrasa as execuções (às vezes horas) e limita as que rodam de hora em hora.
+    # Por isso há poucas execuções, ANTES do horário dos posts: a que começar primeiro espera
+    # a hora certa (até 5h20) e publica. As seguintes são reserva. Horários em UTC.
+    - cron: "23 9 * * *"     # 06h23: posts das 10h
+    - cron: "41 12 * * *"    # 09h41: posts das 10h e Stories das 14h
+    - cron: "17 16 * * *"    # 13h17: posts das 18h (e Stories, reserva)
+    - cron: "37 18 * * *"    # 15h37: posts das 18h e das 21h
+    - cron: "53 20 * * *"    # 17h53: posts das 21h
+    - cron: "19 23 * * *"    # 20h19: posts das 21h
+    - cron: "11 1 * * *"     # 22h11: reserva
   workflow_dispatch:
     inputs:
       simular:
@@ -18,14 +23,17 @@ permissions:
   contents: write
 
 concurrency:
-  group: repositorio
+  group: publicar   # separado dos KPIs, porque esta execução pode ficar esperando
   cancel-in-progress: false
 
 jobs:
   publicar:
     runs-on: ubuntu-latest
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # sempre a versão mais nova: uma execução que ficou na fila não pode repetir um post
 
       - uses: actions/setup-python@v5
         with:
@@ -33,6 +41,12 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
+
+      - name: Esperar o horário do próximo post
+        if: ${{ !inputs.simular }}
+        run: |
+          python main.py esperar --max-min 320
+          git pull --rebase
 
       - name: Publicar posts do dia
         env:
@@ -44,8 +58,15 @@ jobs:
         run: python main.py publicar ${{ inputs.simular && '--simular' || '' }}
 
       - name: Registrar publicação no repositório
+        if: always()   # mesmo com erro, registra o que já saiu
         run: |
           git config user.name "agente-marketing"
           git config user.email "agente-marketing@users.noreply.github.com"
           git add posts/
-          git diff --cached --quiet || (git commit -m "Post publicado no Instagram" && git pull --rebase && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "Post publicado no Instagram"
+          for t in 1 2 3 4 5; do
+            git pull --rebase && git push && exit 0
+            sleep 10
+          done
+          exit 1

@@ -105,6 +105,7 @@ def cmd_listar(_args):
         print(f"{p['data_publicacao']}  {p['formato']:9}  {p.get('titulo', p['id'])}")
 
 
+REPOSITORIO = "dircileiaap-droid/agente-marketing-juridico"
 FIXAS = {"#abcpaulista", "#advocacia", "#saobernardodocampo"}
 
 
@@ -112,6 +113,34 @@ def hashtags_finais(post: dict, maximo: int = 5) -> list[str]:
     """As mais específicas do tema + #saobernardodocampo, sem repetir (máximo 5)."""
     temas = [h for h in post.get("hashtags", []) if h not in FIXAS]
     return list(dict.fromkeys(temas[: maximo - 1] + ["#saobernardodocampo"]))[:maximo]
+
+
+def cmd_esperar(args):
+    """Espera o horário do próximo post, se ele estiver perto. O GitHub atrasa as execuções;
+    começando antes e esperando, o post sai na hora certa."""
+    import time
+    if fila.devidos():
+        print("Há post no horário: não é preciso esperar.")
+        return
+    alvo = fila.proximo_alvo()
+    agora = fila.agora_brasilia()
+    if alvo is None or (alvo - agora).total_seconds() > args.max_min * 60:
+        print(f"Nenhum post nos próximos {args.max_min} minutos.")
+        return
+    print(f"Próximo post: {alvo:%d/%m %H:%M}. Esperando {int((alvo - agora).total_seconds() // 60)} min.",
+          flush=True)
+    while (falta := (alvo - fila.agora_brasilia()).total_seconds()) > 0:
+        time.sleep(min(falta + 1, 300))
+
+
+def ja_no_ar(ig, legenda: str) -> str | None:
+    """ID do post recente com a mesma legenda: evita repetir um post que saiu, mas cujo
+    registro no repositório falhou."""
+    inicio = " ".join(legenda.split())[:120]
+    for m in ig.recentes():
+        if inicio and " ".join((m.get("caption") or "").split()).startswith(inicio):
+            return m["id"]
+    return None
 
 
 def cmd_publicar(args):
@@ -148,8 +177,15 @@ def cmd_publicar(args):
                   f"  local: {local}  hashtags: {tags}\n  story de aviso: {post.get('story_aviso')}\n")
             continue
         if post.get("formato") == "stories":
-            ids = [ig.publicar_story(u) for u in urls]  # telas na ordem do roteiro
+            # telas na ordem do roteiro; o que já saiu fica anotado para não repetir
+            ids = post.setdefault("stories_publicadas", [])
+            for u in urls[len(ids):]:
+                ids.append(ig.publicar_story(u))
+                fila.salvar(post)
             media_id = ",".join(ids)
+        elif media_id := ja_no_ar(ig, legenda):
+            print(f"[já estava no ar] {post['id']}")
+            post["story_aviso"] = None
         elif video:
             media_id = ig.publicar_reel(video, legenda, urls[0] if urls else None, local)
         else:
@@ -214,13 +250,36 @@ def cmd_verificar_token(_args):
 
 
 def cmd_renovar_token(_args):
+    """Renova a chave da Meta por mais 60 dias e a guarda no .env e no GitHub, sem mostrá-la."""
+    import shutil
+    import subprocess
+
     from agente.instagram import Instagram
     if os.environ.get("GITHUB_ACTIONS"):
-        sys.exit("Rode este comando no seu computador: o token apareceria no log público.")
+        sys.exit("Rode este comando no seu computador.")
+    gh = shutil.which("gh") or r"C:\Program Files\GitHub CLI\gh.exe"
+    if not Path(gh).exists():
+        sys.exit("GitHub CLI não encontrado: nada foi alterado.")
+
     dados = Instagram().renovar_token()
+    nova = dados["access_token"]
+    os.environ["IG_ACCESS_TOKEN"] = nova
+    usuario = Instagram().perfil().get("username")  # confirma que a nova chave funciona
     dias = int(dados.get("expires_in", 0)) // 86400
-    print(f"Novo token válido por {dias} dias. Atualize o secret IG_ACCESS_TOKEN com:")
-    print(dados["access_token"])
+    print(f"[1/3] Chave renovada por {dias} dias e testada (@{usuario}).")
+
+    arquivo = RAIZ / ".env"
+    linhas = arquivo.read_text(encoding="utf-8-sig").splitlines()
+    linhas = [f"IG_ACCESS_TOKEN={nova}" if x.strip().startswith("IG_ACCESS_TOKEN") else x for x in linhas]
+    arquivo.write_text("\n".join(linhas) + "\n", encoding="utf-8")
+    print("[2/3] Chave guardada no arquivo .env deste computador.")
+
+    # a chave vai pela entrada padrão: não aparece na tela nem na lista de processos
+    r = subprocess.run([gh, "secret", "set", "IG_ACCESS_TOKEN", "--repo", REPOSITORIO],
+                       input=nova, text=True, capture_output=True)
+    if r.returncode:
+        sys.exit(f"[3/3] FALHOU ao enviar ao GitHub: {r.stderr.strip()[:200]}")
+    print("[3/3] Chave enviada ao GitHub. Pronto!")
 
 
 def main():
@@ -253,6 +312,10 @@ def main():
     pub.set_defaults(func=cmd_publicar)
 
     sub.add_parser("demo", help="gera imagens de exemplo").set_defaults(func=cmd_demo)
+    esp = sub.add_parser("esperar", help="espera o horário do próximo post (GitHub)")
+    esp.add_argument("--max-min", type=int, default=320)
+    esp.set_defaults(func=cmd_esperar)
+
     sub.add_parser("verificar-token").set_defaults(func=cmd_verificar_token)
     sub.add_parser("renovar-token").set_defaults(func=cmd_renovar_token)
 
